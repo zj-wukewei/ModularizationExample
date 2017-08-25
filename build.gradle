@@ -8,8 +8,6 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.0-beta3'
-        
-
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -24,4 +22,55 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+
+def daggerVersion = "2.11"
+def retrofitVersion = "2.3.0"
+def supportVersion = "26.0.0-beta1"
+def okHttpVersion = '3.8.1'
+def gsonVersion = '2.8.1'
+def rxJavaVersion = '2.1.1'
+def rxAndroidVersion = '2.0.1'
+def leakCanaryVersion = "1.5.1"
+def glideVersion = '4.0.0-RC1'
+
+
+project.ext {
+    applicationId = "com.wkw.modularization"
+    buildToolsVersion = "25.0.1"
+    compileSdkVersion = 26
+    minSdkVersion = 16
+    targetSdkVersion = 26
+    versionCode = 1
+    versionName = "1.0.0"
+    abortOnLintError = false
+    checkLintRelease = false
+    useJack = false
+    abortOnLintError = false
+    javaVersion = JavaVersion.VERSION_1_8
+    libSupportAppcompat = "com.android.support:appcompat-v7:${supportVersion}"
+    libSupportDesign = "com.android.support:design:${supportVersion}"
+    libSupportRecyclerview = "com.android.support:recyclerview-v7:${supportVersion}"
+    libSupportV4 = "com.android.support:support-v4:${supportVersion}"
+    libRxAndroid = "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}"
+    libRxJava = "io.reactivex.rxjava2:rxjava:${rxJavaVersion}"
+    libEventBus = "org.greenrobot:eventbus:3.0.0"
+    libGlide = "com.github.bumptech.glide:glide:${glideVersion}"
+    libGson = "com.google.code.gson:gson:${gsonVersion}"
+    debugDependencies = [
+            leakCanary : "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}",
+    ]
+    releaseDependencies = [
+            leakCanary : "com.squareup.leakcanary:leakcanary-android-no-op:${leakCanaryVersion}",
+    ]
+    libRetrofit = "com.squareup.retrofit2:retrofit:${retrofitVersion}"
+    libRetrofitConverterGson = "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
+    libRetrofitAdapterRxJava = "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}"
+    libOkHttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}"
+    libDagger = "com.google.dagger:dagger:${daggerVersion}"
+    libDaggerSupport = "com.google.dagger:dagger-android-support:${daggerVersion}"
+    libDaggerCompiler = "com.google.dagger:dagger-compiler:${daggerVersion}"
+    libDaggerAndroidCompiler = "com.google.dagger:dagger-android-processor:${daggerVersion}"
+    libRxPermissions = 'com.tbruyelle.rxpermissions:rxpermissions:0.9.3@aar'
 }

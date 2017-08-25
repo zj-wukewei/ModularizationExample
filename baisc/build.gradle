@@ -1,15 +1,18 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
+
+
     defaultConfig {
-        applicationId rootProject.ext.applicationId
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
 
     compileOptions {
@@ -28,14 +31,29 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    implementation 'com.android.support:appcompat-v7:26.0.0-beta1'
     testImplementation 'junit:junit:4.12'
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    androidTestImplementation 'com.android.support.test:runner:0.5'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
+    api project(':sdk')
+    annotationProcessor rootProject.ext.libDaggerCompiler
+    annotationProcessor rootProject.ext.libDaggerAndroidCompiler
+    api rootProject.ext.libDagger
+    api rootProject.ext.libDaggerSupport
+    api rootProject.ext.libRxJava
+    api rootProject.ext.libRxAndroid
+    api rootProject.ext.libSupportAppcompat
+    api rootProject.ext.libSupportRecyclerview
+    api rootProject.ext.libSupportDesign
+    api rootProject.ext.libSupportV4
+    api rootProject.ext.libRxPermissions
+    api rootProject.ext.libRetrofit
+    api rootProject.ext.libRetrofitConverterGson
+    api rootProject.ext.libRetrofitAdapterRxJava
+    api rootProject.ext.libOkHttpLoggingInterceptor
+    api rootProject.ext.libEventBus
 }
