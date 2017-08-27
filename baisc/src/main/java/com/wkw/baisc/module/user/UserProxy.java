@@ -15,6 +15,6 @@ public class UserProxy extends Proxy<IUserUi, IUserService> {
 
     @Override
     public Module<IUserUi, IUserService> getDefaultModule() {
-        return null;
+        return new DefaultUserModule();
     }
 }

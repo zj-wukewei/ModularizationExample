@@ -25,12 +25,12 @@ public class DefaultUserModule extends Module<IUserUi, IUserService> {
 
     @Override
     public IUserUi getUiInterface() {
-        return null;
+        return userUi;
     }
 
     @Override
     public IUserService getServiceInterface() {
-        return null;
+        return service;
     }
 
     @Override
