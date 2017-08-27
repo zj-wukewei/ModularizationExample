@@ -41,11 +41,11 @@ public class MrService {
     private static MrService mInstance;
     private Retrofit mRetrofit;
 
-//    public static ZhilanService getInstance() {
+//    public static MrService getInstance() {
 //        if (mInstance == null) {
-//            synchronized (ZhilanService.class) {
+//            synchronized (MrService.class) {
 //                if (mInstance == null) {
-//                    mInstance = new ZhilanService();
+//                    mInstance = new MrService();
 //                }
 //            }
 //        }
