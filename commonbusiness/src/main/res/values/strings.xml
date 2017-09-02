@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">commonbusiness</string>
+    <string name="exception_message_generic">连接服务器失败,请稍后再试</string>
+    <string name="exception_message_no_connection">无网络连接</string>
+</resources>
