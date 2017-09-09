@@ -3,6 +3,7 @@ package com.wkw.commonbusiness.activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
+import com.wkw.commonbusiness.BaseApplication;
 import com.wkw.commonbusiness.entity.UserSystem;
 import com.wkw.commonbusiness.exception.ErrorBundle;
 import com.wkw.basic.exception.ResponseException;
@@ -21,18 +22,12 @@ import dagger.android.AndroidInjection;
 
 public abstract class MrActivity extends BaseActivity {
 
-    @Inject
-    UserSystem mUserSystem;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
     }
 
-    public UserSystem getUserSystem() {
-        return mUserSystem;
-    }
 
     protected boolean handleCommonResponseError(Exception exception) {
         boolean handled = false;

@@ -1,15 +1,28 @@
-apply plugin: 'com.android.application'
+if (isBuildModule.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
+
+
     defaultConfig {
-        applicationId rootProject.ext.applicationId
+
+        if (isBuildModule.toBoolean()) {
+            applicationId "com.wkw.archives"
+        }
+
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        resourcePrefix "archives"
     }
 
     compileOptions {
@@ -21,26 +34,33 @@ android {
         abortOnError rootProject.ext.abortOnLintError
         checkReleaseBuilds rootProject.ext.checkLintRelease
     }
-
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    sourceSets {
+        main {
+            if (isBuildModule.toBoolean()) {
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/release/AndroidManifest.xml'
+                java {
+                    exclude '**/debug/**'
+                }
+            }
+        }
+    }
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
+
+    testImplementation 'junit:junit:4.12'
     annotationProcessor rootProject.ext.libDaggerCompiler
     annotationProcessor rootProject.ext.libDaggerAndroidCompiler
-    if(isBuildModule.toBoolean()) {
-        api project(':commonbusiness')
-    } else {
-        api project(':module_knowledge')
-        api project(':module_archives')
-    }
+    api project(':commonbusiness')
 }

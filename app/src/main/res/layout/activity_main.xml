@@ -4,12 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.wkw.modularization.MainActivity">
 
-    <TextView
-        android:id="@+id/tv"
+
+    <Button
+        android:id="@+id/knowledge"
+        android:text="知识模块"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/archives"
+        android:text="档案模块"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

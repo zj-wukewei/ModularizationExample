@@ -1,1 +1,1 @@
-include ':app', ':sdk', ':basic', ':commonbusiness'
+include ':app', ':sdk', ':basic', ':commonbusiness', ':module_knowledge', ':module_archives'

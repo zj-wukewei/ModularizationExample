@@ -1,10 +1,8 @@
-package com.wkw.modularization;
-
+package com.wkw.archives.debug;
 
 import android.app.Activity;
 
 import com.wkw.commonbusiness.BaseApplication;
-import com.wkw.modularization.di.DaggerAppComponent;
 
 import javax.inject.Inject;
 
@@ -13,10 +11,10 @@ import dagger.android.DispatchingAndroidInjector;
 import dagger.android.HasActivityInjector;
 
 /**
- * Created by wukewei on 2017/8/27.
+ * Created by wukewei on 2017/9/9.
  */
 
-public class MrApplication extends BaseApplication implements HasActivityInjector {
+public class ArchivesApplication extends BaseApplication implements HasActivityInjector {
 
     @Inject
     DispatchingAndroidInjector<Activity> dispatchingAndroidInjector;
@@ -28,7 +26,7 @@ public class MrApplication extends BaseApplication implements HasActivityInjecto
     }
 
     private void initInjector() {
-       DaggerAppComponent.builder()
+        DaggerAppComponent.builder()
                 .application(this)
                 .build().inject(this);
     }
@@ -37,6 +35,4 @@ public class MrApplication extends BaseApplication implements HasActivityInjecto
     public AndroidInjector<Activity> activityInjector() {
         return dispatchingAndroidInjector;
     }
-
-
 }

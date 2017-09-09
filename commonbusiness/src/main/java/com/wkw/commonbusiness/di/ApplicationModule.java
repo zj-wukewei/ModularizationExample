@@ -3,6 +3,8 @@ package com.wkw.commonbusiness.di;
 import android.app.Application;
 import android.content.Context;
 
+import com.wkw.basic.cache.UserCache;
+import com.wkw.basic.cache.UserCacheImpl;
 import com.wkw.basic.executor.PostExecutionThread;
 import com.wkw.basic.executor.ThreadExecutor;
 import com.wkw.basic.executor.job.JobExecutor;
@@ -30,8 +32,8 @@ public class ApplicationModule {
 
     @Provides
     @Singleton
-    UserSystem provideUserSystem(UserSystem system) {
-        return system;
+    UserSystem provideUserSystem() {
+        return new UserSystem();
     }
 
     @Provides
@@ -50,5 +52,11 @@ public class ApplicationModule {
     @Singleton
     MrService provideMrService() {
         return new MrService();
+    }
+
+    @Provides
+    @Singleton
+    UserCache provideUserCache(UserCacheImpl userCache) {
+        return userCache;
     }
 }

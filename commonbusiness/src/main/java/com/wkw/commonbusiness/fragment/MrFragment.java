@@ -1,6 +1,7 @@
 package com.wkw.commonbusiness.fragment;
 
 import android.content.Context;
+import android.view.View;
 
 import com.wkw.commonbusiness.activity.MrActivity;
 import com.wkw.sdk.base.BaseFragment;
@@ -12,6 +13,7 @@ import com.wkw.sdk.base.BaseFragment;
 public class MrFragment extends BaseFragment {
 
     protected MrActivity mActivity;
+    protected View mFragmentView;
 
     @Override
     public void onAttach(Context context) {

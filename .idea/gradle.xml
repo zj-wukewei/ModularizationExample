@@ -11,6 +11,8 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/basic" />
             <option value="$PROJECT_DIR$/commonbusiness" />
+            <option value="$PROJECT_DIR$/module_archives" />
+            <option value="$PROJECT_DIR$/module_knowledge" />
             <option value="$PROJECT_DIR$/sdk" />
           </set>
         </option>

@@ -1,11 +1,10 @@
-package com.wkw.modularization.di;
+package com.wkw.archives.debug;
 
 import android.app.Application;
 
 import com.wkw.archives.di.ArchivesActivityModule;
 import com.wkw.archives.di.ArchivesDataRepositoryModule;
 import com.wkw.commonbusiness.di.ApplicationModule;
-import com.wkw.modularization.MrApplication;
 
 import javax.inject.Singleton;
 
@@ -28,5 +27,5 @@ public interface AppComponent {
         Builder application(Application application);
         AppComponent build();
     }
-    void inject(MrApplication mrApplication);
+    void inject(ArchivesApplication mrApplication);
 }
