@@ -7,8 +7,6 @@ import com.wkw.archives.ArchivesActivity;
 import com.wkw.commonbusiness.activity.MrActivity;
 import com.wkw.knowledge.KnowledgeActivity;
 
-import dagger.android.AndroidInjection;
-
 public class MainActivity extends MrActivity {
 
     private static final String TAG = "MainActivity";

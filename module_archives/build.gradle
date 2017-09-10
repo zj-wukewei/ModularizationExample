@@ -2,6 +2,7 @@ if (isBuildModule.toBoolean()) {
     apply plugin: 'com.android.application'
 } else {
     apply plugin: 'com.android.library'
+    apply from: 'maven-release-kline-aar.gradle'
 }
 
 android {

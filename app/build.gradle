@@ -30,6 +30,16 @@ android {
     }
 }
 
+repositories {
+
+    jcenter()
+
+    //略
+
+    //指定绝对路径
+    maven { url "file:///Users/wukewei/Documents/android/ModularizationExample/repo" }
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -39,6 +49,8 @@ dependencies {
     annotationProcessor rootProject.ext.libDaggerAndroidCompiler
     if(isBuildModule.toBoolean()) {
         api project(':commonbusiness')
+        api('com.wkw:knowledge:1.0.0')
+        api('com.wkw:archives:1.0.0')
     } else {
         api project(':module_knowledge')
         api project(':module_archives')
