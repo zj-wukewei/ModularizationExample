@@ -1,13 +1,10 @@
-package com.wkw.modularization.di;
+package com.wkw.knowledge.debug;
 
 import android.app.Application;
 
-import com.wkw.archives.di.ArchivesActivityModule;
-import com.wkw.archives.di.ArchivesDataRepositoryModule;
 import com.wkw.commonbusiness.di.ApplicationModule;
 import com.wkw.knowledge.di.KnowledgeActivityModule;
 import com.wkw.knowledge.di.KnowledgeDataRepositoryModule;
-import com.wkw.modularization.MrApplication;
 
 import javax.inject.Singleton;
 
@@ -21,7 +18,6 @@ import dagger.android.AndroidInjectionModule;
 @Singleton
 @Component(modules = {
         AndroidInjectionModule.class, ApplicationModule.class,
-        ArchivesDataRepositoryModule.class, ArchivesActivityModule.class,
         KnowledgeDataRepositoryModule.class, KnowledgeActivityModule.class
 })
 public interface AppComponent {
@@ -31,5 +27,5 @@ public interface AppComponent {
         Builder application(Application application);
         AppComponent build();
     }
-    void inject(MrApplication mrApplication);
+    void inject(KnowledgeApplication mrApplication);
 }

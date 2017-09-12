@@ -1,5 +1,9 @@
-apply plugin: 'com.android.library'
-apply from: 'maven-release-kline-aar.gradle'
+if (isBuildModule.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+    apply from: 'maven-release-kline-aar.gradle'
+}
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -7,12 +11,19 @@ android {
 
 
     defaultConfig {
+
+        if (isBuildModule.toBoolean()) {
+            applicationId "com.wkw.knowledge"
+        }
+
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        resourcePrefix "knowledge"
 
     }
 
@@ -31,6 +42,19 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            if (isBuildModule.toBoolean()) {
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/release/AndroidManifest.xml'
+                java {
+                    exclude '**/debug/**'
+                }
+            }
         }
     }
 

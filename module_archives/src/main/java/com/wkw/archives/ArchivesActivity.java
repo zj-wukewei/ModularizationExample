@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 
 import com.wkw.commonbusiness.activity.MrActivity;
 import com.wkw.commonbusiness.entity.UserSystem;
+import com.wkw.commonbusiness.module.knowledge.KnowledgeProxy;
 import com.wkw.sdk.utils.Logger;
 
 import javax.inject.Inject;
@@ -28,6 +29,7 @@ public class ArchivesActivity extends MrActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.archives_activity_archives);
         Logger.d(TAG, userSystem.toString());
+        Logger.d(TAG, KnowledgeProxy.g.getServiceInterface().getModuleName());
     }
 
     @Override

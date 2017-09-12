@@ -1,4 +1,4 @@
-package com.wkw.commonbusiness.module.user;
+package com.wkw.commonbusiness.module.knowledge;
 
 import android.widget.Toast;
 
@@ -10,32 +10,30 @@ import com.wkw.sdk.utils.Logger;
  * Created by wukewei on 2017/8/27.
  */
 
-public class DefaultUserModule extends Module<IUserUi, IUserService> {
+public class DefaultKnowledgeModule extends Module<IKnowledgeUi, IKnowledgeService> {
 
 
-    private IUserService service = new IUserService() {
+    private IKnowledgeService service = () -> "DefaultKnowledgeModule";
 
-    };
-
-    private IUserUi userUi = (context) -> {
+    private IKnowledgeUi knowledgeUi = (context) -> {
         String msg = context.getString(R.string.basic_development);
         Logger.d(getName(), msg);
         Toast.makeText(context.getApplicationContext(), msg, Toast.LENGTH_SHORT).show();
     };
 
     @Override
-    public IUserUi getUiInterface() {
-        return userUi;
+    public IKnowledgeUi getUiInterface() {
+        return knowledgeUi;
     }
 
     @Override
-    public IUserService getServiceInterface() {
+    public IKnowledgeService getServiceInterface() {
         return service;
     }
 
     @Override
     public String getName() {
-        return "DefaultUserModule";
+        return "DefaultKnowledgeModule";
     }
 
     @Override
