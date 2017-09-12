@@ -3,7 +3,7 @@ package com.wkw.modularization;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.wkw.archives.ArchivesActivity;
+import com.wkw.archives.view.ArchivesActivity;
 import com.wkw.commonbusiness.activity.MrActivity;
 import com.wkw.knowledge.KnowledgeActivity;
 

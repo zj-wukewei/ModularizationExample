@@ -3,7 +3,7 @@ package com.wkw.archives.module;
 import android.content.Intent;
 import android.support.annotation.Keep;
 
-import com.wkw.archives.ArchivesActivity;
+import com.wkw.archives.view.ArchivesActivity;
 import com.wkw.commonbusiness.module.Module;
 import com.wkw.commonbusiness.module.archives.IArchivesService;
 import com.wkw.commonbusiness.module.archives.IArchivesUi;

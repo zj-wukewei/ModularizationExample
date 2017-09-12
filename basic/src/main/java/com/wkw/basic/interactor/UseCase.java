@@ -28,7 +28,7 @@ public abstract class UseCase<T, Params> {
     /**
      * Builds an {@link Observable} which will be used when executing the current {@link UseCase}.
      */
-    public abstract Observable<T> buildUseCaseObservable();
+     public abstract Observable<T> buildUseCaseObservable(Params params);
 
     /**
      * Executes the current use case.
@@ -37,7 +37,7 @@ public abstract class UseCase<T, Params> {
      */
     public void execute(DisposableObserver<T> observer, Params params) {
         Preconditions.checkNotNull(observer);
-        final Observable<T> observable = this.buildUseCaseObservable()
+        final Observable<T> observable = this.buildUseCaseObservable(params)
                 .subscribeOn(Schedulers.from(threadExecutor))
                 .observeOn(postExecutionThread.getScheduler());
         addDisposable(observable.subscribeWith(observer));

@@ -7,7 +7,7 @@
         android:label="@string/archives_app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ArchivesActivity">
+        <activity android:name=".view.ArchivesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

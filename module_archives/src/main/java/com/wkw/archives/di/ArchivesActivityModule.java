@@ -1,6 +1,6 @@
 package com.wkw.archives.di;
 
-import com.wkw.archives.ArchivesActivity;
+import com.wkw.archives.view.ArchivesActivity;
 import com.wkw.commonbusiness.di.PerActivity;
 
 import dagger.Module;

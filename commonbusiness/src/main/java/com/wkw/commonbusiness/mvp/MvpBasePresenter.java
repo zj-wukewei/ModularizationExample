@@ -24,6 +24,22 @@ public abstract class MvpBasePresenter<V extends MvpView> implements MvpPresente
     }
 
     @Override
+    public void resume() {
+
+    }
+
+    @Override
+    public void pause() {
+
+    }
+
+    @Override
+    public void destroy() {
+
+    }
+
+
+    @Override
     public V getView() {
         return isViewAttached() ? viewRef.get() : null;
     }

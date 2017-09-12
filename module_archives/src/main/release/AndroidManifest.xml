@@ -2,6 +2,6 @@
     package="com.wkw.archives" >
 
     <application>
-        <activity android:name=".ArchivesActivity" />
+        <activity android:name=".view.ArchivesActivity" />
     </application>
 </manifest>

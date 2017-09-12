@@ -1,6 +1,8 @@
 package com.wkw.archives.di;
 
-import com.wkw.archives.data.ArchivesApi;
+import com.wkw.archives.data.api.ArchivesApi;
+import com.wkw.archives.data.repository.ArchivesDataRepository;
+import com.wkw.archives.domain.repository.ArchivesRepository;
 import com.wkw.basic.network.MrService;
 
 import javax.inject.Singleton;
@@ -20,4 +22,11 @@ public class ArchivesDataRepositoryModule {
     ArchivesApi providesArchivesApi(MrService mrService) {
         return mrService.createApi(ArchivesApi.class);
     }
+
+    @Provides
+    @Singleton
+    ArchivesRepository prvidesArchivesRepository(ArchivesDataRepository archivesDataRepository) {
+        return archivesDataRepository;
+    }
+
 }
