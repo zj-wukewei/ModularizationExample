@@ -1,11 +1,5 @@
 apply plugin: 'maven'
 
-ext {// ext is a gradle closure allowing the declaration of global properties
-    PUBLISH_GROUP_ID = 'com.wkw'
-    PUBLISH_ARTIFACT_ID = 'archives'
-    PUBLISH_VERSION = rootProject.ext.versionName
-}
-
 uploadArchives {
     repositories.mavenDeployer {
         //这里就是最后输出地址，在自己电脑上新建个文件夹，把文件夹路径粘贴在此
@@ -13,9 +7,9 @@ uploadArchives {
         repository(url: "file:///Users/wukewei/Documents/android/ModularizationExample/repo")
 
         pom.project {
-            groupId project.PUBLISH_GROUP_ID
-            artifactId project.PUBLISH_ARTIFACT_ID
-            version project.PUBLISH_VERSION
+            groupId PUBLISH_GROUP_ID
+            artifactId PUBLISH_ARTIFACT_ID
+            version PUBLISH_VERSION
         }
     }
 }

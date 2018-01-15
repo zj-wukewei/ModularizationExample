@@ -1,8 +1,15 @@
 if (isBuildModule.toBoolean()) {
     apply plugin: 'com.android.application'
 } else {
+
+    ext {// ext is a gradle closure allowing the declaration of global properties
+        PUBLISH_GROUP_ID = 'com.wkw'
+        PUBLISH_ARTIFACT_ID = 'archives'
+        PUBLISH_VERSION = rootProject.ext.versionName
+    }
+
     apply plugin: 'com.android.library'
-    apply from: 'maven-release-kline-aar.gradle'
+    apply from: '../maven-release-kline-aar.gradle'
 }
 
 android {
