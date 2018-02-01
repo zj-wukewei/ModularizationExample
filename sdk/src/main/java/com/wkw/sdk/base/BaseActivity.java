@@ -40,7 +40,7 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        AppManager.getAppManager().finishActivity(this);
+        AppManager.getAppManager().removeActivity(this);
     }
 
     @Override
