@@ -4,12 +4,16 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ModularizationExample.iml" filepath="$PROJECT_DIR$/ModularizationExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/basic/baisc.iml" filepath="$PROJECT_DIR$/basic/baisc.iml" />
+      <module fileurl="file://D:\wangji\ModularizationExample\basic\baisc.iml" filepath="D:\wangji\ModularizationExample\basic\baisc.iml" />
       <module fileurl="file://$PROJECT_DIR$/basic/basic.iml" filepath="$PROJECT_DIR$/basic/basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/commonbusiness/commonbusiness.iml" filepath="$PROJECT_DIR$/commonbusiness/commonbusiness.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sdk/lib_ext/lib_ext.iml" filepath="$PROJECT_DIR$/sdk/lib_ext/lib_ext.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sdk/lib_uiframework/lib_uiframework.iml" filepath="$PROJECT_DIR$/sdk/lib_uiframework/lib_uiframework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sdk/lib_uikit/lib_uikit.iml" filepath="$PROJECT_DIR$/sdk/lib_uikit/lib_uikit.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_archives/module_archives.iml" filepath="$PROJECT_DIR$/module_archives/module_archives.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_knowledge/module_knowledge.iml" filepath="$PROJECT_DIR$/module_knowledge/module_knowledge.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sdk/sdk.iml" filepath="$PROJECT_DIR$/sdk/sdk.iml" />
+      <module fileurl="file://D:\wangji\ModularizationExample\sdk\sdk.iml" filepath="D:\wangji\ModularizationExample\sdk\sdk.iml" />
+      <module fileurl="file://D:\wangji\ModularizationExample\lib_ext\sdk.iml" filepath="D:\wangji\ModularizationExample\lib_ext\sdk.iml" />
     </modules>
   </component>
 </project>

@@ -2,7 +2,7 @@ package com.wkw.commonbusiness.module;
 
 import android.text.TextUtils;
 
-import com.wkw.sdk.utils.Logger;
+import timber.log.Timber;
 
 /**
  * Created by wukewei on 2017/8/27.
@@ -34,7 +34,7 @@ public abstract class Proxy<T, C> implements IProxy<T, C> {
                 try {
                     proxy = (Module<T, C>) ModuleManager.LoadModule(module);
                 } catch (Throwable e) {
-                    Logger.e(TAG, module + " module load failed" + e.getMessage());
+                    Timber.e(module + " module load failed" + e.getMessage());
                     proxy = getDefaultModule();
                 }
             }

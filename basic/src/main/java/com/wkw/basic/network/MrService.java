@@ -2,9 +2,8 @@ package com.wkw.basic.network;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.wkw.sdk.Ext;
-import com.wkw.sdk.utils.ConfigManager;
-import com.wkw.sdk.utils.Logger;
+import com.wkw.ext.Ext;
+import com.wkw.ext.utils.ConfigManager;
 
 import java.io.InputStream;
 import java.security.KeyStore;
@@ -25,6 +24,7 @@ import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
+import timber.log.Timber;
 
 /**
  * Created by wukewei on 2017/8/25.
@@ -91,11 +91,13 @@ public class MrService {
                 .cookieJar(new CookieJar() {
                     private final HashMap<HttpUrl, List<Cookie>> cookieStore = new HashMap<>();
 
-                    @Override public void saveFromResponse(HttpUrl url, List<Cookie> cookies) {
+                    @Override
+                    public void saveFromResponse(HttpUrl url, List<Cookie> cookies) {
                         cookieStore.put(HttpUrl.parse(url.host()), cookies);
                     }
 
-                    @Override public List<Cookie> loadForRequest(HttpUrl url) {
+                    @Override
+                    public List<Cookie> loadForRequest(HttpUrl url) {
                         List<Cookie> cookies = cookieStore.get(HttpUrl.parse(url.host()));
                         return cookies != null ? cookies : new ArrayList<>();
                     }
@@ -103,7 +105,7 @@ public class MrService {
                 .build();
     }
 
-    private  SSLSocketFactory getSSLCertifcation() {
+    private SSLSocketFactory getSSLCertifcation() {
         SSLContext sslContext = null;
         try {
             KeyStore ksTrust = KeyStore.getInstance("BKS");
@@ -117,7 +119,7 @@ public class MrService {
             sslContext = SSLContext.getInstance("TLS");
             sslContext.init(null, tmf.getTrustManagers(), null);
         } catch (Exception e) {
-            Logger.e(TAG, "ssl初始化出错:  " + e.getMessage());
+            Timber.e("ssl初始化出错:  " + e.getMessage());
             e.printStackTrace();
         }
         return sslContext.getSocketFactory();

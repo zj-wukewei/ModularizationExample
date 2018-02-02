@@ -8,11 +8,11 @@ import com.wkw.archives.domain.entity.ArchivesEntity;
 import com.wkw.commonbusiness.entity.UserSystem;
 import com.wkw.commonbusiness.module.knowledge.KnowledgeProxy;
 import com.wkw.commonbusiness.mvp.MvpActivity;
-import com.wkw.sdk.utils.Logger;
 
 import javax.inject.Inject;
 
 import dagger.android.AndroidInjection;
+import timber.log.Timber;
 
 /**
  * Created by wukewei on 2017/9/9.
@@ -38,8 +38,8 @@ public class ArchivesActivity extends MvpActivity<ArchivesContract.View, Archive
         AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.archives_activity_archives);
-        Logger.d(TAG, userSystem.toString());
-        Logger.d(TAG, KnowledgeProxy.g.getServiceInterface().getModuleName());
+        Timber.d(userSystem.toString());
+        Timber.d(KnowledgeProxy.g.getServiceInterface().getModuleName());
         getPresenter().archivesList(0);
     }
 

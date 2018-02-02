@@ -4,7 +4,8 @@ import android.widget.Toast;
 
 import com.wkw.basic.R;
 import com.wkw.commonbusiness.module.Module;
-import com.wkw.sdk.utils.Logger;
+
+import timber.log.Timber;
 
 /**
  * Created by wukewei on 2017/8/27.
@@ -17,7 +18,7 @@ public class DefaultKnowledgeModule extends Module<IKnowledgeUi, IKnowledgeServi
 
     private IKnowledgeUi knowledgeUi = (context) -> {
         String msg = context.getString(R.string.basic_development);
-        Logger.d(getName(), msg);
+        Timber.d(getName(), msg);
         Toast.makeText(context.getApplicationContext(), msg, Toast.LENGTH_SHORT).show();
     };
 

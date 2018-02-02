@@ -1,7 +1,7 @@
 package com.wkw.commonbusiness.entity;
 
-import com.wkw.sdk.utils.ConfigManager;
-import com.wkw.sdk.utils.StringUtils;
+import com.wkw.ext.utils.ConfigManager;
+import com.wkw.ext.utils.StringUtils;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;

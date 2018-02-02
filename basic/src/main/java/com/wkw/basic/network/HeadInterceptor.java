@@ -2,7 +2,7 @@ package com.wkw.basic.network;
 
 import android.os.Build;
 
-import com.wkw.sdk.Ext;
+import com.wkw.ext.Ext;
 
 import java.io.IOException;
 import java.util.Locale;

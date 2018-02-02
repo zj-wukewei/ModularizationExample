@@ -1,1 +1,10 @@
-include ':app', ':sdk', ':basic', ':commonbusiness', ':module_knowledge', ':module_archives'
+include ':app', ':basic', ':commonbusiness', ':module_knowledge', ':module_archives'
+
+include ':lib_ext'
+project(':lib_ext').projectDir = new File('sdk/lib_ext')
+
+include ':lib_uikit'
+project(':lib_uikit').projectDir = new File('sdk/lib_uikit')
+
+include ':lib_uiframework'
+project(':lib_uiframework').projectDir = new File('sdk/lib_uiframework')

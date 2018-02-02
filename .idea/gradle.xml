@@ -13,7 +13,9 @@
             <option value="$PROJECT_DIR$/commonbusiness" />
             <option value="$PROJECT_DIR$/module_archives" />
             <option value="$PROJECT_DIR$/module_knowledge" />
-            <option value="$PROJECT_DIR$/sdk" />
+            <option value="$PROJECT_DIR$/sdk/lib_ext" />
+            <option value="$PROJECT_DIR$/sdk/lib_uiframework" />
+            <option value="$PROJECT_DIR$/sdk/lib_uikit" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

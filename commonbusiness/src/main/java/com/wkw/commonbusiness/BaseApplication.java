@@ -2,8 +2,10 @@ package com.wkw.commonbusiness;
 
 import android.app.Application;
 
-import com.wkw.sdk.Ext;
-import com.wkw.sdk.utils.ConfigManager;
+import com.wkw.ext.Ext;
+import com.wkw.ext.utils.ConfigManager;
+
+import timber.log.Timber;
 
 /**
  * Created by wukewei on 2017/9/9.
@@ -53,6 +55,11 @@ public class BaseApplication extends Application  {
         @Override
         public boolean isDebuggable() {
             return false;
+        }
+
+        @Override
+        public void handleLoginOut() {
+            Timber.d("handleLoginOut");
         }
     }
 }

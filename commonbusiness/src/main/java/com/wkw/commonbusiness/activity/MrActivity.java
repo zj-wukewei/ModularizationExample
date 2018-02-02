@@ -3,18 +3,12 @@ package com.wkw.commonbusiness.activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.wkw.commonbusiness.BaseApplication;
-import com.wkw.commonbusiness.entity.UserSystem;
-import com.wkw.commonbusiness.exception.ErrorBundle;
 import com.wkw.basic.exception.ResponseException;
+import com.wkw.commonbusiness.exception.ErrorBundle;
 import com.wkw.commonbusiness.exception.ErrorMessageFactory;
-import com.wkw.sdk.base.BaseActivity;
-import com.wkw.sdk.utils.StringUtils;
-import com.wkw.sdk.utils.ToashUtils;
-
-import javax.inject.Inject;
-
-import dagger.android.AndroidInjection;
+import com.wkw.ext.utils.StringUtils;
+import com.wkw.ext.utils.ToastUtils;
+import com.wkw.uiframework.base.BaseActivity;
 
 /**
  * Created by wukewei on 2017/8/28.
@@ -31,7 +25,6 @@ public abstract class MrActivity extends BaseActivity {
 
     protected boolean handleCommonResponseError(Exception exception) {
         boolean handled = false;
-
         if (exception instanceof ResponseException) {
             final ResponseException responseException = (ResponseException) exception;
             switch (responseException.getStatusCode()) {
@@ -40,7 +33,6 @@ public abstract class MrActivity extends BaseActivity {
                     break;
             }
         }
-
         return handled;
     }
 
@@ -51,7 +43,7 @@ public abstract class MrActivity extends BaseActivity {
 
     private void showErrorMessage(String errorMessage) {
         if (StringUtils.isNotEmpty(errorMessage)) {
-            ToashUtils.show(getApplicationContext(), errorMessage);
+            ToastUtils.show(getApplicationContext(), errorMessage);
         }
     }
 

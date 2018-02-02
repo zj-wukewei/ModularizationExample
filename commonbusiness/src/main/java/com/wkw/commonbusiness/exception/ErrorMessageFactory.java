@@ -6,9 +6,10 @@ import com.wkw.basic.exception.NetworkConnectionException;
 import com.wkw.basic.exception.ResponseException;
 import com.wkw.basic.network.MrService;
 import com.wkw.commonbusiness.R;
-import com.wkw.sdk.utils.Logger;
-import com.wkw.sdk.utils.NetWorkUtils;
-import com.wkw.sdk.utils.StringUtils;
+import com.wkw.ext.utils.NetWorkUtils;
+import com.wkw.ext.utils.StringUtils;
+
+import timber.log.Timber;
 
 /**
  * Created by wukewei on 2017/8/28.
@@ -20,7 +21,7 @@ public class ErrorMessageFactory {
 
     public static String create(Context context, Exception exception) {
         if (StringUtils.isNotEmpty(exception.getMessage())) {
-            Logger.d(TAG, exception.getMessage());
+            Timber.d(exception.getMessage());
         }
         String message = context.getString(R.string.exception_message_generic);
 

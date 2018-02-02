@@ -3,13 +3,13 @@ package com.wkw.basic;
 import com.wkw.basic.exception.NetworkConnectionException;
 import com.wkw.basic.exception.ResponseException;
 import com.wkw.basic.model.MrResponse;
-import com.wkw.sdk.utils.Logger;
-import com.wkw.sdk.utils.StringUtils;
+import com.wkw.ext.utils.StringUtils;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableSource;
 import io.reactivex.ObservableTransformer;
 import io.reactivex.functions.Function;
+import timber.log.Timber;
 
 /**
  * Created by wukewei on 2017/8/25.
@@ -25,7 +25,7 @@ public class RepositoryUtils {
                             if (tApiResponse == null) {
                                 return Observable.error(new NetworkConnectionException());
                             } else if (tApiResponse.getStatusCode() != ResponseException.STATUS_CODE_SUCCESS) {
-                                Logger.d(TAG, StringUtils.isEmpty(tApiResponse.getStatusMessage()) ? DEFAULT_ERROR_MSG : tApiResponse.getStatusMessage());
+                                Timber.d(StringUtils.isEmpty(tApiResponse.getStatusMessage()) ? DEFAULT_ERROR_MSG : tApiResponse.getStatusMessage());
                                 return Observable.error(new ResponseException(tApiResponse));
                             } else {
                                 return createData(tApiResponse.getData());

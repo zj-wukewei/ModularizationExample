@@ -4,9 +4,8 @@ import android.widget.Toast;
 
 import com.wkw.basic.R;
 import com.wkw.commonbusiness.module.Module;
-import com.wkw.commonbusiness.module.knowledge.IKnowledgeService;
-import com.wkw.commonbusiness.module.knowledge.IKnowledgeUi;
-import com.wkw.sdk.utils.Logger;
+
+import timber.log.Timber;
 
 /**
  * Created by wukewei on 2017/8/27.
@@ -19,7 +18,7 @@ public class DefaultArchivesModule extends Module<IArchivesUi, IArchivesService>
 
     private IArchivesUi archivesUi = (context) -> {
         String msg = context.getString(R.string.basic_development);
-        Logger.d(getName(), msg);
+        Timber.d(getName(), msg);
         Toast.makeText(context.getApplicationContext(), msg, Toast.LENGTH_SHORT).show();
     };
 

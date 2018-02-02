@@ -6,9 +6,10 @@ import android.support.annotation.Nullable;
 
 import com.wkw.commonbusiness.activity.MrActivity;
 import com.wkw.commonbusiness.exception.DefaultErrorBundle;
-import com.wkw.sdk.utils.Logger;
-import com.wkw.sdk.utils.StringUtils;
-import com.wkw.sdk.utils.ToashUtils;
+import com.wkw.ext.utils.StringUtils;
+import com.wkw.ext.utils.ToastUtils;
+
+import timber.log.Timber;
 
 /**
  * Created by wukewei on 2017/8/28.
@@ -48,13 +49,13 @@ public abstract class MvpActivity<V extends MvpView, P extends MvpPresenter<V>> 
 
     @Override
     public void showToast(int stringId) {
-        ToashUtils.show(this, stringId);
+        ToastUtils.show(this, stringId);
     }
 
     @Override
     public void showError(Throwable e) {
         if (!handleCommonResponseError((Exception) e)) {
-            Logger.w(this.getLocalClassName(), StringUtils.isEmpty(e.getMessage()) ? "未知错误" : e.getMessage());
+            Timber.w(StringUtils.isEmpty(e.getMessage()) ? "未知错误" : e.getMessage());
             showErrorMessage(new DefaultErrorBundle((Exception) e));
         }
     }

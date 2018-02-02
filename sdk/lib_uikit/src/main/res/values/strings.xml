@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">lib_uikit</string>
+
+    <string name="loading_message">加载中</string>
+    <string name="none_message">暂无内容</string>
+    <string name="net_error_message">网络连接失败</string>
+    <string name="failed_message">服务器连接失败</string>
+    <string name="retry_message">点击屏幕重试</string>
+    <string name="dl_waiting">请等待...</string>
+</resources>
