@@ -4,7 +4,7 @@ import android.content.Context;
 import android.view.View;
 
 import com.wkw.commonbusiness.activity.MrActivity;
-import com.wkw.ext.base.BaseFragment;
+import com.wkw.uiframework.base.BaseFragment;
 
 /**
  * Created by wukewei on 2017/8/28.
