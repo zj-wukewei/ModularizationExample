@@ -1,4 +1,4 @@
-include ':app', ':basic', ':commonbusiness', ':module_knowledge', ':module_archives', ':lib_imageloader'
+include ':app', ':basic', ':commonbusiness', ':module_knowledge', ':module_archives'
 
 include ':lib_ext'
 project(':lib_ext').projectDir = new File('sdk/lib_ext')
@@ -8,3 +8,7 @@ project(':lib_uikit').projectDir = new File('sdk/lib_uikit')
 
 include ':lib_uiframework'
 project(':lib_uiframework').projectDir = new File('sdk/lib_uiframework')
+
+include ':lib_imageloader'
+project(':lib_imageloader').projectDir = new File('sdk/lib_imageloader')
+
