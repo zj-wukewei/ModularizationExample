@@ -126,11 +126,12 @@
     <orderEntry type="library" name="appcompat-v7-26.0.2" level="project" />
     <orderEntry type="library" name="timber-4.5.1" level="project" />
     <orderEntry type="library" scope="TEST" name="hamcrest-core-1.3" level="project" />
-    <orderEntry type="library" name="rxpermissions-0.9.3" level="project" />
     <orderEntry type="library" scope="TEST" name="junit-4.12" level="project" />
     <orderEntry type="library" name="logging-interceptor-3.8.1" level="project" />
     <orderEntry type="library" name="design-26.0.2" level="project" />
+    <orderEntry type="library" name="rxpermissions-0.9.4" level="project" />
     <orderEntry type="module" module-name="lib_uikit" />
+    <orderEntry type="module" module-name="lib_pictures" />
     <orderEntry type="module" module-name="lib_imageloader" />
     <orderEntry type="module" module-name="commonbusiness" />
     <orderEntry type="module" module-name="lib_uiframework" />

@@ -73,5 +73,5 @@ project.ext {
     libDaggerSupport = "com.google.dagger:dagger-android-support:${daggerVersion}"
     libDaggerCompiler = "com.google.dagger:dagger-compiler:${daggerVersion}"
     libDaggerAndroidCompiler = "com.google.dagger:dagger-android-processor:${daggerVersion}"
-    libRxPermissions = 'com.tbruyelle.rxpermissions:rxpermissions:0.9.3@aar'
+    libRxPermissions = 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
 }

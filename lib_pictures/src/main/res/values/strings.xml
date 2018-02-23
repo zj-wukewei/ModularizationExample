@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">lib_pictures</string>
+    <string name="current_size">%d/%d</string>
+    <color name="black">#000000</color>
+</resources>
