@@ -13,7 +13,6 @@ import com.wkw.commonbusiness.activity.MrActivity;
 import com.wkw.imageloader.ImageLoader;
 import com.wkw.imageloader.glide.GlideImageConfig;
 import com.wkw.imageloader.glide.GlideImageLoaderStrategy;
-import com.wkw.knowledge.KnowledgeActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +36,7 @@ public class MainActivity extends MrActivity {
         mImgRound = findViewById(R.id.img_round);
         mImgBlur = findViewById(R.id.img_blur);
         findViewById(R.id.knowledge).setOnClickListener(view -> {
-            startActivity(new Intent(MainActivity.this, KnowledgeActivity.class));
+            startActivity(new Intent(MainActivity.this, BackActivity.class));
         });
 
         findViewById(R.id.archives).setOnClickListener(view -> {

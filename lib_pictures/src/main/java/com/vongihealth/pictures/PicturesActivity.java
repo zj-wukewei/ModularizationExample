@@ -19,6 +19,7 @@ import android.widget.TextView;
 
 import com.vongihealth.pictures.widget.MultiTouchViewPager;
 import com.wkw.ext.utils.StatusBarUtil;
+import com.wkw.ext.utils.guava.Preconditions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -120,11 +121,10 @@ public class PicturesActivity extends AppCompatActivity implements ViewPager.OnP
         mViewPager = findViewById(R.id.view_page);
         mTvCurrent = findViewById(R.id.tv_current);
 
+        Preconditions.checkArgument(getIntent().hasExtra(IMAGE_URL), "请传递urls");
+        Preconditions.checkArgument(getIntent().hasExtra(START), "请传递 start");
 
         mUrls = getIntent().getStringArrayListExtra(IMAGE_URL);
-        if (mUrls == null) {
-            mUrls = new ArrayList<>();
-        }
         mCurrent = getIntent().getIntExtra(START, 0);
 
         if (mUrls.isEmpty() || mUrls.size() == 1) {

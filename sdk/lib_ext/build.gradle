@@ -1,5 +1,12 @@
 apply plugin: 'com.android.library'
 
+ext {// ext is a gradle closure allowing the declaration of global properties
+    PUBLISH_GROUP_ID = 'com.vongi'
+    PUBLISH_ARTIFACT_ID = 'lib-ext'
+    PUBLISH_VERSION = "1.0.0"
+}
+apply from: '../../maven-release-kline-aar.gradle'
+
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
