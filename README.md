@@ -5,7 +5,7 @@ android组件化学习
 
 2：lib_uikit（依赖 lib_ext）: 一个app公用的控件,比如RecyclerViewWithFooter和tablayout
 
-3: lib_uiframeword (依赖上面两个库): 作为页面的基础类（BaseActivity, BaseFragment, MvpActivity）
+3: lib_uiframework (依赖上面两个库): 作为页面的基础类（BaseActivity, BaseFragment, MvpActivity）
 
 4: lib_imageloader: 图片加载代码代码隔离
 

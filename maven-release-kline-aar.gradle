@@ -1,16 +1,26 @@
 apply plugin: 'maven'
 
 uploadArchives {
-    repositories.mavenDeployer {
-        //这里就是最后输出地址，在自己电脑上新建个文件夹，把文件夹路径粘贴在此
-        //注意”file://“ + 路径，有三个斜杠，别漏了
-        repository(url: "file:///Users/wukewei/Documents/android/ModularizationExample/repo")
+    repositories {
+        mavenDeployer {
+            //这里就是最后输出地址，在自己电脑上新建个文件夹，把文件夹路径粘贴在此
+            //注意”file://“ + 路径，有三个斜杠，别漏了
+            repository(url: RELEASE_REPOSITORY_URL) {
+                authentication(userName: NEXUS_USERNAME, password: NEXUS_PASSWORD)
+            }
 
-        pom.project {
-            groupId PUBLISH_GROUP_ID
-            artifactId PUBLISH_ARTIFACT_ID
-            version PUBLISH_VERSION
+            snapshotRepository(url: SNAPSHOT_REPOSITORY_URL) {
+                authentication(userName: NEXUS_USERNAME, password: NEXUS_PASSWORD)
+            }
+
+            pom.project {
+                groupId PUBLISH_GROUP_ID
+                artifactId PUBLISH_ARTIFACT_ID
+                version PUBLISH_VERSION
+                packaging 'aar'
+            }
         }
+
     }
 }
 

@@ -3,7 +3,6 @@ package com.wkw.modularization;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.liuguangqiang.swipeback.SwipeBackLayout;
 import com.wkw.uiframework.base.SwipeBackActivity;
 
 /**
@@ -18,10 +17,5 @@ public class BackActivity extends SwipeBackActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.back_activity);
-    }
-
-    @Override
-    protected SwipeBackLayout.DragEdge getDefaultDragEdge() {
-        return SwipeBackLayout.DragEdge.TOP;
     }
 }

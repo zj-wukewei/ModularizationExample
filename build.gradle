@@ -1,7 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    
+
     repositories {
         google()
         jcenter()
@@ -17,6 +17,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url RELEASE_REPOSITORY_URL }
     }
 }
 
@@ -60,10 +61,10 @@ project.ext {
     libGlideCompiler = "com.github.bumptech.glide:compiler:${glideVersion}"
     libGson = "com.google.code.gson:gson:${gsonVersion}"
     debugDependencies = [
-            leakCanary : "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}",
+            leakCanary: "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}",
     ]
     releaseDependencies = [
-            leakCanary : "com.squareup.leakcanary:leakcanary-android-no-op:${leakCanaryVersion}",
+            leakCanary: "com.squareup.leakcanary:leakcanary-android-no-op:${leakCanaryVersion}",
     ]
     libRetrofit = "com.squareup.retrofit2:retrofit:${retrofitVersion}"
     libRetrofitConverterGson = "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
