@@ -59,7 +59,7 @@ public class ApplicationModule {
     @Provides
     @Singleton
     MrService provideMrService() {
-        return new MrService();
+        return  MrService.getInstance();
     }
 
     @Provides

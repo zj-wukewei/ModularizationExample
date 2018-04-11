@@ -11,8 +11,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManagerFactory;
@@ -32,13 +30,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Email zjwkw1992@163.com
  * GitHub https://github.com/zj-wukewei
  */
-@Singleton
 public class MrService {
     private static final String TAG = "MrService";
     private Retrofit mRetrofit;
     private OkHttpClient mOkHttpClient;
-    public static String S_BKS_FILE_NAME;
-    public static String S_PASSWORD;
 
 
     public <T> T createApi(Class<T> clazz) {
@@ -58,13 +53,12 @@ public class MrService {
         return mInstance;
     }
 
-    @Inject
-    public MrService() {
+    private MrService() {
         this(true);
     }
 
 
-    public MrService(boolean useRxJava) {
+    private MrService(boolean useRxJava) {
         final Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
         Retrofit.Builder builder = new Retrofit
                 .Builder()
@@ -122,14 +116,14 @@ public class MrService {
     }
 
     private SSLSocketFactory getSSLCertifcation() {
-        if (MrService.S_BKS_FILE_NAME == null || MrService.S_PASSWORD == null) {
+        if (NetWorkManager.S_BKS_FILE_NAME == null || NetWorkManager.S_PASSWORD == null) {
             return null;
         }
         SSLContext sslContext = null;
         try {
             KeyStore ksTrust = KeyStore.getInstance("BKS");
-            InputStream stream = NetWorkManager.mContext.getAssets().open(MrService.S_BKS_FILE_NAME);
-            ksTrust.load(stream, MrService.S_PASSWORD.toCharArray());
+            InputStream stream = NetWorkManager.mContext.getAssets().open(NetWorkManager.S_BKS_FILE_NAME);
+            ksTrust.load(stream, NetWorkManager.S_PASSWORD.toCharArray());
 
             // TrustManager decides which certificate authorities to use.
             TrustManagerFactory tmf =

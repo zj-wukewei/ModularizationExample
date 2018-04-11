@@ -3,8 +3,6 @@ package com.vongihealth.network;
 import android.app.Application;
 import android.content.Context;
 
-import com.vongihealth.network.retrofit.MrService;
-
 import java.util.HashSet;
 
 import okhttp3.Interceptor;
@@ -21,7 +19,8 @@ public final class NetWorkManager {
 
     public static boolean isDebug = false;
     public static String baseUrl;
-
+    public static String S_BKS_FILE_NAME;
+    public static String S_PASSWORD;
     public static HashSet<Interceptor> mInterceptors = new HashSet<>();
 
     public static void init(String url, Application context) {
@@ -39,8 +38,8 @@ public final class NetWorkManager {
     }
 
     public static void setSSLFileNameAndPassword(String fileName, String password) {
-        MrService.S_BKS_FILE_NAME = fileName;
-        MrService.S_PASSWORD = password;
+        S_BKS_FILE_NAME = fileName;
+        S_PASSWORD = password;
     }
 
 }
