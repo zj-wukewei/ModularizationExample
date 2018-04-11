@@ -2,10 +2,10 @@ package com.wkw.commonbusiness.exception;
 
 import android.content.Context;
 
-import com.wkw.basic.exception.NetworkConnectionException;
-import com.wkw.basic.exception.ResponseException;
-import com.wkw.basic.network.MrService;
+import com.vongihealth.network.exception.NetworkConnectionException;
+import com.vongihealth.network.exception.ResponseException;
 import com.wkw.commonbusiness.R;
+import com.wkw.ext.Ext;
 import com.wkw.ext.utils.NetWorkUtils;
 import com.wkw.ext.utils.StringUtils;
 
@@ -29,7 +29,7 @@ public class ErrorMessageFactory {
             message = context.getString(R.string.exception_message_no_connection);
         } else if (exception instanceof ResponseException) {
             message = exception.getMessage();
-        } else if (MrService.INITIAL_ENVIRONMENT_DEV) {
+        } else if (Ext.g().isDebuggable()) {
             message = exception.getMessage();
         }
 

@@ -3,10 +3,10 @@ package com.wkw.knowledge.module;
 import android.content.Intent;
 import android.support.annotation.Keep;
 
-import com.wkw.commonbusiness.module.Module;
 import com.wkw.commonbusiness.module.knowledge.IKnowledgeService;
 import com.wkw.commonbusiness.module.knowledge.IKnowledgeUi;
 import com.wkw.knowledge.KnowledgeActivity;
+import com.wkw.uiframework.module.Module;
 
 /**
  * Created by wukewei on 2017/9/12.

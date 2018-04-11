@@ -1,4 +1,4 @@
-include ':app', ':basic', ':commonbusiness', ':module_knowledge', ':module_archives', ':lib_pictures'
+include ':app', ':basic', ':commonbusiness', ':module_knowledge', ':module_archives', ':lib_pictures', ':lib_network_rx_retrofit'
 
 include ':lib_ext'
 project(':lib_ext').projectDir = new File('sdk/lib_ext')

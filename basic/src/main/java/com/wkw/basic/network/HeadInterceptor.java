@@ -24,6 +24,8 @@ public class HeadInterceptor implements Interceptor {
 
     public static final String ACCEPT_LANGUAGE = "ACCEPT-LANGUAGE";
     public static final String HEADER_APP_VER = "APP-VERSION";
+    public static final String DEVICE_MODEL = "DEVICE-MODEL";
+    public static final String DEVICE_SYSTEM = "DEVICE_SYSTEM";
     public static final String HEADER_TOKEN = "TOKEN";
 
     @Override
@@ -34,7 +36,9 @@ public class HeadInterceptor implements Interceptor {
                 .addHeader(HEADER_APP_ID, HEADER_APP_ID_VALUE)
                 .addHeader(HEADER_APP_MODEl, Build.MODEL + Build.VERSION.RELEASE)
                 .addHeader(HEADER_APP_VER, String.valueOf(Ext.g().getVersionCode()))
-                .addHeader(HEADER_TOKEN, MrService.token)
+                .addHeader(DEVICE_SYSTEM, Build.VERSION.RELEASE)
+                .addHeader(DEVICE_MODEL, Build.MODEL)
+//                .addHeader(HEADER_TOKEN, MrService.token)
                 .header(ACCEPT_LANGUAGE, Locale.getDefault().getLanguage())
                 .build();
 //        Logger.d(TAG, String.format("Sending request %s", toGetUrl(request)));

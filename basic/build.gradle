@@ -36,16 +36,16 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:0.5'
     api project(path: ':lib_uiframework')
     api project(path: ':lib_imageloader')
     api project(path: ':lib_pictures')
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
+    api project(path: ':lib_network_rx_retrofit')
     annotationProcessor rootProject.ext.libDaggerCompiler
     annotationProcessor rootProject.ext.libDaggerAndroidCompiler
     api rootProject.ext.libDagger
-    api rootProject.ext.libDaggerSupport
+    api (rootProject.ext.libDaggerSupport) {
+        exclude group: "com.android.support"
+    }
     api rootProject.ext.libRxJava
     api rootProject.ext.libRxAndroid
     api rootProject.ext.libSupportAppcompat

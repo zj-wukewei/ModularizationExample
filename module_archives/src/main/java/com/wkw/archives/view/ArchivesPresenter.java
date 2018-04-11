@@ -1,9 +1,10 @@
 package com.wkw.archives.view;
 
-import com.wkw.archives.domain.entity.ArchivesEntity;
+import com.vongihealth.network.handler.RxErrorHandler;
+import com.vongihealth.network.interactor.MrObserver;
 import com.wkw.archives.domain.interactor.ArchivesListUseCase;
-import com.wkw.basic.interactor.DefaultObserver;
-import com.wkw.commonbusiness.mvp.MvpBasePresenter;
+import com.wkw.commonbusiness.entity.TokenEntity;
+import com.wkw.uiframework.base.mvp.MvpBasePresenter;
 
 import javax.inject.Inject;
 
@@ -14,26 +15,30 @@ import javax.inject.Inject;
 public class ArchivesPresenter extends MvpBasePresenter<ArchivesContract.View> implements ArchivesContract.Presenter {
 
     private final ArchivesListUseCase mArchivesListUseCase;
-
+    private final RxErrorHandler mRxErrorHandler;
 
     @Inject
-    public ArchivesPresenter(ArchivesListUseCase getArchivesListUseCase) {
+    public ArchivesPresenter(ArchivesListUseCase getArchivesListUseCase, RxErrorHandler handler) {
         this.mArchivesListUseCase = getArchivesListUseCase;
+        mRxErrorHandler = handler;
     }
 
     @Override
     public void archivesList(int pn) {
         getView().showLoading();
-        mArchivesListUseCase.execute(new ArchivesObserver(), ArchivesListUseCase.Params.forArchives(pn));
+        mArchivesListUseCase.execute(new ArchivesObserver(mRxErrorHandler), ArchivesListUseCase.Params.forArchives(pn));
     }
 
 
-    private final class ArchivesObserver extends DefaultObserver<ArchivesEntity> {
+    private final class ArchivesObserver extends MrObserver<TokenEntity> {
+
+        public ArchivesObserver(RxErrorHandler handler) {
+            super(handler);
+        }
 
         @Override
         public void onError(Throwable exception) {
             super.onError(exception);
-            getView().showError(exception);
             getView().hideLoading();
         }
 
@@ -44,7 +49,7 @@ public class ArchivesPresenter extends MvpBasePresenter<ArchivesContract.View> i
         }
 
         @Override
-        public void onNext(ArchivesEntity entity) {
+        public void onNext(TokenEntity entity) {
             super.onNext(entity);
             getView().showData(entity);
         }

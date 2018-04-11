@@ -1,6 +1,6 @@
 package com.wkw.archives.domain.repository;
 
-import com.wkw.archives.domain.entity.ArchivesEntity;
+import com.wkw.commonbusiness.entity.TokenEntity;
 
 import io.reactivex.Observable;
 
@@ -9,5 +9,5 @@ import io.reactivex.Observable;
  */
 
 public interface ArchivesRepository {
-    Observable<ArchivesEntity> archivesList();
+    Observable<TokenEntity> archivesList();
 }

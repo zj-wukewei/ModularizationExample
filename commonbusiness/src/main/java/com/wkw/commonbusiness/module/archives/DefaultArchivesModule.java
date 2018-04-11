@@ -3,7 +3,7 @@ package com.wkw.commonbusiness.module.archives;
 import android.widget.Toast;
 
 import com.wkw.basic.R;
-import com.wkw.commonbusiness.module.Module;
+import com.wkw.uiframework.module.Module;
 
 import timber.log.Timber;
 

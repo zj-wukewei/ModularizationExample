@@ -1,9 +1,9 @@
 package com.wkw.archives.di;
 
+import com.vongihealth.network.retrofit.MrService;
 import com.wkw.archives.data.api.ArchivesApi;
 import com.wkw.archives.data.repository.ArchivesDataRepository;
 import com.wkw.archives.domain.repository.ArchivesRepository;
-import com.wkw.basic.network.MrService;
 
 import javax.inject.Singleton;
 

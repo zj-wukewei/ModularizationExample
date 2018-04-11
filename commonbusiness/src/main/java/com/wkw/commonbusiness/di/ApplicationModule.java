@@ -3,14 +3,16 @@ package com.wkw.commonbusiness.di;
 import android.app.Application;
 import android.content.Context;
 
+import com.vongihealth.network.executor.PostExecutionThread;
+import com.vongihealth.network.executor.ThreadExecutor;
+import com.vongihealth.network.executor.job.JobExecutor;
+import com.vongihealth.network.executor.job.UIThread;
+import com.vongihealth.network.handler.RxErrorHandler;
+import com.vongihealth.network.retrofit.MrService;
 import com.wkw.basic.cache.UserCache;
 import com.wkw.basic.cache.UserCacheImpl;
-import com.wkw.basic.executor.PostExecutionThread;
-import com.wkw.basic.executor.ThreadExecutor;
-import com.wkw.basic.executor.job.JobExecutor;
-import com.wkw.basic.executor.job.UIThread;
-import com.wkw.basic.network.MrService;
 import com.wkw.commonbusiness.entity.UserSystem;
+import com.wkw.commonbusiness.exception.ResponseLisenterImpl;
 
 import javax.inject.Singleton;
 
@@ -46,6 +48,12 @@ public class ApplicationModule {
     @Singleton
     PostExecutionThread providePostExecutionThread(UIThread uiThread) {
         return uiThread;
+    }
+
+    @Provides
+    @Singleton
+    RxErrorHandler provideRxErrorHandler(Context context) {
+        return RxErrorHandler.builder().with(context).responseErrorListener(new ResponseLisenterImpl()).build();
     }
 
     @Provides

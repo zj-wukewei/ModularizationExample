@@ -4,10 +4,10 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 import com.wkw.archives.R;
-import com.wkw.archives.domain.entity.ArchivesEntity;
+import com.wkw.commonbusiness.entity.TokenEntity;
 import com.wkw.commonbusiness.entity.UserSystem;
 import com.wkw.commonbusiness.module.knowledge.KnowledgeProxy;
-import com.wkw.commonbusiness.mvp.MvpActivity;
+import com.wkw.uiframework.base.mvp.MvpActivity;
 
 import javax.inject.Inject;
 
@@ -43,19 +43,13 @@ public class ArchivesActivity extends MvpActivity<ArchivesContract.View, Archive
         getPresenter().archivesList(0);
     }
 
-
-    @Override
-    protected String pageName() {
-        return TAG;
-    }
-
     @Override
     public void showLoading() {
 
     }
 
     @Override
-    public void showData(ArchivesEntity entity) {
+    public void showData(TokenEntity entity) {
 
     }
 

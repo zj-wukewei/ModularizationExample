@@ -1,6 +1,6 @@
 package com.wkw.knowledge.di;
 
-import com.wkw.basic.network.MrService;
+import com.vongihealth.network.retrofit.MrService;
 import com.wkw.knowledge.data.KnowledgeApi;
 
 import javax.inject.Singleton;

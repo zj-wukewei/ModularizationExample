@@ -3,8 +3,7 @@ package com.wkw.basic.cache;
 import android.content.Context;
 
 import com.google.gson.Gson;
-import com.wkw.basic.exception.UserNotFoundException;
-import com.wkw.basic.executor.ThreadExecutor;
+import com.vongihealth.network.executor.ThreadExecutor;
 import com.wkw.basic.model.UserEntity;
 
 import java.io.File;
@@ -43,26 +42,26 @@ public class UserCacheImpl implements UserCache {
     @Override
     public Observable<UserEntity> get(int userId) {
         return Observable.create(emitter -> {
-            final File userEntityFile = UserCacheImpl.this.buildFile(userId);
-            final String fileContent = UserCacheImpl.this.fileManager.readFileContent(userEntityFile);
-            final UserEntity userEntity =
-                    UserCacheImpl.this.mGson.fromJson(fileContent, UserEntity.class);
-
-            if (userEntity != null) {
-                emitter.onNext(userEntity);
-                emitter.onComplete();
-            } else {
-                emitter.onError(new UserNotFoundException());
-            }
+//            final File userEntityFile = UserCacheImpl.this.buildFile(userId);
+//            final String fileContent = UserCacheImpl.this.fileManager.readFileContent(userEntityFile);
+//            final UserEntity userEntity =
+//                    UserCacheImpl.this.mGson.fromJson(fileContent, UserEntity.class);
+//
+//            if (userEntity != null) {
+//                emitter.onNext(userEntity);
+//                emitter.onComplete();
+//            } else {
+//                emitter.onError(new UserNotFoundException());
+//            }
         });
     }
 
     @Override
     public void put(UserEntity userEntity) {
         if (userEntity != null) {
-            final File userEntityFile = this.buildFile(userEntity.getUserId());
-            final String jsonString = this.mGson.toJson(userEntity, UserEntity.class);
-            this.executeAsynchronously(new CacheWriter(this.fileManager, userEntityFile, jsonString));
+//            final File userEntityFile = this.buildFile(userEntity.getUserId());
+//            final String jsonString = this.mGson.toJson(userEntity, UserEntity.class);
+//            this.executeAsynchronously(new CacheWriter(this.fileManager, userEntityFile, jsonString));
         }
     }
 

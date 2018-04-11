@@ -3,7 +3,7 @@ package com.wkw.commonbusiness.activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.wkw.basic.exception.ResponseException;
+import com.vongihealth.network.exception.ResponseException;
 import com.wkw.commonbusiness.exception.ErrorBundle;
 import com.wkw.commonbusiness.exception.ErrorMessageFactory;
 import com.wkw.ext.utils.StringUtils;

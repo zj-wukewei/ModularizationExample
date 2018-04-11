@@ -2,6 +2,8 @@ package com.wkw.commonbusiness;
 
 import android.app.Application;
 
+import com.vongihealth.network.NetWorkManager;
+import com.wkw.basic.network.HeadInterceptor;
 import com.wkw.ext.Ext;
 import com.wkw.ext.utils.ConfigManager;
 
@@ -11,7 +13,7 @@ import timber.log.Timber;
  * Created by wukewei on 2017/9/9.
  */
 
-public class BaseApplication extends Application  {
+public class BaseApplication extends Application {
 
 
     @Override
@@ -20,9 +22,15 @@ public class BaseApplication extends Application  {
         initExtension();
 
         ConfigManager.init(this);
+
+        initNetWork();
     }
 
-
+    private void initNetWork() {
+        NetWorkManager.init("http://192.168.3.19:8091/big-shell-app/", this);
+        NetWorkManager.isDebug(true);
+        NetWorkManager.addInterceptors(new HeadInterceptor());
+    }
 
 
     private void initExtension() {

@@ -1,7 +1,8 @@
 package com.wkw.basic.interactor;
 
-import com.wkw.basic.executor.PostExecutionThread;
-import com.wkw.basic.executor.ThreadExecutor;
+
+import com.vongihealth.network.executor.PostExecutionThread;
+import com.vongihealth.network.executor.ThreadExecutor;
 
 import dagger.internal.Preconditions;
 import io.reactivex.Observable;

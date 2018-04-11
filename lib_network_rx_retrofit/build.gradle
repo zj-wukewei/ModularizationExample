@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation rootProject.ext.libRxJava
+    implementation rootProject.ext.libRxAndroid
+    implementation rootProject.ext.libRetrofit
+    implementation rootProject.ext.libRetrofitConverterGson
+    implementation rootProject.ext.libRetrofitAdapterRxJava
+    implementation rootProject.ext.libOkHttpLoggingInterceptor
+    implementation 'com.jakewharton.timber:timber:4.5.1'
+    implementation rootProject.ext.libDagger
+    implementation (rootProject.ext.libDaggerSupport) {
+        exclude group: "com.android.support"
+    }
+}

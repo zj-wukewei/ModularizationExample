@@ -1,10 +1,10 @@
 package com.wkw.commonbusiness.module.archives;
 
-import com.wkw.commonbusiness.module.Module;
-import com.wkw.commonbusiness.module.Proxy;
 import com.wkw.commonbusiness.module.knowledge.DefaultKnowledgeModule;
 import com.wkw.commonbusiness.module.knowledge.IKnowledgeService;
 import com.wkw.commonbusiness.module.knowledge.IKnowledgeUi;
+import com.wkw.uiframework.module.Module;
+import com.wkw.uiframework.module.Proxy;
 
 /**
  * Created by wukewei on 2017/8/27.
