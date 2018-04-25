@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ModularizationExample.iml" filepath="$PROJECT_DIR$/ModularizationExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ModularizationExample.iml" filepath="$PROJECT_DIR$/.idea/ModularizationExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/basic/basic.iml" filepath="$PROJECT_DIR$/basic/basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/commonbusiness/commonbusiness.iml" filepath="$PROJECT_DIR$/commonbusiness/commonbusiness.iml" />
       <module fileurl="file://$PROJECT_DIR$/sdk/lib_ext/lib_ext.iml" filepath="$PROJECT_DIR$/sdk/lib_ext/lib_ext.iml" />
       <module fileurl="file://$PROJECT_DIR$/sdk/lib_imageloader/lib_imageloader.iml" filepath="$PROJECT_DIR$/sdk/lib_imageloader/lib_imageloader.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lib_pictures/lib_pictures.iml" filepath="$PROJECT_DIR$/lib_pictures/lib_pictures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sdk/lib_network_rx_retrofit/lib_network_rx_retrofit.iml" filepath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/lib_network_rx_retrofit.iml" />
+      <module fileurl="file://D:\wangji\ModularizationExample\lib_network_rx_retrofit\lib_network_rx_retrofit.iml" filepath="D:\wangji\ModularizationExample\lib_network_rx_retrofit\lib_network_rx_retrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sdk/lib_pictures/lib_pictures.iml" filepath="$PROJECT_DIR$/sdk/lib_pictures/lib_pictures.iml" />
+      <module fileurl="file://D:\wangji\ModularizationExample\lib_pictures\lib_pictures.iml" filepath="D:\wangji\ModularizationExample\lib_pictures\lib_pictures.iml" />
       <module fileurl="file://$PROJECT_DIR$/sdk/lib_uiframework/lib_uiframework.iml" filepath="$PROJECT_DIR$/sdk/lib_uiframework/lib_uiframework.iml" />
       <module fileurl="file://$PROJECT_DIR$/sdk/lib_uikit/lib_uikit.iml" filepath="$PROJECT_DIR$/sdk/lib_uikit/lib_uikit.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_archives/module_archives.iml" filepath="$PROJECT_DIR$/module_archives/module_archives.iml" />

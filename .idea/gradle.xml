@@ -11,11 +11,12 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/basic" />
             <option value="$PROJECT_DIR$/commonbusiness" />
-            <option value="$PROJECT_DIR$/lib_pictures" />
             <option value="$PROJECT_DIR$/module_archives" />
             <option value="$PROJECT_DIR$/module_knowledge" />
             <option value="$PROJECT_DIR$/sdk/lib_ext" />
             <option value="$PROJECT_DIR$/sdk/lib_imageloader" />
+            <option value="$PROJECT_DIR$/sdk/lib_network_rx_retrofit" />
+            <option value="$PROJECT_DIR$/sdk/lib_pictures" />
             <option value="$PROJECT_DIR$/sdk/lib_uiframework" />
             <option value="$PROJECT_DIR$/sdk/lib_uikit" />
           </set>

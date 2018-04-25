@@ -1,4 +1,5 @@
-include ':app', ':basic', ':commonbusiness', ':module_knowledge', ':module_archives', ':lib_pictures', ':lib_network_rx_retrofit'
+include ':app', ':basic', ':commonbusiness', ':module_knowledge', ':module_archives'
+
 
 include ':lib_ext'
 project(':lib_ext').projectDir = new File('sdk/lib_ext')
@@ -12,3 +13,9 @@ project(':lib_uiframework').projectDir = new File('sdk/lib_uiframework')
 include ':lib_imageloader'
 project(':lib_imageloader').projectDir = new File('sdk/lib_imageloader')
 
+
+include ':lib_pictures'
+project(':lib_pictures').projectDir = new File('sdk/lib_pictures')
+
+include ':lib_network_rx_retrofit'
+project(':lib_network_rx_retrofit').projectDir = new File('sdk/lib_network_rx_retrofit')
