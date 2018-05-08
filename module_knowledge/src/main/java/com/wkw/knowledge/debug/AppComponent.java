@@ -2,7 +2,7 @@ package com.wkw.knowledge.debug;
 
 import android.app.Application;
 
-import com.wkw.commonbusiness.di.ApplicationModule;
+import com.wkw.uiframework.di.ApplicationModule;
 import com.wkw.knowledge.di.KnowledgeActivityModule;
 import com.wkw.knowledge.di.KnowledgeDataRepositoryModule;
 

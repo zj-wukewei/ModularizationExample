@@ -1,6 +1,6 @@
 package com.wkw.knowledge.di;
 
-import com.wkw.commonbusiness.di.PerActivity;
+import com.wkw.uiframework.di.PerActivity;
 import com.wkw.knowledge.KnowledgeActivity;
 
 import dagger.Module;

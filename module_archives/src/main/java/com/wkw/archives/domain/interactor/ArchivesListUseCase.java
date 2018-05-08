@@ -2,8 +2,8 @@ package com.wkw.archives.domain.interactor;
 
 import com.vongihealth.network.executor.PostExecutionThread;
 import com.vongihealth.network.executor.ThreadExecutor;
+import com.vongihealth.network.interactor.UseCase;
 import com.wkw.archives.domain.repository.ArchivesRepository;
-import com.wkw.basic.interactor.UseCase;
 import com.wkw.commonbusiness.entity.TokenEntity;
 
 import javax.inject.Inject;

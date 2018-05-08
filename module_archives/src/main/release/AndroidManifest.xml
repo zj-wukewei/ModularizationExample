@@ -3,5 +3,6 @@
 
     <application>
         <activity android:name=".view.ArchivesActivity" />
+        <activity android:name=".view.ArActivity"/>
     </application>
 </manifest>

@@ -28,15 +28,11 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation rootProject.ext.libRxJava
-    implementation rootProject.ext.libRxAndroid
-    implementation rootProject.ext.libRetrofit
-    implementation rootProject.ext.libRetrofitConverterGson
-    implementation rootProject.ext.libRetrofitAdapterRxJava
-    implementation rootProject.ext.libOkHttpLoggingInterceptor
+    api rootProject.ext.libRxJava
+    api rootProject.ext.libRxAndroid
+    api rootProject.ext.libRetrofit
+    api rootProject.ext.libRetrofitConverterGson
+    api rootProject.ext.libRetrofitAdapterRxJava
+    api rootProject.ext.libOkHttpLoggingInterceptor
     implementation 'com.jakewharton.timber:timber:4.5.1'
-    implementation rootProject.ext.libDagger
-    implementation (rootProject.ext.libDaggerSupport) {
-        exclude group: "com.android.support"
-    }
 }

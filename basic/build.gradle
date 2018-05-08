@@ -37,15 +37,10 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     api project(path: ':lib_uiframework')
-    api project(path: ':lib_imageloader')
-    api project(path: ':lib_pictures')
-    api project(path: ':lib_network_rx_retrofit')
+
     annotationProcessor rootProject.ext.libDaggerCompiler
     annotationProcessor rootProject.ext.libDaggerAndroidCompiler
-    api rootProject.ext.libDagger
-    api (rootProject.ext.libDaggerSupport) {
-        exclude group: "com.android.support"
-    }
+
     api rootProject.ext.libRxJava
     api rootProject.ext.libRxAndroid
     api rootProject.ext.libSupportAppcompat

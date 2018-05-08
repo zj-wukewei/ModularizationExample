@@ -1,7 +1,7 @@
 package com.wkw.archives.di;
 
 import com.wkw.archives.view.ArchivesActivity;
-import com.wkw.commonbusiness.di.PerActivity;
+import com.wkw.uiframework.di.PerActivity;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;

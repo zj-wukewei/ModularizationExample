@@ -4,7 +4,8 @@ import android.app.Application;
 
 import com.wkw.archives.di.ArchivesActivityModule;
 import com.wkw.archives.di.ArchivesDataRepositoryModule;
-import com.wkw.commonbusiness.di.ApplicationModule;
+import com.wkw.uiframework.di.AppConfigModule;
+import com.wkw.uiframework.di.ApplicationModule;
 import com.wkw.knowledge.di.KnowledgeActivityModule;
 import com.wkw.knowledge.di.KnowledgeDataRepositoryModule;
 import com.wkw.modularization.MrApplication;
@@ -20,16 +21,20 @@ import dagger.android.AndroidInjectionModule;
  */
 @Singleton
 @Component(modules = {
-        AndroidInjectionModule.class, ApplicationModule.class,
+        AndroidInjectionModule.class, ApplicationModule.class, AppConfigModule.class,
         ArchivesDataRepositoryModule.class, ArchivesActivityModule.class,
-        KnowledgeDataRepositoryModule.class, KnowledgeActivityModule.class
+        KnowledgeDataRepositoryModule.class, KnowledgeActivityModule.class,
 })
 public interface AppComponent {
     @Component.Builder
     interface Builder {
         @BindsInstance
         Builder application(Application application);
+
+        Builder appConfigModule(AppConfigModule appConfigModule);
+
         AppComponent build();
     }
+
     void inject(MrApplication mrApplication);
 }

@@ -4,7 +4,7 @@ import android.app.Application;
 
 import com.wkw.archives.di.ArchivesActivityModule;
 import com.wkw.archives.di.ArchivesDataRepositoryModule;
-import com.wkw.commonbusiness.di.ApplicationModule;
+import com.wkw.uiframework.di.ApplicationModule;
 
 import javax.inject.Singleton;
 

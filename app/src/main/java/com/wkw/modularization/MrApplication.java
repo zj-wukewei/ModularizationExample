@@ -4,13 +4,19 @@ package com.wkw.modularization;
 import android.app.Activity;
 
 import com.wkw.commonbusiness.BaseApplication;
+import com.wkw.uiframework.di.AppConfigModule;
+import com.wkw.commonbusiness.exception.ResponseListenerImpl;
+import com.wkw.imageloader.glide.GlideImageLoaderStrategy;
 import com.wkw.modularization.di.DaggerAppComponent;
+
+import java.util.ArrayList;
 
 import javax.inject.Inject;
 
 import dagger.android.AndroidInjector;
 import dagger.android.DispatchingAndroidInjector;
 import dagger.android.HasActivityInjector;
+import okhttp3.HttpUrl;
 import timber.log.Timber;
 
 /**
@@ -32,8 +38,14 @@ public class MrApplication extends BaseApplication implements HasActivityInjecto
     }
 
     private void initInjector() {
+        AppConfigModule.Builder builder = AppConfigModule.builder();
+        builder.baseUrl(HttpUrl.parse("http://www.baidu.com"))
+                .interceptorList(new ArrayList<>())
+                .responseErrorListener(new ResponseListenerImpl())
+                .imageLoaderStrategy(new GlideImageLoaderStrategy());
         DaggerAppComponent.builder()
                 .application(this)
+                .appConfigModule(builder.build())
                 .build().inject(this);
     }
 

@@ -3,12 +3,12 @@ package com.wkw.commonbusiness.activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
+import com.vongihealth.network.exception.ErrorBundle;
 import com.vongihealth.network.exception.ResponseException;
-import com.wkw.commonbusiness.exception.ErrorBundle;
-import com.wkw.commonbusiness.exception.ErrorMessageFactory;
 import com.wkw.ext.utils.StringUtils;
 import com.wkw.ext.utils.ToastUtils;
 import com.wkw.uiframework.base.BaseActivity;
+import com.wkw.uiframework.error.ErrorMessageFactory;
 
 /**
  * Created by wukewei on 2017/8/28.

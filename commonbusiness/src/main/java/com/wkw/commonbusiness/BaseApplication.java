@@ -2,8 +2,6 @@ package com.wkw.commonbusiness;
 
 import android.app.Application;
 
-import com.vongihealth.network.NetWorkManager;
-import com.wkw.basic.network.HeadInterceptor;
 import com.wkw.ext.Ext;
 import com.wkw.ext.utils.ConfigManager;
 
@@ -20,16 +18,7 @@ public class BaseApplication extends Application {
     public void onCreate() {
         super.onCreate();
         initExtension();
-
         ConfigManager.init(this);
-
-        initNetWork();
-    }
-
-    private void initNetWork() {
-        NetWorkManager.init("http://192.168.3.19:8091/big-shell-app/", this);
-        NetWorkManager.isDebug(true);
-        NetWorkManager.addInterceptors(new HeadInterceptor());
     }
 
 
@@ -62,7 +51,7 @@ public class BaseApplication extends Application {
 
         @Override
         public boolean isDebuggable() {
-            return false;
+            return true;
         }
 
         @Override

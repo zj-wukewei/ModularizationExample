@@ -25,7 +25,7 @@ public class HeadInterceptor implements Interceptor {
     public static final String ACCEPT_LANGUAGE = "ACCEPT-LANGUAGE";
     public static final String HEADER_APP_VER = "APP-VERSION";
     public static final String DEVICE_MODEL = "DEVICE-MODEL";
-    public static final String DEVICE_SYSTEM = "DEVICE_SYSTEM";
+    public static final String DEVICE_SYSTEM = "DEVICE-SYSTEM";
     public static final String HEADER_TOKEN = "TOKEN";
 
     @Override

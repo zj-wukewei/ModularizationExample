@@ -12,7 +12,6 @@ import com.wkw.archives.view.ArchivesActivity;
 import com.wkw.commonbusiness.activity.MrActivity;
 import com.wkw.imageloader.ImageLoader;
 import com.wkw.imageloader.glide.GlideImageConfig;
-import com.wkw.imageloader.glide.GlideImageLoaderStrategy;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,7 +51,6 @@ public class MainActivity extends MrActivity {
         imageViews.add(mImgRound);
         imageViews.add(mImgBlur);
 
-        ImageLoader.getInstance().setImageLoaderStrategy(new GlideImageLoaderStrategy());
 
         GlideImageConfig configCircle = GlideImageConfig.builder()
                 .isCircle(true)
@@ -61,12 +59,9 @@ public class MainActivity extends MrActivity {
                 .build();
 
         ViewCompat.setTransitionName(mImgCircle, IMAGE_URL);
-        mImgCircle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                index = 0;
-                PicturesActivity.startActivity(MainActivity.this, mImgCircle, urls, 0);
-            }
+        mImgCircle.setOnClickListener(v -> {
+            index = 0;
+            PicturesActivity.startActivity(MainActivity.this, mImgCircle, urls, 0);
         });
 
         ImageLoader.getInstance().displayImage(this, configCircle);
@@ -80,12 +75,9 @@ public class MainActivity extends MrActivity {
                 .url(IMAGE_URL1)
                 .build();
 
-        mImgRound.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                index = 1;
-                PicturesActivity.startActivity(MainActivity.this, urls, 1);
-            }
+        mImgRound.setOnClickListener(v -> {
+            index = 1;
+            PicturesActivity.startActivity(MainActivity.this, urls, 1);
         });
         ImageLoader.getInstance().displayImage(this, configRound);
 
@@ -96,12 +88,9 @@ public class MainActivity extends MrActivity {
                 .url(IMAGE_URL2)
                 .imageView(mImgBlur)
                 .build();
-        mImgBlur.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                index = 2;
-                PicturesActivity.startActivity(MainActivity.this, mImgBlur, urls, 2);
-            }
+        mImgBlur.setOnClickListener(v -> {
+            index = 2;
+            PicturesActivity.startActivity(MainActivity.this, mImgBlur, urls, 2);
         });
         ImageLoader.getInstance().displayImage(this, configBlur);
 
@@ -119,6 +108,7 @@ public class MainActivity extends MrActivity {
     }
 
     int index = -1;
+
 
     @Override
     public void onActivityReenter(int resultCode, Intent data) {

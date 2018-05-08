@@ -2,7 +2,7 @@ package com.wkw.archives.view;
 
 import com.wkw.commonbusiness.entity.TokenEntity;
 import com.wkw.uiframework.base.mvp.MvpPresenter;
-import com.wkw.uiframework.base.mvp.MvpView;
+import com.wkw.uiframework.base.mvp.rxandroid.LoadingView;
 
 /**
  * Created by wukewei on 2017/9/12.
@@ -10,13 +10,22 @@ import com.wkw.uiframework.base.mvp.MvpView;
 
 public class ArchivesContract {
 
-    public interface View extends MvpView {
-        void showLoading();
+    public interface View extends LoadingView {
+
         void showData(TokenEntity entity);
-        void hideLoading();
+
+        void showDataString(String entity);
+
+        void showName(String name);
+
+        void showPassword(String pa);
     }
 
     public interface Presenter extends MvpPresenter<View> {
         void archivesList(int pn);
+
+        void fetchName();
+
+        void fetchPassword();
     }
 }

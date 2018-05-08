@@ -10,4 +10,8 @@ import io.reactivex.Observable;
 
 public interface ArchivesRepository {
     Observable<TokenEntity> archivesList();
+
+    Observable<String> fetchName();
+
+    Observable<String> fetchPassword();
 }

@@ -13,4 +13,6 @@ public interface MvpView {
     Context context();
 
     void showToast(@StringRes int stringId);
+
+    String getViewId();
 }

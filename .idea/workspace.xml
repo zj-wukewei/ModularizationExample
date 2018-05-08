@@ -6,65 +6,32 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ecb2931-646e-465f-b20a-29c8e1fa77f1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dictionaries/hzwukewei.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/adapter_rxjava2_2_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_26_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/annotations_4_5_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_26_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/converter_gson_2_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/dagger_2_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/dagger_android_2_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/dagger_android_support_2_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/design_26_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/disklrucache_4_5_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_core_2_2_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_2_2_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/eventbus_3_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/gifdecoder_4_5_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/glide_4_5_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/gson_2_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_integration_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_library_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javawriter_2_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javax_annotation_api_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javax_inject_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jsr305_3_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/logging_interceptor_3_8_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/okhttp_3_8_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/okio_1_13_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/reactive_streams_1_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_26_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/retrofit_2_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/rules_0_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/runner_0_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/rxandroid_2_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/rxjava_2_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/rxpermissions_0_9_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_26_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_compat_26_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_ui_26_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_utils_26_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_fragment_26_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_media_compat_26_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_26_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_26_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/timber_4_5_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/transition_26_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_pictures/lib_pictures.iml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/domain/interactor/NameUseCase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/domain/interactor/PasswordUseCase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module_archives/src/main/res/layout/archives_activity_ar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/action/ViewActionQueue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/action/ViewActionQueueImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/action/ViewActionQueueProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/action/ViewActionQueueProviderImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/rxandroid/LoadingTransformer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/rxandroid/LoadingView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/di/AppConfigModule.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/di/ApplicationModule.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/wkw/modularization/ExampleInstrumentedTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/basic/src/androidTest/java/com/wkw/baisc/ExampleInstrumentedTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/basic/src/test/java/com/wkw/baisc/ExampleUnitTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/di/ApplicationModule.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/exception/DefaultErrorBundle.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/exception/ErrorBundle.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/androidTest/java/com/vongihealth/network/ExampleInstrumentedTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/NetWorkManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/test/java/com/vongihealth/network/ExampleUnitTest.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" />
@@ -76,66 +43,49 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/MrApplication.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/MrApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/di/AppComponent.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/di/AppComponent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/basic.iml" afterPath="$PROJECT_DIR$/basic/basic.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/build.gradle" afterPath="$PROJECT_DIR$/basic/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/src/main/java/com/wkw/basic/network/HeadInterceptor.java" afterPath="$PROJECT_DIR$/basic/src/main/java/com/wkw/basic/network/HeadInterceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commonbusiness/commonbusiness.iml" afterPath="$PROJECT_DIR$/commonbusiness/commonbusiness.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/BaseApplication.java" afterPath="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/BaseApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/activity/MrActivity.java" afterPath="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/activity/MrActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module_archives/module_archives.iml" afterPath="$PROJECT_DIR$/module_archives/module_archives.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/data/repository/ArchivesDataRepository.java" afterPath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/data/repository/ArchivesDataRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/debug/AppComponent.java" afterPath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/debug/AppComponent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/di/ArchivesActivityModule.java" afterPath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/di/ArchivesActivityModule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/domain/interactor/ArchivesListUseCase.java" afterPath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/domain/interactor/ArchivesListUseCase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/domain/repository/ArchivesRepository.java" afterPath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/domain/repository/ArchivesRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesActivity.java" afterPath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesContract.java" afterPath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesContract.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesPresenter.java" afterPath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesPresenter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module_archives/src/main/release/AndroidManifest.xml" afterPath="$PROJECT_DIR$/module_archives/src/main/release/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module_archives/src/main/res/layout/archives_activity_archives.xml" afterPath="$PROJECT_DIR$/module_archives/src/main/res/layout/archives_activity_archives.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module_knowledge/module_knowledge.iml" afterPath="$PROJECT_DIR$/module_knowledge/module_knowledge.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/debug/AppComponent.java" afterPath="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/debug/AppComponent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/di/KnowledgeActivityModule.java" afterPath="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/di/KnowledgeActivityModule.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/lib_ext/lib_ext.iml" afterPath="$PROJECT_DIR$/sdk/lib_ext/lib_ext.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/lib_imageloader/lib_imageloader.iml" afterPath="$PROJECT_DIR$/sdk/lib_imageloader/lib_imageloader.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/build.gradle" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/executor/job/JobExecutor.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/executor/job/JobExecutor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/executor/job/UIThread.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/executor/job/UIThread.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/retrofit/MrService.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/retrofit/MrService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/lib_uiframework/build.gradle" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/lib_uiframework/lib_uiframework.iml" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/lib_uiframework.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpActivity.java" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpBasePresenter.java" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpBasePresenter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpView.java" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/lib_uikit/lib_uikit.iml" afterPath="$PROJECT_DIR$/sdk/lib_uikit/lib_uikit.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/.gitignore" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/build.gradle" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/build.gradle" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/proguard-rules.pro" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/proguard-rules.pro" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/androidTest/java/com/vongihealth/network/ExampleInstrumentedTest.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/androidTest/java/com/vongihealth/network/ExampleInstrumentedTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/AndroidManifest.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/NetWorkManager.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/NetWorkManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/entity/MrResponse.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/entity/MrResponse.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/exception/DefaultErrorBundle.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/exception/DefaultErrorBundle.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/exception/ErrorBundle.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/exception/ErrorBundle.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/exception/NetworkConnectionException.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/exception/NetworkConnectionException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/exception/ResponseException.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/exception/ResponseException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/executor/PostExecutionThread.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/executor/PostExecutionThread.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/executor/ThreadExecutor.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/executor/ThreadExecutor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/executor/job/JobExecutor.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/executor/job/JobExecutor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/executor/job/UIThread.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/executor/job/UIThread.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/handler/ErrorHandlerFactory.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/handler/ErrorHandlerFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/handler/ResponseErrorListener.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/handler/ResponseErrorListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/handler/RxErrorHandler.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/handler/RxErrorHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/interactor/DefaultObserver.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/interactor/DefaultObserver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/interactor/MrObserver.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/interactor/MrObserver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/repository/RepositoryUtils.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/repository/RepositoryUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/retrofit/MrService.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/retrofit/MrService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/res/values/strings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_network_rx_retrofit/src/test/java/com/vongihealth/network/ExampleUnitTest.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/test/java/com/vongihealth/network/ExampleUnitTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/.gitignore" afterPath="$PROJECT_DIR$/sdk/lib_pictures/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/build.gradle" afterPath="$PROJECT_DIR$/sdk/lib_pictures/build.gradle" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/proguard-rules.pro" afterPath="$PROJECT_DIR$/sdk/lib_pictures/proguard-rules.pro" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/AndroidManifest.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/java/com/vongihealth/pictures/ImageFragment.java" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/ImageFragment.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/java/com/vongihealth/pictures/ImagePageAdapter.java" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/ImagePageAdapter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/java/com/vongihealth/pictures/PicturesActivity.java" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/PicturesActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/java/com/vongihealth/pictures/utils/RxImage.java" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/utils/RxImage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/java/com/vongihealth/pictures/utils/Shares.java" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/utils/Shares.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/java/com/vongihealth/pictures/widget/MultiTouchViewPager.java" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/widget/MultiTouchViewPager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/Compat.java" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/Compat.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/CustomGestureDetector.java" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/CustomGestureDetector.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/OnGestureListener.java" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/OnGestureListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/OnMatrixChangedListener.java" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/OnMatrixChangedListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/OnOutsidePhotoTapListener.java" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/OnOutsidePhotoTapListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/OnPhotoTapListener.java" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/OnPhotoTapListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/OnScaleChangedListener.java" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/OnScaleChangedListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/OnSingleFlingListener.java" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/OnSingleFlingListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/OnViewDragListener.java" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/OnViewDragListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/OnViewTapListener.java" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/OnViewTapListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/PhotoView.java" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/PhotoView.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/PhotoViewAttacher.java" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/PhotoViewAttacher.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/Util.java" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/Util.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/res/layout/activity_picture.xml" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/res/layout/activity_picture.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/res/layout/fragment_image.xml" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/res/layout/fragment_image.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib_pictures/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/res/values/strings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/basic/src/main/java/com/wkw/basic/interactor/UseCase.java" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/interactor/UseCase.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/di/PerActivity.java" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/di/PerActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/exception/ErrorMessageFactory.java" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/error/ErrorMessageFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/exception/ResponseLisenterImpl.java" afterPath="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/exception/ResponseListenerImpl.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -180,14 +130,67 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ArchivesActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-25">
+              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResponseListenerImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/exception/ResponseListenerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArchivesPresenter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesPresenter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewActionQueue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/action/ViewActionQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="18" column="60" lean-forward="true" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewActionQueueImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/action/ViewActionQueueImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-275">
+              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="valueResourceFile" />
         <option value="layoutResourceFile_vertical" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -208,6 +211,12 @@
       <find>libGlide</find>
       <find>libDagger</find>
       <find>libDaggerSupport</find>
+      <find>KnowledgeDataRepositoryModule</find>
+      <find>archivesDataRepositoryModule</find>
+      <find>appConfigModule</find>
+      <find>application</find>
+      <find>adapter</find>
+      <find>values</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -3122,118 +3131,6 @@
                 <option name="description" value="Displays the properties of project ':commonbusiness'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/commonbusiness" />
                 <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib_network_rx_retrofit">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':lib_network_rx_retrofit'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_network_rx_retrofit" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':lib_network_rx_retrofit'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_network_rx_retrofit" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':lib_network_rx_retrofit'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_network_rx_retrofit" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':lib_network_rx_retrofit'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_network_rx_retrofit" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':lib_network_rx_retrofit'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_network_rx_retrofit" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':lib_network_rx_retrofit'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_network_rx_retrofit" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_network_rx_retrofit" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':lib_network_rx_retrofit'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_network_rx_retrofit" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':lib_network_rx_retrofit'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_network_rx_retrofit" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':lib_network_rx_retrofit'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_network_rx_retrofit" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/lib_pictures">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':lib_pictures'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_pictures" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':lib_pictures'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_pictures" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':lib_pictures'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_pictures" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':lib_pictures'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_pictures" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':lib_pictures'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_pictures" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':lib_pictures'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_pictures" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_pictures" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':lib_pictures'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_pictures" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':lib_pictures'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_pictures" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':lib_pictures'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/lib_pictures" />
-                <option name="name" value="tasks" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -10275,57 +10172,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/entity/MrResonse.java" />
-        <option value="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/executor/job/UIThread.java" />
-        <option value="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/executor/job/JobExecutor.java" />
-        <option value="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/exception/ErrorBundle.java" />
-        <option value="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/exception/ResponseException.java" />
-        <option value="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/repository/RepositoryUtils.java" />
-        <option value="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/handler/RxErrorHandler.java" />
-        <option value="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/interactor/DefaultObserver.java" />
-        <option value="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/handler/ResponseErrorListener.java" />
-        <option value="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/handler/ErrorHandlerFactory.java" />
-        <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/module/knowledge/DefaultKnowledgeModule.java" />
-        <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/module/knowledge/KnowledgeProxy.java" />
-        <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/module/archives/ArchivesProxy.java" />
-        <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/module/archives/DefaultArchivesModule.java" />
-        <option value="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/interactor/MrObserver.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpView.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpPresenter.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpBasePresenter.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpActivity.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_imageloader/build.gradle" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/lib_network_rx_retrofit/build.gradle" />
-        <option value="$PROJECT_DIR$/lib_pictures/build.gradle" />
-        <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/exception/ResponseLisenterImpl.java" />
-        <option value="$PROJECT_DIR$/basic/src/main/java/com/wkw/basic/interactor/UseCase.java" />
-        <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/BaseApplication.java" />
-        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/data/api/ArchivesApi.java" />
-        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/domain/repository/ArchivesRepository.java" />
-        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/data/repository/ArchivesDataRepository.java" />
-        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/domain/interactor/ArchivesListUseCase.java" />
-        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesPresenter.java" />
-        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesContract.java" />
-        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesActivity.java" />
-        <option value="$PROJECT_DIR$/basic/src/main/java/com/wkw/basic/cache/UserCache.java" />
-        <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/activity/MrActivity.java" />
-        <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/exception/ErrorMessageFactory.java" />
-        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/di/ArchivesDataRepositoryModule.java" />
-        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/module/ArchivesModule.java" />
-        <option value="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/di/KnowledgeDataRepositoryModule.java" />
-        <option value="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/module/KnowledgeModule.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/basic/src/main/java/com/wkw/basic/network/HeadInterceptor.java" />
-        <option value="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/entity/MrResponse.java" />
-        <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/di/ApplicationModule.java" />
-        <option value="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/NetWorkManager.java" />
-        <option value="$PROJECT_DIR$/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/retrofit/MrService.java" />
         <option value="$PROJECT_DIR$/sdk/lib_uikit/lib_uikit.iml" />
         <option value="$PROJECT_DIR$/sdk/lib_pictures/sdk-lib_pictures.iml" />
         <option value="$PROJECT_DIR$/basic/src/main/java/com/wkw/basic/cache/UserCacheImpl.java" />
         <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/domain/interactor/ArchivesListUseCase.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/action/ViewActionQueueProvider.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpView.java" />
+        <option value="$PROJECT_DIR$/app/build/generated/source/apt/debug/com/wkw/modularization/di/DaggerAppComponent.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpActivity.java" />
+        <option value="$PROJECT_DIR$/basic/src/main/java/com/wkw/basic/network/HeadInterceptor.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/NetWorkManager.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/di/AppConfigModule.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/retrofit/MrService.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/executor/job/UIThread.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/executor/job/JobExecutor.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/interactor/UseCase.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/di/AppComponent.java" />
+        <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/di/AppConfigModule.java" />
+        <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/di/ApplicationModule.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/MrApplication.java" />
+        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/domain/interactor/NameUseCase.java" />
+        <option value="$PROJECT_DIR$/module_archives/src/main/res/layout/archives_activity_ar.xml" />
+        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArActivity.java" />
+        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/domain/repository/ArchivesRepository.java" />
+        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/domain/interactor/PasswordUseCase.java" />
+        <option value="$PROJECT_DIR$/module_archives/src/main/res/layout/archives_activity_archives.xml" />
+        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/rxandroid/LoadingView.java" />
+        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/rxandroid/LoadingTransformer.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/di/PerActivity.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/build.gradle" />
         <option value="$PROJECT_DIR$/basic/build.gradle" />
+        <option value="$PROJECT_DIR$/sdk/lib_uiframework/build.gradle" />
+        <option value="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/exception/ErrorMessageFactory.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/error/ErrorMessageFactory.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/exception/ResponseListenerImpl.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpBasePresenter.java" />
+        <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/activity/MrActivity.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/action/ViewActionQueueProviderImpl.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/di/ApplicationModule.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/action/ViewActionQueue.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/action/ViewActionQueueImpl.java" />
+        <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/BaseApplication.java" />
+        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/data/repository/ArchivesDataRepository.java" />
+        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesContract.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/rxandroid/LoadingView.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/rxandroid/LoadingTransformer.java" />
+        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesActivity.java" />
+        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesPresenter.java" />
       </list>
     </option>
   </component>
@@ -10333,7 +10230,7 @@
     <option name="x" value="1358" />
     <option name="y" value="-320" />
     <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -10403,7 +10300,921 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="basic" />
+              <option name="myItemId" value="sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib_uiframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib_uiframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib_uiframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib_uiframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib_uiframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uiframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib_uiframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uiframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="di" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib_uiframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uiframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib_uiframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uiframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib_uiframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uiframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rxandroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib_ext" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module_archives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module_archives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module_archives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module_archives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module_archives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commonbusiness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commonbusiness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commonbusiness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commonbusiness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commonbusiness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commonbusiness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commonbusiness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commonbusiness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commonbusiness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exception" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commonbusiness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commonbusiness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commonbusiness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commonbusiness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modularization" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wkw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modularization" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="di" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModularizationExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -10418,18 +11229,27 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Downloads/adt-bundle-mac-x86_64-20140702/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="RxJavaPlugins&#9;PSI&#9;JAVA://io.reactivex.plugins.RxJavaPlugins" />
+    <property name="SearchEverywhereHistoryKey" value="HttpUr&#9;PSI&#9;JAVA://okhttp3.HttpUrl&#10;Completable&#9;PSI&#9;JAVA://io.reactivex.Completable&#10;Single&#9;FILE&#9;jar://C:/Users/hzwukewei/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.1/99895d4dc6d79efbb74360f13c556d95533ad8f8/rxjava-2.1.1.jar!/io/reactivex/Single.class&#10;A&#9;FILE&#9;jar://C:/Users/hzwukewei/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.1/6112a58432d62645eca9d0aa77bf6bc7ad75b66a/rxjava-2.1.1-sources.jar!/io/reactivex/functions/Action.java&#10;RxJavaPlugins&#9;PSI&#9;JAVA://io.reactivex.plugins.RxJavaPlugins" />
     <property name="device.picker.selection" value="11ab3020" />
+    <property name="android.profiler.active" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.wkw.uiframework.base.mvp" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wangji\ModularizationExample\module_archives\src\main\res\layout" />
       <recent name="D:\wangji\ModularizationExample\sdk\lib_pictures" />
       <recent name="D:\wangji\ModularizationExample\sdk" />
       <recent name="D:\wangji\ModularizationExample\lib_network_rx_retrofit\src\main\java\com\vongihealth\network" />
       <recent name="D:\wangji\ModularizationExample\lib_network_rx_retrofit\src\main\java\com\vongihealth\network\executor" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wkw.uiframework.error" />
       <recent name="com.vongihealth.network.exception" />
+      <recent name="com.wkw.archives.domain.interactor" />
+      <recent name="com.wkw.uiframework.di" />
+      <recent name="com.vongihealth.network.interactor" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\wangji\ModularizationExample\sdk" />
@@ -10851,35 +11671,43 @@
       <option name="project" value="LOCAL" />
       <updated>1523439770900</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="基础组件移到sdk下面">
+      <created>1524637439020</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1524637439020</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-320" width="1936" height="1096" extended-state="6" />
+    <frame x="1358" y="-320" width="1936" height="1092" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22198506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4578442" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32657418" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276414" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8665955" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6307364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5154749" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.5154749" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" x="0" y="22" width="1366" height="706" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23880596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2217484" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -10888,7 +11716,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -10924,158 +11752,228 @@
     <MESSAGE value="swipeBack" />
     <MESSAGE value="打包" />
     <MESSAGE value="network_retrofit" />
-    <option name="LAST_COMMIT_MESSAGE" value="network_retrofit" />
+    <MESSAGE value="基础组件移到sdk下面" />
+    <option name="LAST_COMMIT_MESSAGE" value="基础组件移到sdk下面" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="11" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/module/KnowledgeModule.java">
+    <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/domain/interactor/PasswordUseCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="425">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_imageloader/src/main/java/com/wkw/imageloader/glide/GlideImageLoaderStrategy.java">
+    <entry file="file://$PROJECT_DIR$/module_archives/src/main/res/layout/archives_activity_archives.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-498">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="325">
+          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/apt/debug/com/wkw/modularization/di/DaggerAppComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="294" column="0" lean-forward="false" selection-start-line="294" selection-start-column="0" selection-end-line="294" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/BaseApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="31" column="49" lean-forward="false" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/wkw/basic/network/HeadInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="27" column="63" lean-forward="true" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" />
-    <entry file="file://$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/retrofit/MrService.java">
+    <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/di/ArchivesDataRepositoryModule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/MrApplication.java">
+    <entry file="file://$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/repository/RepositoryUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        <state relative-caret-position="100">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/KnowledgeActivity.java">
+    <entry file="file://$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/handler/RxErrorHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="475">
+          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesActivity.java">
+    <entry file="file://$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/interactor/MrObserver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        <state relative-caret-position="500">
+          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/interactor/UseCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="43" column="16" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.1/6112a58432d62645eca9d0aa77bf6bc7ad75b66a/rxjava-2.1.1-sources.jar!/io/reactivex/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="10781" column="28" lean-forward="false" selection-start-line="10781" selection-start-column="28" selection-end-line="10781" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_archives/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="70" column="2" lean-forward="false" selection-start-line="70" selection-start-column="2" selection-end-line="71" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdk/lib_network_rx_retrofit/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-648">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/BackActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/di/AppComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="22" column="50" lean-forward="false" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        <state relative-caret-position="200">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpBasePresenter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesPresenter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/MrApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        <state relative-caret-position="277">
+          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/di/ApplicationModule.java">
+    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/exception/DefaultErrorBundle.java" />
+    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/exception/ErrorBundle.java" />
+    <entry file="file://$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/exception/ErrorMessageFactory.java" />
+    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/exception/ErrorMessageFactory.java" />
+    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="55" column="91" lean-forward="true" selection-start-line="55" selection-start-column="91" selection-end-line="55" selection-end-column="91" />
+        <state relative-caret-position="125">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/BaseActivity.java">
+    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/error/ErrorMessageFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="225">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="65" lean-forward="false" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/wkw/basic/network/HeadInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commonbusiness/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/di/PerActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/di/AppConfigModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1475">
+          <caret line="92" column="19" lean-forward="false" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+        <state relative-caret-position="592">
+          <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/exception/ResponseLisenterImpl.java">
+    <entry file="file://$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/exception/DefaultErrorBundle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/AppManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-523">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/fragment/MrFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/exception/ErrorMessageFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/exception/ErrorBundle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/exception/DefaultErrorBundle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/exception/NetworkConnectionException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="175">
+          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -11086,218 +11984,166 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/entity/MrResponse.java">
+    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/action/ViewActionQueueProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-73">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        <state relative-caret-position="200">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/handler/RxErrorHandler.java">
+    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpBasePresenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/exception/ResponseException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/repository/RepositoryUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commonbusiness/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="199">
+          <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.1/6112a58432d62645eca9d0aa77bf6bc7ad75b66a/rxjava-2.1.1-sources.jar!/io/reactivex/Observer.java">
+    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/di/ApplicationModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.1/6112a58432d62645eca9d0aa77bf6bc7ad75b66a/rxjava-2.1.1-sources.jar!/io/reactivex/observers/DisposableObserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="73" column="22" lean-forward="false" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+        <state relative-caret-position="686">
+          <caret line="81" column="61" lean-forward="false" selection-start-line="81" selection-start-column="61" selection-end-line="81" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/NetWorkManager.java">
+    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/action/ViewActionQueueProviderImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_imageloader/proguard-rules.pro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_pictures/proguard-rules.pro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_uikit/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="177">
+          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/interactor/DefaultObserver.java">
+    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/BaseApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="577">
+          <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/interactor/MrObserver.java">
+    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/activity/MrActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_imageloader/lib_imageloader.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2028">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_uikit/lib_uikit.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="109" column="14" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="109" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_pictures/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_pictures/sdk-lib_pictures.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="5" column="65" lean-forward="false" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/ImageFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="41" column="40" lean-forward="false" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+        <state relative-caret-position="650">
+          <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib_pictures/lib_pictures.iml">
+    <entry file="file://D:/sdk/sources/android-26/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="303">
+          <caret line="112" column="36" lean-forward="false" selection-start-line="112" selection-start-column="36" selection-end-line="112" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/src/main/java/com/wkw/basic/cache/UserCacheImpl.java">
+    <entry file="file://D:/sdk/sources/android-26/java/lang/Throwable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="55" lean-forward="false" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+        <state relative-caret-position="267">
+          <caret line="646" column="36" lean-forward="true" selection-start-line="646" selection-start-column="36" selection-end-line="646" selection-end-column="36" />
+          <folding>
+            <element signature="e#26982#26983#0" expanded="true" />
+            <element signature="e#27025#27026#0" expanded="true" />
+            <element signature="e#27230#27231#0" expanded="true" />
+            <element signature="e#27288#27289#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/rxandroid/LoadingTransformer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="25" column="79" lean-forward="false" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_network_rx_retrofit/lib_network_rx_retrofit.iml">
+    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/rxandroid/LoadingView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1492">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="375">
+          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_pictures/lib_pictures.iml">
+    <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/data/repository/ArchivesDataRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/domain/repository/ArchivesRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
-          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/basic.iml">
+    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/action/ViewActionQueueImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-275">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_pictures/build.gradle">
+    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/action/ViewActionQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-331">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="18" column="60" lean-forward="true" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
+    <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="88" lean-forward="false" selection-start-line="20" selection-start-column="88" selection-end-line="20" selection-end-column="88" />
+        <state relative-caret-position="223">
+          <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/exception/ResponseListenerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/build.gradle">
+    <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+        <state relative-caret-position="-25">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
         </state>
       </provider>
