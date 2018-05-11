@@ -2,36 +2,77 @@ package com.wkw.knowledge;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 
-import com.wkw.commonbusiness.activity.MrActivity;
-import com.wkw.commonbusiness.entity.UserSystem;
+import com.wkw.knowledge.view.KnowledgePresenter;
+import com.wkw.knowledge.view.KonwledgeContract;
+import com.wkw.knowledge.view.fragment.KnowledgeFragment;
+import com.wkw.uiframework.base.mvp.MvpActivity;
+import com.wkw.uiframework.base.mvp.page.PageEntity;
 
 import javax.inject.Inject;
 
 import dagger.android.AndroidInjection;
+import dagger.android.AndroidInjector;
+import dagger.android.DispatchingAndroidInjector;
+import dagger.android.support.HasSupportFragmentInjector;
 import timber.log.Timber;
 
 /**
  * Created by wukewei on 2017/9/9.
  */
 
-public class KnowledgeActivity extends MrActivity {
+public class KnowledgeActivity extends MvpActivity<KonwledgeContract.View, KonwledgeContract.Presenter> implements KonwledgeContract.View, HasSupportFragmentInjector {
 
     private static final String TAG = "KnowledgeActivity";
 
     @Inject
-    UserSystem userSystem;
+    KnowledgePresenter mKnowledgePresenter;
+
+    @Override
+    protected KonwledgeContract.Presenter getPresenter() {
+        return mKnowledgePresenter;
+    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.knowledge_activity_knowledge);
-        Timber.d(userSystem.toString());
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.add(R.id.fragment, KnowledgeFragment.newInstance());
+        fragmentTransaction.commitAllowingStateLoss();
+    }
+
+
+    @Override
+    public void showLoading() {
+        Timber.d("showLoading");
     }
 
     @Override
-    protected String pageName() {
-        return TAG;
+    public void hideLoading() {
+        Timber.d("hideLoading");
+    }
+
+    @Override
+    public void showError(Exception e) {
+        Timber.d("Exception");
+    }
+
+    @Override
+    public void showData(PageEntity<String> data) {
+        Timber.d(data.toString());
+        Timber.d(data.isHasMore() + "");
+        Timber.d(data.getList().size() + "");
+    }
+
+    @Inject
+    DispatchingAndroidInjector<Fragment> fragmentInjector;
+
+    @Override
+    public AndroidInjector<Fragment> supportFragmentInjector() {
+        return fragmentInjector;
     }
 }

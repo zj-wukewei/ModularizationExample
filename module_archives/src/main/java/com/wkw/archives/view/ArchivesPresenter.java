@@ -45,6 +45,12 @@ public class ArchivesPresenter extends MvpBasePresenter<ArchivesContract.View> i
     }
 
     @Override
+    public void destroy() {
+        super.destroy();
+        mArchivesListUseCase.dispose();
+    }
+
+    @Override
     public void fetchPassword() {
         viewActionQueue.subscribeTo(mPasswordUseCase.execute(null).map(this::toViewPasswordAction));
     }

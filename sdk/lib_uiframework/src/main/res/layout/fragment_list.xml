@@ -1,0 +1,30 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.wkw.uikit.ProgressLayout
+            android:id="@+id/progress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/content_bg">
+
+
+            <com.wkw.uikit.loadmore.RecyclerViewWithFooter
+                android:id="@+id/rv_with_footer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </com.wkw.uikit.ProgressLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</layout>

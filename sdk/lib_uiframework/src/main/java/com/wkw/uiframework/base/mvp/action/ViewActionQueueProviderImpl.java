@@ -1,6 +1,7 @@
 package com.wkw.uiframework.base.mvp.action;
 
 import com.vongihealth.network.handler.RxErrorHandler;
+import com.wkw.ext.utils.guava.Preconditions;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,6 +17,7 @@ public class ViewActionQueueProviderImpl implements ViewActionQueueProvider {
     private final RxErrorHandler mRxErrorHandler;
 
     public ViewActionQueueProviderImpl(RxErrorHandler rxErrorHandler) {
+        Preconditions.checkNotNull(rxErrorHandler, "rxErrorHandler == null");
         this.mRxErrorHandler = rxErrorHandler;
     }
 

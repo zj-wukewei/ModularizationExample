@@ -59,7 +59,7 @@ public abstract class MvpBasePresenter<V extends MvpView> implements MvpPresente
         subscribeToViewActionQueue();
     }
 
-    private final void logError(final Throwable throwable) {
+    private void logError(final Throwable throwable) {
         if (!TextUtils.isEmpty(throwable.getMessage())) {
             Timber.d(throwable);
         }
@@ -79,11 +79,11 @@ public abstract class MvpBasePresenter<V extends MvpView> implements MvpPresente
         viewActionQueueProvider = null;
     }
 
-    protected void onViewAction(final Consumer<V> vAction) throws Exception {
-        doIfViewNotNull(vAction::accept);
+    private void onViewAction(final Consumer<V> vAction) throws Exception {
+        doIfViewNotNull(vAction);
     }
 
-    protected void doIfViewNotNull(final Consumer<V> whenViewNotNull) throws Exception {
+    private void doIfViewNotNull(final Consumer<V> whenViewNotNull) throws Exception {
         final V view = getView();
         if (view != null) {
             whenViewNotNull.accept(view);

@@ -12,6 +12,6 @@ import dagger.android.ContributesAndroidInjector;
 @Module
 public abstract class KnowledgeActivityModule {
     @PerActivity
-    @ContributesAndroidInjector()
+    @ContributesAndroidInjector(modules = KnowledgeFragmentModule.class)
     abstract KnowledgeActivity contributeKnowledgeActivity();
 }

@@ -25,6 +25,6 @@ public class LoadingTransformer<T> implements ObservableTransformer<T, T> {
     public ObservableSource<T> apply(Observable<T> upstream) {
         return upstream.doOnSubscribe(disposable -> mLoadingView.showLoading())
                 .doOnError(throwable -> mLoadingView.showError((Exception) throwable))
-                .doOnNext(t -> mLoadingView.hideLoading());
+                .doOnComplete(mLoadingView::hideLoading);
     }
 }

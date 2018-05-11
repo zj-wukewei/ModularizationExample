@@ -1,6 +1,9 @@
 package com.wkw.uiframework.base.mvp.action;
 
+import android.support.annotation.MainThread;
+
 import com.vongihealth.network.handler.RxErrorHandler;
+import com.wkw.ext.utils.guava.Preconditions;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -29,6 +32,7 @@ public class ViewActionQueueImpl<V> implements ViewActionQueue<V> {
     private final RxErrorHandler mRxErrorHandler;
 
     public ViewActionQueueImpl(RxErrorHandler rxErrorHandler) {
+        Preconditions.checkNotNull(rxErrorHandler, "rxErrorHandler == null");
         this.mRxErrorHandler = rxErrorHandler;
     }
 
@@ -90,6 +94,7 @@ public class ViewActionQueueImpl<V> implements ViewActionQueue<V> {
         consumeQueue();
     }
 
+    @MainThread
     private void consumeQueue() {
         synchronized (queueLock) {
             final Iterator<Consumer<V>> actionIterator = viewActions.iterator();

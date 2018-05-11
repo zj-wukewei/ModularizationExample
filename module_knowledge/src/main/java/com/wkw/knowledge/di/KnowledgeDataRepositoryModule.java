@@ -2,6 +2,8 @@ package com.wkw.knowledge.di;
 
 import com.vongihealth.network.retrofit.MrService;
 import com.wkw.knowledge.data.KnowledgeApi;
+import com.wkw.knowledge.data.knowledge.KnowledgeDataRepository;
+import com.wkw.knowledge.domain.repository.KnowledgeRepository;
 
 import javax.inject.Singleton;
 
@@ -18,5 +20,11 @@ public class KnowledgeDataRepositoryModule {
     @Singleton
     KnowledgeApi providesAKnowledgeApi(MrService mrService) {
         return mrService.createApi(KnowledgeApi.class);
+    }
+
+    @Provides
+    @Singleton
+    KnowledgeRepository prvidesKnowledgeRepository(KnowledgeDataRepository knowledgeRepository) {
+        return knowledgeRepository;
     }
 }

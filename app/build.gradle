@@ -21,13 +21,17 @@ android {
         abortOnError rootProject.ext.abortOnLintError
         checkReleaseBuilds rootProject.ext.checkLintRelease
     }
-
+    dataBinding {
+        enabled = true
+    }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+
 }
 
 repositories {
@@ -44,7 +48,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     annotationProcessor rootProject.ext.libDaggerCompiler
     annotationProcessor rootProject.ext.libDaggerAndroidCompiler
-    if(isBuildModule.toBoolean()) {
+    if (isBuildModule.toBoolean()) {
         api project(':commonbusiness')
         api('com.wkw:knowledge:1.0.0')
         api('com.wkw:archives:1.0.0')

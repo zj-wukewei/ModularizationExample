@@ -1,6 +1,7 @@
 package com.wkw.archives.data.repository;
 
-import com.vongihealth.network.repository.RepositoryUtils;
+import com.vongihealth.network.entity.MrResponse;
+import com.vongihealth.network.exception.ResponseException;
 import com.wkw.archives.data.api.ArchivesApi;
 import com.wkw.archives.domain.repository.ArchivesRepository;
 import com.wkw.commonbusiness.entity.TokenEntity;
@@ -26,8 +27,13 @@ public class ArchivesDataRepository implements ArchivesRepository {
 
     @Override
     public Observable<TokenEntity> archivesList() {
-        return mArchivesApi.login("1825800578", "123456", "1")
-                .compose(RepositoryUtils.handleResult());
+        return Observable.create(new ObservableOnSubscribe<TokenEntity>() {
+            @Override
+            public void subscribe(ObservableEmitter<TokenEntity> e) throws Exception {
+                Thread.sleep(3000);
+                e.onNext(new TokenEntity("aaaa", null));
+            }
+        }).flatMap(entity -> Observable.error(new ResponseException(new MrResponse(-1, "-1111", null))));
     }
 
     @Override
@@ -49,19 +55,9 @@ public class ArchivesDataRepository implements ArchivesRepository {
 
     @Override
     public Observable<String> fetchPassword() {
-        return Observable.create(new ObservableOnSubscribe<String>() {
-            @Override
-            public void subscribe(ObservableEmitter<String> e) throws Exception {
-                try {
-                    Thread.sleep(3000);
-                    int i = 1 / 0;
-                    e.onNext("1234567");
-                    e.onComplete();
-                } catch (Exception ex) {
-                    e.onError(ex);
-                }
-
-            }
-        });
+        return Observable.create((ObservableOnSubscribe<TokenEntity>) e -> {
+            Thread.sleep(3000);
+            e.onNext(new TokenEntity("aaaa", null));
+        }).flatMap(entity -> Observable.error(new ResponseException(new MrResponse(-1, "-1111", null))));
     }
 }
