@@ -35,11 +35,21 @@ public abstract class PageFragment<Request, Response, V extends PageView<Respons
     private MultiTypeAdapter mMultiTypeAdapter;
 
     private FragmentListBinding mBinding;
+    private View mFragmentView;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_list, container, false);
+        if (mFragmentView == null) {
+            mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_list, container, false);
+            mFragmentView = mBinding.getRoot();
+            initHeaderAndFooter();
+        } else {
+            ViewGroup parent = (ViewGroup) mFragmentView.getParent();
+            if (parent != null) {
+                parent.removeView(mFragmentView);
+            }
+        }
         return mBinding.getRoot();
     }
 
@@ -60,7 +70,6 @@ public abstract class PageFragment<Request, Response, V extends PageView<Respons
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        initHeaderAndFooter();
     }
 
     /**
