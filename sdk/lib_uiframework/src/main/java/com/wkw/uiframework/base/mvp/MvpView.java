@@ -1,5 +1,6 @@
 package com.wkw.uiframework.base.mvp;
 
+import android.arch.lifecycle.LifecycleOwner;
 import android.content.Context;
 import android.support.annotation.StringRes;
 
@@ -15,4 +16,6 @@ public interface MvpView {
     void showToast(@StringRes int stringId);
 
     String getViewId();
+
+    LifecycleOwner getLifecycleOwner();
 }

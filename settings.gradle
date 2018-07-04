@@ -1,8 +1,11 @@
-include ':app', ':basic', ':commonbusiness', ':module_knowledge', ':module_archives'
+include ':app', ':basic', ':commonbusiness', ':module_knowledge', ':module_archives', ':lib_live'
 
 
 include ':lib_ext'
 project(':lib_ext').projectDir = new File('sdk/lib_ext')
+
+include ':lib_live'
+project(':lib_live').projectDir = new File('sdk/lib_live')
 
 include ':lib_uikit'
 project(':lib_uikit').projectDir = new File('sdk/lib_uikit')

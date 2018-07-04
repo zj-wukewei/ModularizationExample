@@ -42,6 +42,7 @@ dependencies {
 
     api project(path: ':lib_imageloader')
     api project(path: ':lib_pictures')
+    api project(path: ':lib_live')
     api project(path: ':lib_network_rx_retrofit')
     api rootProject.ext.libDagger
     api (rootProject.ext.libDaggerSupport) {

@@ -1,5 +1,8 @@
 package com.wkw.archives.view;
 
+import android.annotation.SuppressLint;
+
+import com.vongihealth.live.Live;
 import com.vongihealth.network.handler.RxErrorHandler;
 import com.vongihealth.network.interactor.MrObserver;
 import com.wkw.archives.domain.interactor.ArchivesListUseCase;
@@ -32,9 +35,12 @@ public class ArchivesPresenter extends MvpBasePresenter<ArchivesContract.View> i
         mRxErrorHandler = handler;
     }
 
+    @SuppressLint("CheckResult")
     @Override
     public void archivesList(int pn) {
-        mArchivesListUseCase.execute(new ArchivesObserver(mRxErrorHandler), ArchivesListUseCase.Params.forArchives(pn));
+        mArchivesListUseCase.execute(ArchivesListUseCase.Params.forArchives(pn))
+                .compose(Live.bindLifecycle(getLifecycleOwner()))
+                .subscribe(tokenEntity -> getView().showData(tokenEntity));
     }
 
     @Override
@@ -47,7 +53,6 @@ public class ArchivesPresenter extends MvpBasePresenter<ArchivesContract.View> i
     @Override
     public void destroy() {
         super.destroy();
-        mArchivesListUseCase.dispose();
     }
 
     @Override

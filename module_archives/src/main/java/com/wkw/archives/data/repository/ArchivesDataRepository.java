@@ -2,6 +2,7 @@ package com.wkw.archives.data.repository;
 
 import com.vongihealth.network.entity.MrResponse;
 import com.vongihealth.network.exception.ResponseException;
+import com.vongihealth.network.repository.RepositoryUtils;
 import com.wkw.archives.data.api.ArchivesApi;
 import com.wkw.archives.domain.repository.ArchivesRepository;
 import com.wkw.commonbusiness.entity.TokenEntity;
@@ -27,13 +28,15 @@ public class ArchivesDataRepository implements ArchivesRepository {
 
     @Override
     public Observable<TokenEntity> archivesList() {
-        return Observable.create(new ObservableOnSubscribe<TokenEntity>() {
+        return Observable.create(new ObservableOnSubscribe<MrResponse<TokenEntity>>() {
             @Override
-            public void subscribe(ObservableEmitter<TokenEntity> e) throws Exception {
-                Thread.sleep(3000);
-                e.onNext(new TokenEntity("aaaa", null));
+            public void subscribe(ObservableEmitter<MrResponse<TokenEntity>> e) throws Exception {
+                Thread.sleep(4000);
+                MrResponse<TokenEntity> mrResponse = new MrResponse<>();
+                mrResponse.setData(new TokenEntity("1111", "222222"));
+                e.onNext(mrResponse);
             }
-        }).flatMap(entity -> Observable.error(new ResponseException(new MrResponse(-1, "-1111", null))));
+        }).compose(RepositoryUtils.handleResult());
     }
 
     @Override

@@ -1,5 +1,6 @@
 package com.wkw.uiframework.base.mvp;
 
+import android.arch.lifecycle.LifecycleOwner;
 import android.text.TextUtils;
 
 import com.wkw.uiframework.base.mvp.action.ViewActionQueue;
@@ -98,6 +99,12 @@ public abstract class MvpBasePresenter<V extends MvpView> implements MvpPresente
         return "";
     }
 
+    protected LifecycleOwner getLifecycleOwner() {
+        if (getView() != null) {
+            return getView().getLifecycleOwner();
+        }
+        return null;
+    }
 
     @Override
     public V getView() {

@@ -1,5 +1,6 @@
 package com.wkw.uiframework.base.mvp;
 
+import android.arch.lifecycle.LifecycleOwner;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -54,6 +55,10 @@ public abstract class MvpFragment<V extends MvpView, P extends MvpPresenter<V>> 
         outState.putString(KEY_VIEW_ID, viewId);
     }
 
+    @Override
+    public LifecycleOwner getLifecycleOwner() {
+        return this;
+    }
 
     @Override
     public void onDestroy() {

@@ -1,5 +1,6 @@
 package com.wkw.uiframework.base.mvp;
 
+import android.arch.lifecycle.LifecycleOwner;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -72,6 +73,11 @@ public abstract class MvpActivity<V extends MvpView, P extends MvpPresenter<V>> 
         ToastUtils.show(this, stringId);
     }
 
+
+    @Override
+    public LifecycleOwner getLifecycleOwner() {
+        return this;
+    }
 
     @Override
     public Context context() {
