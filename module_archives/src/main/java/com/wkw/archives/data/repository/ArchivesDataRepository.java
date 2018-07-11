@@ -28,15 +28,14 @@ public class ArchivesDataRepository implements ArchivesRepository {
 
     @Override
     public Observable<TokenEntity> archivesList() {
-        return Observable.create(new ObservableOnSubscribe<MrResponse<TokenEntity>>() {
+        return Observable.create(new ObservableOnSubscribe<TokenEntity>() {
             @Override
-            public void subscribe(ObservableEmitter<MrResponse<TokenEntity>> e) throws Exception {
+            public void subscribe(ObservableEmitter<TokenEntity> e) throws Exception {
                 Thread.sleep(4000);
-                MrResponse<TokenEntity> mrResponse = new MrResponse<>();
-                mrResponse.setData(new TokenEntity("1111", "222222"));
-                e.onNext(mrResponse);
+                e.onNext(new TokenEntity("1111", "222222"));
+                e.onComplete();
             }
-        }).compose(RepositoryUtils.handleResult());
+        });
     }
 
     @Override

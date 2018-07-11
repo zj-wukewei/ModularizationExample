@@ -1,18 +1,13 @@
 package com.wkw.uiframework.base.mvp;
 
 import android.arch.lifecycle.LifecycleOwner;
-import android.text.TextUtils;
 
-import com.wkw.uiframework.base.mvp.action.ViewActionQueue;
-import com.wkw.uiframework.base.mvp.action.ViewActionQueueProvider;
+import com.vongihealth.network.handler.RxErrorHandler;
+import com.wkw.ext.utils.guava.Preconditions;
 
 import java.lang.ref.WeakReference;
 
 import javax.inject.Inject;
-
-import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.functions.Consumer;
-import timber.log.Timber;
 
 /**
  * Created by GoGo on 2018-4-11.
@@ -23,17 +18,13 @@ import timber.log.Timber;
 public abstract class MvpBasePresenter<V extends MvpView> implements MvpPresenter<V> {
 
     private WeakReference<V> viewRef;
-    private String viewId;
-    protected ViewActionQueue<V> viewActionQueue;
+
     @Inject
-    ViewActionQueueProvider viewActionQueueProvider;
-    private final CompositeDisposable disposables = new CompositeDisposable();
+    RxErrorHandler mRxErrorHandler;
 
     @Override
     public void attachView(V view) {
         viewRef = new WeakReference<>(view);
-        viewId = getIfViewNotNull();
-        viewActionQueue = viewActionQueueProvider.queueFor(viewId);
     }
 
     @Override
@@ -46,57 +37,25 @@ public abstract class MvpBasePresenter<V extends MvpView> implements MvpPresente
 
     @Override
     public void resume() {
-        subscribeToViewActionQueue();
-        viewActionQueue.resume();
-    }
-
-    private void subscribeToViewActionQueue() {
-        disposables.add(viewActionQueue.viewActionsObservable()
-                .subscribe(this::onViewAction, this::onViewActionQueueError));
-    }
-
-    private void onViewActionQueueError(final Throwable throwable) {
-        logError(throwable);
-        subscribeToViewActionQueue();
-    }
-
-    private void logError(final Throwable throwable) {
-        if (!TextUtils.isEmpty(throwable.getMessage())) {
-            Timber.d(throwable);
-        }
     }
 
     @Override
     public void pause() {
-        viewActionQueue.pause();
-        disposables.clear();
     }
 
     @Override
     public void destroy() {
-        viewActionQueue.destroy();
-        viewActionQueueProvider.dispose(viewId);
-        viewActionQueue = null;
-        viewActionQueueProvider = null;
     }
 
-    private void onViewAction(final Consumer<V> vAction) throws Exception {
-        doIfViewNotNull(vAction);
+
+    @Override
+    public V getView() {
+        return isViewAttached() ? viewRef.get() : null;
     }
 
-    private void doIfViewNotNull(final Consumer<V> whenViewNotNull) throws Exception {
-        final V view = getView();
-        if (view != null) {
-            whenViewNotNull.accept(view);
-        }
-    }
-
-    private String getIfViewNotNull() {
-        final V v = this.getView();
-        if (v != null && v.getViewId() != null) {
-            return v.getViewId();
-        }
-        return "";
+    protected final RxErrorHandler getRxErrorHandler() {
+        Preconditions.checkNotNull(mRxErrorHandler, "请全局提供RxErrorHandler");
+        return mRxErrorHandler;
     }
 
     protected LifecycleOwner getLifecycleOwner() {
@@ -104,11 +63,6 @@ public abstract class MvpBasePresenter<V extends MvpView> implements MvpPresente
             return getView().getLifecycleOwner();
         }
         return null;
-    }
-
-    @Override
-    public V getView() {
-        return isViewAttached() ? viewRef.get() : null;
     }
 
     protected boolean isViewAttached() {

@@ -19,23 +19,16 @@ import java.util.UUID;
 public abstract class MvpFragment<V extends MvpView, P extends MvpPresenter<V>> extends BaseFragment implements MvpView {
 
     private static final String TAG = "MvpFragment";
-    private static final String KEY_VIEW_ID = "view_id";
 
     protected abstract P getPresenter();
 
-    private String viewId;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        initializeView(savedInstanceState);
         getPresenter().attachView((V) this);
     }
 
-    private void initializeView(@Nullable final Bundle savedInstanceState) {
-        viewId = (savedInstanceState == null) ? UUID.randomUUID().toString()
-                : savedInstanceState.getString(KEY_VIEW_ID);
-    }
 
     @Override
     public void onResume() {
@@ -49,11 +42,6 @@ public abstract class MvpFragment<V extends MvpView, P extends MvpPresenter<V>> 
         getPresenter().pause();
     }
 
-    @Override
-    public void onSaveInstanceState(final Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putString(KEY_VIEW_ID, viewId);
-    }
 
     @Override
     public LifecycleOwner getLifecycleOwner() {
@@ -67,10 +55,6 @@ public abstract class MvpFragment<V extends MvpView, P extends MvpPresenter<V>> 
         getPresenter().destroy();
     }
 
-    @Override
-    public String getViewId() {
-        return viewId;
-    }
 
     @Override
     public void showToast(int stringId) {

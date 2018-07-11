@@ -13,9 +13,6 @@ import com.vongihealth.network.executor.job.UIThread;
 import com.vongihealth.network.handler.ResponseErrorListener;
 import com.vongihealth.network.handler.RxErrorHandler;
 import com.vongihealth.network.retrofit.MrService;
-import com.wkw.uiframework.base.mvp.action.ViewActionQueueProvider;
-import com.wkw.uiframework.base.mvp.action.ViewActionQueueProviderImpl;
-
 import javax.inject.Singleton;
 
 import dagger.Module;
@@ -76,9 +73,9 @@ public class ApplicationModule {
         return RxSharedPreferences.create(sharedPreferences);
     }
 
-    @Provides
-    @Singleton
-    ViewActionQueueProvider provideViewActionQueueProvider(RxErrorHandler rxErrorHandler) {
-        return new ViewActionQueueProviderImpl(rxErrorHandler);
-    }
+//    @Provides
+//    @Singleton
+//    ViewActionQueueProvider provideViewActionQueueProvider(RxErrorHandler rxErrorHandler) {
+//        return new ViewActionQueueProviderImpl(rxErrorHandler);
+//    }
 }

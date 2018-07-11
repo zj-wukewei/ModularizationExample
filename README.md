@@ -11,3 +11,5 @@ android组件化学习
 
 5: lib_pictures: 图片浏览组件，里面会依赖一些第三方的库（Rxjava, RxAndroid, RxPermissions, Glide）使用的时候请注意
 
+6: lib_live: 是一个rxjava和官方框架中的LiveData类似
+

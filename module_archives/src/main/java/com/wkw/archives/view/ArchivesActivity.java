@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.util.Log;
+import android.widget.Button;
 
 import com.vongihealth.live.Live;
 import com.wkw.archives.R;
@@ -20,8 +22,10 @@ import dagger.android.AndroidInjection;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
+import io.reactivex.Observer;
 import io.reactivex.Scheduler;
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 import timber.log.Timber;
@@ -38,6 +42,7 @@ public class ArchivesActivity extends MvpActivity<ArchivesContract.View, Archive
     ArchivesPresenter mArchivesPresenter;
 
 
+    Button bu;
     @Override
     protected ArchivesContract.Presenter getPresenter() {
         return mArchivesPresenter;
@@ -50,10 +55,10 @@ public class ArchivesActivity extends MvpActivity<ArchivesContract.View, Archive
         super.onCreate(savedInstanceState);
         setContentView(R.layout.archives_activity_archives);
         getPresenter().archivesList(1);
+        bu = findViewById(R.id.btn);
         findViewById(R.id.btn).setOnClickListener(view -> {
             KnowledgeProxy.g.getUiInterface().goToKnowledgeActivity(ArchivesActivity.this);
         });
-
 
     }
 

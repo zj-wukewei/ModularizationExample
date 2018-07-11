@@ -45,9 +45,6 @@ public class ArchivesPresenter extends MvpBasePresenter<ArchivesContract.View> i
 
     @Override
     public void fetchName() {
-        viewActionQueue.subscribeTo(mNameUseCase.execute(null)
-                .compose(new LoadingTransformer<>(getView()))
-                .map(this::toViewAction));
     }
 
     @Override
@@ -57,16 +54,12 @@ public class ArchivesPresenter extends MvpBasePresenter<ArchivesContract.View> i
 
     @Override
     public void fetchPassword() {
-        viewActionQueue.subscribeTo(mPasswordUseCase.execute(null).map(this::toViewPasswordAction));
     }
 
     private Consumer<ArchivesContract.View> toViewAction(String name) {
         return view -> view.showName(name);
     }
 
-    private Consumer<ArchivesContract.View> toViewPasswordAction(String pa) {
-        return view -> view.showPassword(pa);
-    }
 
     private final class ArchivesObserver extends MrObserver<TokenEntity> {
 

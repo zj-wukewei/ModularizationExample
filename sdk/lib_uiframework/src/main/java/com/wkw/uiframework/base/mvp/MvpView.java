@@ -15,7 +15,5 @@ public interface MvpView {
 
     void showToast(@StringRes int stringId);
 
-    String getViewId();
-
     LifecycleOwner getLifecycleOwner();
 }
