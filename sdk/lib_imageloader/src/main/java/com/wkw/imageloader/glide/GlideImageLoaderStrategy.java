@@ -1,8 +1,12 @@
 package com.wkw.imageloader.glide;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+import android.os.Looper;
+import android.support.v4.content.ContextCompat;
+import android.text.TextUtils;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestBuilder;
@@ -10,6 +14,7 @@ import com.bumptech.glide.RequestManager;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
 import com.wkw.imageloader.ImageLoaderStrategy;
+import com.wkw.imageloader.utils.ImageUtil;
 
 /**
  * Created by GoGo on 2018-2-5.
@@ -18,8 +23,15 @@ import com.wkw.imageloader.ImageLoaderStrategy;
  */
 
 public class GlideImageLoaderStrategy implements ImageLoaderStrategy<GlideImageConfig> {
+    @SuppressLint("CheckResult")
     @Override
     public void loadImage(Context context, GlideImageConfig config) {
+
+        if (TextUtils.isEmpty(config.getUrl())) {
+            config.getImageView()
+                    .setImageDrawable(ContextCompat.getDrawable(context, config.getErrorPic()));
+            return;
+        }
 
         RequestManager manager;
         if (context instanceof Activity) {
@@ -71,4 +83,37 @@ public class GlideImageLoaderStrategy implements ImageLoaderStrategy<GlideImageC
         request.apply(requestOptions).into(config.getImageView());
 
     }
+
+    @Override
+    public String getCacheSize(Context context) {
+        try {
+            return ImageUtil.getFormatSize(ImageUtil.getFolderSize(Glide.getPhotoCacheDir(context.getApplicationContext())));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
+
+    @Override
+    public void clearImageDiskCache(Context context) {
+        if (Looper.myLooper() != Looper.getMainLooper()) {
+            throw new IllegalStateException("You should not use the Live Transformer at a background thread.");
+        }
+        Glide.get(context.getApplicationContext()).clearMemory();
+    }
+
+    @Override
+    public void clearImageMemoryCache(final Context context) {
+        if (Looper.myLooper() == Looper.getMainLooper()) {
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    Glide.get(context.getApplicationContext()).clearDiskCache();
+                }
+            }).start();
+        } else {
+            Glide.get(context.getApplicationContext()).clearDiskCache();
+        }
+    }
+
 }

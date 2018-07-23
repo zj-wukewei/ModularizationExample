@@ -28,6 +28,23 @@ public class ImageLoader {
     }
 
 
+    public String getCacheSize(Context context) {
+        return mImageLoaderStrategy.getCacheSize(context);
+    }
+
+    public void clearImageDiskCache(final Context context) {
+        mImageLoaderStrategy.clearImageDiskCache(context);
+    }
+
+    public void clearImageMemoryCache(Context context) {
+        mImageLoaderStrategy.clearImageMemoryCache(context);
+    }
+
+    public void clearAllCache(Context context) {
+        clearImageDiskCache(context);
+        clearImageMemoryCache(context);
+    }
+
     public static ImageLoader getInstance() {
         return ImageLoaderInstance.mImageLoader;
     }

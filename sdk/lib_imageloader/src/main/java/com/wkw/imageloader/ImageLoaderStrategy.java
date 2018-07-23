@@ -10,4 +10,11 @@ import android.content.Context;
 
 public interface ImageLoaderStrategy<T extends ImageConfig> {
     void loadImage(Context context, T t);
+
+    String getCacheSize(Context context);
+
+    void clearImageDiskCache(final Context context);
+
+    void clearImageMemoryCache(Context context);
+
 }
