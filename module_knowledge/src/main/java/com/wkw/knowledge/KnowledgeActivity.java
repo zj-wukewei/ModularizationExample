@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 
+import com.wkw.knowledge.entity.User;
 import com.wkw.knowledge.view.KnowledgePresenter;
 import com.wkw.knowledge.view.KonwledgeContract;
 import com.wkw.knowledge.view.fragment.KnowledgeFragment;
@@ -74,5 +75,10 @@ public class KnowledgeActivity extends MvpActivity<KonwledgeContract.View, Konwl
     @Override
     public AndroidInjector<Fragment> supportFragmentInjector() {
         return fragmentInjector;
+    }
+
+    @Override
+    public void showDataUserList(PageEntity<User> users) {
+        Timber.d(users.toString());
     }
 }

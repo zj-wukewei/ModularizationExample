@@ -1,7 +1,11 @@
 package com.wkw.knowledge.data.knowledge;
 
 
+import com.vongihealth.network.repository.RepositoryUtils;
+import com.wkw.commonbusiness.entity.AbstractQry;
+import com.wkw.knowledge.data.KnowledgeApi;
 import com.wkw.knowledge.domain.repository.KnowledgeRepository;
+import com.wkw.knowledge.entity.User;
 import com.wkw.uiframework.base.mvp.page.PageEntity;
 
 import java.util.ArrayList;
@@ -19,6 +23,9 @@ import io.reactivex.ObservableOnSubscribe;
  */
 
 public class KnowledgeDataRepository implements KnowledgeRepository {
+
+    @Inject
+    KnowledgeApi mApi;
 
     @Inject
     public KnowledgeDataRepository() {
@@ -41,5 +48,11 @@ public class KnowledgeDataRepository implements KnowledgeRepository {
                 }
             }
         });
+    }
+
+    @Override
+    public Observable<PageEntity<User>> users(AbstractQry qry) {
+        return mApi.users(qry)
+                .compose(RepositoryUtils.handleResult());
     }
 }

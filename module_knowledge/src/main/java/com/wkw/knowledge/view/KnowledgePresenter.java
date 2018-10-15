@@ -1,6 +1,11 @@
 package com.wkw.knowledge.view;
 
+import android.annotation.SuppressLint;
+
+import com.vongihealth.live.Live;
+import com.wkw.commonbusiness.entity.AbstractQry;
 import com.wkw.knowledge.domain.KnowledgeUseCase;
+import com.wkw.knowledge.domain.UsersListUseCase;
 import com.wkw.uiframework.base.mvp.page.PageEntity;
 import com.wkw.uiframework.base.mvp.page.PagePresenterImpl;
 
@@ -17,6 +22,8 @@ import io.reactivex.Observable;
 public class KnowledgePresenter extends PagePresenterImpl<Integer, String, KonwledgeContract.View> implements KonwledgeContract.Presenter {
 
     @Inject
+    UsersListUseCase mUsersListUseCase;
+    @Inject
     KnowledgeUseCase mKnowledgeUseCase;
 
     @Inject
@@ -28,4 +35,12 @@ public class KnowledgePresenter extends PagePresenterImpl<Integer, String, Konwl
         return mKnowledgeUseCase.execute(pn);
     }
 
+    @SuppressLint("CheckResult")
+    @Override
+    public void usersList(AbstractQry qry) {
+        mUsersListUseCase.execute(qry)
+                .compose(Live.bindLifecycle(getLifecycleOwner()))
+                .subscribe(users -> getView().showDataUserList(users),
+                        throwable -> getRxErrorHandler().getHandlerFactory().handleError(throwable));
+    }
 }

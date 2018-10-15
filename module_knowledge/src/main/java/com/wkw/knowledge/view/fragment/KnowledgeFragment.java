@@ -4,14 +4,18 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 import com.wkw.knowledge.R;
+import com.wkw.knowledge.domain.UsersListUseCase;
+import com.wkw.knowledge.entity.User;
 import com.wkw.knowledge.view.KnowledgePresenter;
 import com.wkw.knowledge.view.KonwledgeContract;
 import com.wkw.uiframework.adapter.MultiTypeAdapter;
+import com.wkw.uiframework.base.mvp.page.PageEntity;
 import com.wkw.uiframework.base.mvp.page.PageFragment;
 
 import javax.inject.Inject;
 
 import dagger.android.support.AndroidSupportInjection;
+import timber.log.Timber;
 
 /**
  * Created by GoGo on 2018-5-11.
@@ -46,6 +50,7 @@ public class KnowledgeFragment extends PageFragment<Integer, String, KonwledgeCo
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         getPresenter().fetchData(provideRequest());
+        getPresenter().usersList(UsersListUseCase.create(1));
     }
 
     @Override
@@ -61,5 +66,10 @@ public class KnowledgeFragment extends PageFragment<Integer, String, KonwledgeCo
     @Override
     protected MultiTypeAdapter.MultiViewTyper provideMultiViewTyper() {
         return o -> TYPE_VIEW;
+    }
+
+    @Override
+    public void showDataUserList(PageEntity<User> users) {
+        Timber.d(users.toString());
     }
 }

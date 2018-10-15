@@ -39,7 +39,7 @@ public class MrApplication extends BaseApplication implements HasActivityInjecto
 
     private void initInjector() {
         AppConfigModule.Builder builder = AppConfigModule.builder();
-        builder.baseUrl(HttpUrl.parse("http://www.baidu.com"))
+        builder.baseUrl(HttpUrl.parse("http://192.168.8.164:1001/"))
                 .interceptorList(new ArrayList<>())
                 .responseErrorListener(new ResponseListenerImpl())
                 .imageLoaderStrategy(new GlideImageLoaderStrategy());
