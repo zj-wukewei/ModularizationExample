@@ -38,6 +38,7 @@ def glideVersion = '4.5.0'
 def jUnitVersion  = '4.12'
 def assertJVersion  = '1.7.1'
 def mockitoVersion  = '1.9.5'
+def autoService = '1.0-rc4'
 
 
 project.ext {
@@ -79,6 +80,7 @@ project.ext {
     libDaggerAndroidCompiler = "com.google.dagger:dagger-android-processor:${daggerVersion}"
     libRxPermissions = 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
     libRxPreferences = 'com.f2prateek.rx.preferences2:rx-preferences:2.0.0'
+    libAutoService = "com.google.auto.service:auto-service:${autoService}"
     testJunit = "junit:junit:${jUnitVersion}"
     testMockito = "org.mockito:mockito-core:${mockitoVersion}"
     testAssertj = "org.assertj:assertj-core:${assertJVersion}"

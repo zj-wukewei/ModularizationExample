@@ -81,5 +81,7 @@ dependencies {
     testCompile rootProject.ext.testAssertj
     annotationProcessor rootProject.ext.libDaggerCompiler
     annotationProcessor rootProject.ext.libDaggerAndroidCompiler
+    annotationProcessor rootProject.ext.libAutoService
+    compileOnly rootProject.ext.libAutoService
     api project(':commonbusiness')
 }
