@@ -10,6 +10,7 @@ import java.util.ServiceLoader;
 public class BaseApplication extends Application {
 
     private ServiceLoader<IApplicationLifecycle> mApplicationLiServiceLoader = null;
+
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);

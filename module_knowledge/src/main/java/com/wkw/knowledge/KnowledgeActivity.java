@@ -5,10 +5,12 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 
+import com.wkw.commonbusiness.service.IArchivesService;
 import com.wkw.knowledge.entity.User;
 import com.wkw.knowledge.view.KnowledgePresenter;
 import com.wkw.knowledge.view.KonwledgeContract;
 import com.wkw.knowledge.view.fragment.KnowledgeFragment;
+import com.wkw.uiframework.app.MrServiceLoader;
 import com.wkw.uiframework.base.mvp.MvpActivity;
 import com.wkw.uiframework.base.mvp.page.PageEntity;
 
@@ -44,6 +46,16 @@ public class KnowledgeActivity extends MvpActivity<KonwledgeContract.View, Konwl
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.add(R.id.fragment, KnowledgeFragment.newInstance());
         fragmentTransaction.commitAllowingStateLoss();
+        IArchivesService service = MrServiceLoader.getInstance().getService(IArchivesService.class, "archives");
+        IArchivesService service1 = MrServiceLoader.getInstance().getService(IArchivesService.class, "archives");
+        if (service != null) {
+            Timber.d("IArchivesService1111 %s", service.getName());
+            Timber.d("IArchivesService1111 %s", service);
+        }
+        if (service1 != null) {
+            Timber.d("IArchivesService2222 %s", service1.getName());
+            Timber.d("IArchivesService2222 %s", service1);
+        }
     }
 
 

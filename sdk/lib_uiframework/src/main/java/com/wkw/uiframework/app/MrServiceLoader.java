@@ -1,13 +1,11 @@
 package com.wkw.uiframework.app;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.ServiceLoader;
 
 public final class MrServiceLoader {
     private volatile static MrServiceLoader instance;
-
-    private HashMap<String, Object> cacheServiceLoader = new HashMap<>();
+    private HashMap<String, ServiceImpl> mServiceHashMap = new HashMap<>();
 
 
     private MrServiceLoader() {
@@ -25,16 +23,34 @@ public final class MrServiceLoader {
     }
 
 
-    public <S> S getService(Class<S> service) {
-        String name = service.getName();
-        if (!cacheServiceLoader.containsKey(name)) {
-            Iterator<S> iterator = ServiceLoader.load(service).iterator();
-
-            cacheServiceLoader.put(name, iterator.next());
+    public <S> S getService(Class<S> service, String key) {
+        String name = service.getName() + key;
+        if (!mServiceHashMap.containsKey(name)) {
+            createServiceImpl(service);
         }
-        return (S) cacheServiceLoader.get(name);
+
+        ServiceImpl service1mpl = mServiceHashMap.get(name);
+        if (service1mpl != null) {
+            return (S) service1mpl.getCacheObject();
+        }
+        return null;
     }
 
+    public <S> S getService(Class<S> service) {
+        return getService(service, "");
+    }
 
+    private <S> void createServiceImpl(Class<S> service) {
+
+        ServiceLoader<S> serviceLoader = ServiceLoader.load(service);
+        for (S s : serviceLoader) {
+            String key = service.getName();
+            IAutoServiceKey iAutoServiceKey = s.getClass().getAnnotation(IAutoServiceKey.class);
+            if (iAutoServiceKey != null) {
+                key = key + iAutoServiceKey.value();
+            }
+            mServiceHashMap.put(key, new ServiceImpl(key, s));
+        }
+    }
 
 }

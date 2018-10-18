@@ -11,17 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3cf7fc5-473f-42a4-9fc6-7717d0e96a96" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/module/KnowledgeApplicationLifecycle.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/BaseApplication.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/IApplicationLifecycle.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/MrServiceLoader.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/service/IArchivesService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/service/IKnowledgeService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/module/ArchivesService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/service/KnowledgeService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/IAutoServiceKey.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/ServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/BaseApplication.java" afterPath="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/BaseApplication.java" />
-      <change beforePath="$PROJECT_DIR$/module_archives/build.gradle" afterPath="$PROJECT_DIR$/module_archives/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/module_archives/module_archives.iml" afterPath="$PROJECT_DIR$/module_archives/module_archives.iml" />
-      <change beforePath="$PROJECT_DIR$/module_knowledge/build.gradle" afterPath="$PROJECT_DIR$/module_knowledge/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/module_knowledge/module_knowledge.iml" afterPath="$PROJECT_DIR$/module_knowledge/module_knowledge.iml" />
+      <change beforePath="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/KnowledgeActivity.java" afterPath="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/KnowledgeActivity.java" />
+      <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/BaseApplication.java" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/BaseApplication.java" />
+      <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/MrServiceLoader.java" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/MrServiceLoader.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,22 +58,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="BaseApplication.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/BaseApplication.java">
+      <file leaf-file-name="MrServiceLoader.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/MrServiceLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KnowledgeApplicationLifecycle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/module/KnowledgeApplicationLifecycle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="25">
+              <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1044#1045#0" expanded="true" />
+                <element signature="e#1090#1091#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -12150,7 +12143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sdk/lib_live/build.gradle" />
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/sdk/lib_uiframework/build.gradle" />
         <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/data/repository/ArchivesDataRepository.java" />
@@ -12188,14 +12180,20 @@
         <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/fragment/MrFragment.java" />
         <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/page/PageLazyFragment.java" />
         <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/BaseApplication.java" />
-        <option value="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/KnowledgeActivity.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/module_archives/build.gradle" />
         <option value="$PROJECT_DIR$/module_knowledge/build.gradle" />
         <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/IApplicationLifecycle.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/MrServiceLoader.java" />
         <option value="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/module/KnowledgeApplicationLifecycle.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/IAutoServiceKey.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/ServiceImpl.java" />
         <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/BaseApplication.java" />
+        <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/service/IKnowledgeService.java" />
+        <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/service/IArchivesService.java" />
+        <option value="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/service/KnowledgeService.java" />
+        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/module/ArchivesService.java" />
+        <option value="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/KnowledgeActivity.java" />
+        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/MrServiceLoader.java" />
       </list>
     </option>
   </component>
@@ -12221,6 +12219,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -12312,30 +12311,117 @@
             <path>
               <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
               <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="commonbusiness" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="commonbusiness" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="commonbusiness" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="commonbusiness" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="commonbusiness" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="commonbusiness" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="wkw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="commonbusiness" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="wkw" type="462c0819:PsiDirectoryNode" />
+              <item name="commonbusiness" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="commonbusiness" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="wkw" type="462c0819:PsiDirectoryNode" />
+              <item name="commonbusiness" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="commonbusiness" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="wkw" type="462c0819:PsiDirectoryNode" />
+              <item name="commonbusiness" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="commonbusiness" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="wkw" type="462c0819:PsiDirectoryNode" />
+              <item name="commonbusiness" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="module_archives" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
               <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_archives" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
               <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_archives" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
               <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_archives" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -12343,7 +12429,7 @@
             <path>
               <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
               <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_archives" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -12352,7 +12438,7 @@
             <path>
               <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
               <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_archives" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -12362,25 +12448,93 @@
             <path>
               <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
               <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_archives" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="wkw" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledge" type="462c0819:PsiDirectoryNode" />
+              <item name="archives" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
               <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_archives" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="wkw" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledge" type="462c0819:PsiDirectoryNode" />
+              <item name="archives" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="wkw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="wkw" type="462c0819:PsiDirectoryNode" />
+              <item name="knowledge" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="wkw" type="462c0819:PsiDirectoryNode" />
+              <item name="knowledge" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
@@ -12391,10 +12545,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -12410,15 +12563,17 @@
     <property name="android.project.structure.proportion" value="0.15" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\androidproject\ModularizationExample\sdk" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wkw.archives.module" />
+      <recent name="com.wkw.commonbusiness.service" />
+      <recent name="com.wkw.knowledge.domain" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\androidproject\ModularizationExample\commonbusiness\src\main\java\com\wkw\commonbusiness\entity" />
       <recent name="G:\androidproject\ModularizationExample\module_knowledge\src\main\java\com\wkw\knowledge\entity" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.wkw.knowledge.domain" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\androidproject\ModularizationExample\sdk" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -12719,7 +12874,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539594558414</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="使用ServiceLoader实现IApplicationLifecycle的实现各个模块自己初始化">
+      <created>1539759047874</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1539759047874</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -12768,13 +12930,13 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28165236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38547486" sideWeight="0.4967811" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38435754" sideWeight="0.4967811" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.4906542" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4217002" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44854587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -12805,7 +12967,8 @@
     <MESSAGE value="Live fix bug 列表页面的改动" />
     <MESSAGE value="图片库添加获取缓存大小和清理缓存" />
     <MESSAGE value="加了测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="加了测试" />
+    <MESSAGE value="使用ServiceLoader实现IApplicationLifecycle的实现各个模块自己初始化" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用ServiceLoader实现IApplicationLifecycle的实现各个模块自己初始化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -12817,87 +12980,15 @@
           <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="36" />
+      <option name="time" value="38" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/module/archives/IArchivesUi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/module/archives/DefaultArchivesModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/module/archives/ArchivesProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/di/PerActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/handler/ResponseErrorListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://G:/sdk/sources/android-27/android/app/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="119" column="27" lean-forward="false" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/di/ArchivesDataRepositoryModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/di/ArchivesActivityModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/di/KnowledgeDataRepositoryModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/data/api/ArchivesApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -12905,7 +12996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -12913,7 +13003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -12921,26 +13010,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.ssh/known_hosts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.ssh/known_hosts" />
     <entry file="file://G:/sdk/sources/android-27/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="177" column="11" lean-forward="false" selection-start-line="177" selection-start-column="11" selection-end-line="177" selection-end-column="11" />
-          <folding>
-            <element signature="e#7911#7912#0" expanded="false" />
-            <element signature="e#7979#7980#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -12948,7 +13025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="138" column="23" lean-forward="false" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -12956,7 +13032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="44" column="20" lean-forward="false" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -12964,7 +13039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -12972,7 +13046,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -12980,7 +13053,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -12999,7 +13071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -13007,7 +13078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-509">
           <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -13023,7 +13093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-300">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -13031,15 +13100,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-386">
           <caret line="1965" column="64" lean-forward="true" selection-start-line="1965" selection-start-column="64" selection-end-line="1965" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/activity/MrActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -13047,7 +13107,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
           <caret line="28" column="54" lean-forward="false" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -13055,10 +13114,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="191" column="39" lean-forward="false" selection-start-line="191" selection-start-column="39" selection-end-line="191" selection-end-column="39" />
-          <folding>
-            <element signature="e#5546#5547#0" expanded="false" />
-            <element signature="e#5594#5595#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -13074,7 +13129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-300">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -13082,7 +13136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -13098,14 +13151,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/KnowledgeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -13130,7 +13175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="60" column="17" lean-forward="false" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -13138,7 +13182,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="980">
           <caret line="140" column="24" lean-forward="false" selection-start-line="140" selection-start-column="16" selection-end-line="140" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -13146,24 +13189,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
           <caret line="82" column="18" lean-forward="false" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/MrServiceLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="27" column="44" lean-forward="false" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://G:/sdk/sources/android-27/java/util/Iterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="61" column="12" lean-forward="false" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -13184,14 +13209,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/BackActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -13200,19 +13217,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://G:/sdk/sources/android-27/java/util/ServiceLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="182" column="19" lean-forward="false" selection-start-line="182" selection-start-column="19" selection-end-line="182" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/BaseApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="11" column="66" lean-forward="false" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -13232,11 +13240,153 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sdk/lib_ext/src/main/java/com/wkw/ext/utils/ToastUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="64" column="23" lean-forward="false" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+          <folding>
+            <element signature="e#1880#1881#0" expanded="false" />
+            <element signature="e#1928#1929#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/exception/ResponseListenerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/activity/MrActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/IAutoServiceKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/sdk/sources/android-27/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="53" column="17" lean-forward="false" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/sdk/sources/android-27/java/util/ServiceLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="478" column="14" lean-forward="false" selection-start-line="478" selection-start-column="14" selection-end-line="478" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/sdk/sources/android-27/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="553" column="13" lean-forward="false" selection-start-line="553" selection-start-column="13" selection-end-line="553" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/ServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="e#279#280#0" expanded="false" />
+            <element signature="e#305#306#0" expanded="false" />
+            <element signature="e#343#344#0" expanded="false" />
+            <element signature="e#373#374#0" expanded="false" />
+            <element signature="e#411#412#0" expanded="false" />
+            <element signature="e#445#446#0" expanded="false" />
+            <element signature="e#499#500#0" expanded="false" />
+            <element signature="e#545#546#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/BaseApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        <state relative-caret-position="115">
+          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/service/IKnowledgeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/service/IArchivesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/service/KnowledgeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#404#405#0" expanded="false" />
+            <element signature="e#445#446#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/module/ArchivesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="38" column="66" lean-forward="false" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/KnowledgeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="747">
+          <caret line="61" column="13" lean-forward="true" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/app/MrServiceLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
