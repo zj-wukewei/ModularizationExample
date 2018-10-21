@@ -2,6 +2,7 @@ package com.wkw.commonbusiness.exception;
 
 import android.content.Context;
 
+import com.vongihealth.network.exception.ResponseException;
 import com.vongihealth.network.handler.ResponseErrorListener;
 import com.wkw.ext.utils.ToastUtils;
 import com.wkw.uiframework.error.ErrorMessageFactory;
@@ -18,6 +19,9 @@ public class ResponseListenerImpl implements ResponseErrorListener {
     @Override
     public void handleResponseError(Context context, Throwable t) {
         Timber.e(t);
+        if (t instanceof ResponseException) {
+
+        }
         final String msg = ErrorMessageFactory.create(context, (Exception) t);
         ToastUtils.show(context, msg);
     }

@@ -50,10 +50,11 @@ dependencies {
     annotationProcessor rootProject.ext.libDaggerAndroidCompiler
     if (isBuildModule.toBoolean()) {
         api project(':commonbusiness')
-        api('com.wkw:knowledge:1.0.0')
-        api('com.wkw:archives:1.0.0')
+//        api('com.wkw:knowledge:1.0.0')
+//        api('com.wkw:archives:1.0.0')
     } else {
         api project(':module_knowledge')
         api project(':module_archives')
+        api project(':module_login')
     }
 }

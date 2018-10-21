@@ -28,6 +28,7 @@ public class ArchivesApplication extends BaseApplication implements HasActivityI
     private void initInjector() {
         DaggerAppComponent.builder()
                 .application(this)
+                .appConfigModule(providerAppConfigModule().build())
                 .build().inject(this);
     }
 

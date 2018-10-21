@@ -20,5 +20,5 @@
         android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="起订"/>
+        android:text="获取login模块信息"/>
 </LinearLayout>

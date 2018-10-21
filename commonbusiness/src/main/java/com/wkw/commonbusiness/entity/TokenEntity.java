@@ -16,6 +16,8 @@ public class TokenEntity {
     @SerializedName("userId")
     private String uid;
 
+    public TokenEntity() {
+    }
 
     public TokenEntity(String uid, String token) {
         this.token = token;

@@ -7,6 +7,7 @@ import android.support.v4.view.ViewCompat;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.github.wkw.login.LoginActivity;
 import com.vongihealth.pictures.PicturesActivity;
 import com.wkw.archives.view.ArchivesActivity;
 import com.wkw.commonbusiness.activity.MrActivity;
@@ -37,6 +38,10 @@ public class MainActivity extends MrActivity {
         mImgBlur = findViewById(R.id.img_blur);
         findViewById(R.id.knowledge).setOnClickListener(view -> {
             startActivity(new Intent(MainActivity.this, KnowledgeActivity.class));
+        });
+
+        findViewById(R.id.login).setOnClickListener(view -> {
+            startActivity(new Intent(MainActivity.this, LoginActivity.class));
         });
 
         findViewById(R.id.archives).setOnClickListener(view -> {

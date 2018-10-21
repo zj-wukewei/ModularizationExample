@@ -1,4 +1,4 @@
-include ':app', ':basic', ':commonbusiness', ':module_knowledge', ':module_archives', ':lib_live'
+include ':app', ':basic', ':commonbusiness', ':module_knowledge', ':module_archives', ':lib_live', ':module_login'
 
 
 include ':lib_ext'

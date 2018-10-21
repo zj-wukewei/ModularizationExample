@@ -2,6 +2,7 @@ package com.wkw.knowledge.debug;
 
 import android.app.Application;
 
+import com.wkw.uiframework.di.AppConfigModule;
 import com.wkw.uiframework.di.ApplicationModule;
 import com.wkw.knowledge.di.KnowledgeActivityModule;
 import com.wkw.knowledge.di.KnowledgeDataRepositoryModule;
@@ -17,14 +18,18 @@ import dagger.android.AndroidInjectionModule;
  */
 @Singleton
 @Component(modules = {
-        AndroidInjectionModule.class, ApplicationModule.class,
+        AndroidInjectionModule.class, ApplicationModule.class, AppConfigModule.class,
         KnowledgeDataRepositoryModule.class, KnowledgeActivityModule.class
 })
 public interface AppComponent {
     @Component.Builder
     interface Builder {
+
         @BindsInstance
         Builder application(Application application);
+
+        Builder appConfigModule(AppConfigModule appConfigModule);
+
         AppComponent build();
     }
     void inject(KnowledgeApplication mrApplication);

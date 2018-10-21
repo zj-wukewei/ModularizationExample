@@ -29,6 +29,7 @@ public class KnowledgeApplication extends BaseApplication implements HasActivity
     private void initInjector() {
         DaggerAppComponent.builder()
                 .application(this)
+                .appConfigModule(providerAppConfigModule().build())
                 .build().inject(this);
     }
 

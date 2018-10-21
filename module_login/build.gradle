@@ -1,0 +1,79 @@
+if (isBuildModule.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+
+    ext {// ext is a gradle closure allowing the declaration of global properties
+        PUBLISH_GROUP_ID = 'com.wkw'
+        PUBLISH_ARTIFACT_ID = 'login'
+        PUBLISH_VERSION = rootProject.ext.versionName
+    }
+
+    apply plugin: 'com.android.library'
+    apply from: '../maven-release-kline-aar.gradle'
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+
+    defaultConfig {
+
+        if (isBuildModule.toBoolean()) {
+            applicationId "com.wkw.login"
+        }
+
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        resourcePrefix "login"
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        abortOnError rootProject.ext.abortOnLintError
+        checkReleaseBuilds rootProject.ext.checkLintRelease
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    sourceSets {
+        main {
+            if (isBuildModule.toBoolean()) {
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/release/AndroidManifest.xml'
+                java {
+                    exclude '**/debug/**'
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    annotationProcessor rootProject.ext.libDaggerCompiler
+    annotationProcessor rootProject.ext.libDaggerAndroidCompiler
+    annotationProcessor rootProject.ext.libAutoService
+    compileOnly rootProject.ext.libAutoService
+    api project(':commonbusiness')
+}

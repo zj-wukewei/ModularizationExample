@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/sdk/lib_uikit/lib_uikit.iml" filepath="$PROJECT_DIR$/sdk/lib_uikit/lib_uikit.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_archives/module_archives.iml" filepath="$PROJECT_DIR$/module_archives/module_archives.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_knowledge/module_knowledge.iml" filepath="$PROJECT_DIR$/module_knowledge/module_knowledge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_login/module_login.iml" filepath="$PROJECT_DIR$/module_login/module_login.iml" />
     </modules>
   </component>
 </project>

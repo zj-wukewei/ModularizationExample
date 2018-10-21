@@ -2,6 +2,7 @@ package com.wkw.modularization;
 
 
 import android.app.Activity;
+import android.content.ContentProvider;
 
 import com.wkw.commonbusiness.BaseApplication;
 import com.wkw.uiframework.di.AppConfigModule;
@@ -16,6 +17,7 @@ import javax.inject.Inject;
 import dagger.android.AndroidInjector;
 import dagger.android.DispatchingAndroidInjector;
 import dagger.android.HasActivityInjector;
+import dagger.android.HasContentProviderInjector;
 import okhttp3.HttpUrl;
 import timber.log.Timber;
 
@@ -23,36 +25,52 @@ import timber.log.Timber;
  * Created by wukewei on 2017/8/27.
  */
 
-public class MrApplication extends BaseApplication implements HasActivityInjector {
+public class MrApplication extends BaseApplication implements HasActivityInjector, HasContentProviderInjector {
 
     @Inject
     DispatchingAndroidInjector<Activity> dispatchingAndroidInjector;
+
+    private volatile boolean needToInject = true;
+
+
+    @Inject
+    DispatchingAndroidInjector<ContentProvider> dispatchingContentProviderInjector;
 
     @Override
     public void onCreate() {
         super.onCreate();
         initInjector();
-        if (BuildConfig.DEBUG) {
-            Timber.plant(new Timber.DebugTree());
-        }
     }
 
     private void initInjector() {
-        AppConfigModule.Builder builder = AppConfigModule.builder();
-        builder.baseUrl(HttpUrl.parse("http://192.168.8.164:1001/"))
-                .interceptorList(new ArrayList<>())
-                .responseErrorListener(new ResponseListenerImpl())
-                .imageLoaderStrategy(new GlideImageLoaderStrategy());
-        DaggerAppComponent.builder()
-                .application(this)
-                .appConfigModule(builder.build())
-                .build().inject(this);
+        if (needToInject) {
+            synchronized (this) {
+                if (needToInject) {
+                    DaggerAppComponent.builder()
+                            .application(this)
+                            .appConfigModule(providerAppConfigModule().build())
+                            .build().inject(this);
+                    setInjected();
+                }
+            }
+        }
     }
+
+    void setInjected() {
+        needToInject = false;
+    }
+
 
     @Override
     public AndroidInjector<Activity> activityInjector() {
         return dispatchingAndroidInjector;
     }
 
+
+    @Override
+    public AndroidInjector<ContentProvider> contentProviderInjector() {
+        initInjector();
+        return dispatchingContentProviderInjector;
+    }
 
 }

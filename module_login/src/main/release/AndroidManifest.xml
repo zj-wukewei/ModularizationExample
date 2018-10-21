@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.wkw.login" >
+    <application>
+        <activity android:name=".LoginActivity"/>
+        <provider
+            android:exported="true"
+            android:authorities="com.modularization.android.login"
+            android:name=".provider.UserContentProvider"/>
+    </application>
+</manifest>

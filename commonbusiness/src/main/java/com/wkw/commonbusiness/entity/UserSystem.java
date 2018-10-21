@@ -1,10 +1,19 @@
 package com.wkw.commonbusiness.entity;
 
-import com.wkw.ext.utils.ConfigManager;
-import com.wkw.ext.utils.StringUtils;
+import android.content.ContentResolver;
+import android.content.Context;
+import android.database.ContentObserver;
+import android.database.Cursor;
+import android.net.Uri;
+
+import com.wkw.commonbusiness.constant.AppConstats;
+import com.wkw.ext.utils.ToastUtils;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
+
+import io.reactivex.Observable;
+import io.reactivex.subjects.BehaviorSubject;
 
 /**
  * Created by wukewei on 2017/8/25.
@@ -15,51 +24,42 @@ public class UserSystem {
     private static final String KEY_TOKEN = "token";
     private static final String KEY_USER_ID = "uid";
 
-    private String mToken;
-    private String mUserId;
+    private BehaviorSubject<TokenEntity> mTokenEntityBehaviorSubject = BehaviorSubject.create();
+
+    private Context mContext;
 
     @Inject
-    public UserSystem() {
+    public UserSystem(Context context) {
+        this.mContext = context;
+        loadTokenEntity();
+        context.getContentResolver().registerContentObserver(Uri.parse(AppConstats.USER_URI), false, new ContentObserver(null) {
+            @Override
+            public void onChange(boolean selfChange) {
+                super.onChange(selfChange);
+                loadTokenEntity();
+            }
+        });
     }
 
-    public String getToken() {
-        if (StringUtils.isEmpty(mToken)) {
-            String token = ConfigManager.getString(KEY_TOKEN, "", ConfigManager.KEY_ACCOUNT);
-            String userId = ConfigManager.getString(KEY_USER_ID, "", ConfigManager.KEY_ACCOUNT);
-            setTokenWrapper(new TokenEntity(userId, token));
+
+    private void loadTokenEntity() {
+        ContentResolver resolver = mContext.getContentResolver();
+        Uri uri = Uri.parse(AppConstats.USER_URI);
+        Cursor cursor = resolver.query(uri, null, null, null, null);
+        if (cursor != null) {
+            while (cursor.moveToNext()) {
+                String token = cursor.getString(0);
+                String uId = cursor.getString(1);
+                TokenEntity entity = new TokenEntity(uId, token);
+                mTokenEntityBehaviorSubject.onNext(entity);
+            }
+            cursor.close();
+        } else {
+            ToastUtils.show(mContext, "请安装登录模块");
         }
-        return mToken;
     }
 
-    public void setToken(String token) {
-        if (StringUtils.equal(token, mUserId)) {
-            return;
-        }
-        ConfigManager.putString(KEY_TOKEN, token, ConfigManager.KEY_ACCOUNT);
-        this.mToken = token;
-    }
-
-    public String getUserId() {
-        if (StringUtils.isEmpty(mUserId)) {
-            String token = ConfigManager.getString(KEY_TOKEN, "", ConfigManager.KEY_ACCOUNT);
-            String userId = ConfigManager.getString(KEY_USER_ID, "", ConfigManager.KEY_ACCOUNT);
-            setTokenWrapper(new TokenEntity(userId, token));
-        }
-        return mUserId;
-    }
-
-    public void setUserId(String userId) {
-        if (StringUtils.equal(userId, mUserId)) {
-            return;
-        }
-        ConfigManager.putString(KEY_USER_ID, userId, ConfigManager.KEY_ACCOUNT);
-        this.mUserId = userId;
-    }
-
-    public void setTokenWrapper(TokenEntity token) {
-        if (token != null) {
-            setToken(token.getToken());
-            setUserId(token.getUid());
-        }
+    public Observable<TokenEntity> getTokenEntityObservable() {
+        return mTokenEntityBehaviorSubject;
     }
 }
