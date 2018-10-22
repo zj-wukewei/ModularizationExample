@@ -7,7 +7,7 @@ import android.net.Uri;
 
 import com.vongihealth.network.exception.ResponseException;
 import com.vongihealth.network.handler.ResponseErrorListener;
-import com.wkw.commonbusiness.constant.AppConstats;
+import com.wkw.commonbusiness.constant.AppConstants;
 import com.wkw.ext.utils.ToastUtils;
 import com.wkw.uiframework.error.ErrorMessageFactory;
 
@@ -28,7 +28,7 @@ public class ResponseListenerImpl implements ResponseErrorListener {
             if (((ResponseException) t).getStatusCode() == ResponseException.ERROR_CODE_NEED_LOGIN) {
                 Timber.e(t, "请重新登录");
                 if (schemeLoginValid(context)) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(AppConstats.LOGIN_URI));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(AppConstants.LOGIN_URI));
                     context.startActivity(intent);
                 }
             }
@@ -40,7 +40,7 @@ public class ResponseListenerImpl implements ResponseErrorListener {
     private boolean schemeLoginValid(Context context) {
         PackageManager manager = context.getPackageManager();
         Intent action = new Intent(Intent.ACTION_VIEW);
-        action.setData(Uri.parse(AppConstats.LOGIN_URI));
+        action.setData(Uri.parse(AppConstants.LOGIN_URI));
         List list = manager.queryIntentActivities(action, PackageManager.GET_RESOLVED_FILTER);
         return list != null && list.size() > 0;
     }

@@ -1,7 +1,9 @@
-package com.wkw.basic.network;
+package com.wkw.commonbusiness.network;
 
+import android.content.Context;
 import android.os.Build;
 
+import com.wkw.commonbusiness.entity.UserSystem;
 import com.wkw.ext.Ext;
 
 import java.io.IOException;
@@ -28,6 +30,11 @@ public class HeadInterceptor implements Interceptor {
     public static final String DEVICE_SYSTEM = "DEVICE-SYSTEM";
     public static final String HEADER_TOKEN = "TOKEN";
 
+    private String token = "";
+
+    public HeadInterceptor(Context context) {
+    }
+
     @Override
     public Response intercept(Interceptor.Chain chain) throws IOException {
         Request original = chain.request();
@@ -38,7 +45,7 @@ public class HeadInterceptor implements Interceptor {
                 .addHeader(HEADER_APP_VER, String.valueOf(Ext.g().getVersionCode()))
                 .addHeader(DEVICE_SYSTEM, Build.VERSION.RELEASE)
                 .addHeader(DEVICE_MODEL, Build.MODEL)
-//                .addHeader(HEADER_TOKEN, MrService.token)
+                .addHeader(HEADER_TOKEN, token)
                 .header(ACCEPT_LANGUAGE, Locale.getDefault().getLanguage())
                 .build();
 //        Logger.d(TAG, String.format("Sending request %s", toGetUrl(request)));

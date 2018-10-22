@@ -4,7 +4,7 @@ package com.wkw.commonbusiness.constant;
  * @author GoGo on 2018/10/21.
  */
 
-public class AppConstats {
+public class AppConstants {
     public static final String LOGIN_MODULE = "module_login";
 
     public static final String TOKEN = "token";

@@ -1,15 +1,10 @@
 package com.wkw.archives.view;
 
 import android.annotation.SuppressLint;
-import android.content.ContentResolver;
-import android.database.Cursor;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.widget.Button;
 
 import com.wkw.archives.R;
-import com.wkw.commonbusiness.constant.AppConstats;
 import com.wkw.commonbusiness.entity.TokenEntity;
 import com.wkw.commonbusiness.entity.UserSystem;
 import com.wkw.uiframework.base.mvp.MvpActivity;
@@ -18,7 +13,6 @@ import javax.inject.Inject;
 
 import dagger.android.AndroidInjection;
 import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.functions.Consumer;
 import timber.log.Timber;
 
 /**

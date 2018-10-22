@@ -7,9 +7,8 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 
-import com.f2prateek.rx.preferences2.RxSharedPreferences;
 import com.wkw.commonbusiness.activity.MrActivity;
-import com.wkw.commonbusiness.constant.AppConstats;
+import com.wkw.commonbusiness.constant.AppConstants;
 
 import java.util.UUID;
 
@@ -53,17 +52,17 @@ public class LoginActivity extends MrActivity implements View.OnClickListener {
             String token  = UUID.randomUUID().toString();
             String uId = "123456";
             SharedPreferences.Editor editor = mSharedPreferences.edit();
-            editor.putString(AppConstats.TOKEN, token);
-            editor.putString(AppConstats.UID, uId);
+            editor.putString(AppConstants.TOKEN, token);
+            editor.putString(AppConstants.UID, uId);
             editor.apply();
-            getContentResolver().notifyChange(Uri.parse(AppConstats.USER_URI), null);
+            getContentResolver().notifyChange(Uri.parse(AppConstants.USER_URI), null);
 
         } else if (id == R.id.btn_login_out) {
             SharedPreferences.Editor editor = mSharedPreferences.edit();
-            editor.putString(AppConstats.TOKEN, null);
-            editor.putString(AppConstats.UID, null);
+            editor.putString(AppConstants.TOKEN, null);
+            editor.putString(AppConstants.UID, null);
             editor.apply();
-            getContentResolver().notifyChange(Uri.parse(AppConstats.USER_URI), null);
+            getContentResolver().notifyChange(Uri.parse(AppConstants.USER_URI), null);
         }
     }
 

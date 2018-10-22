@@ -6,7 +6,7 @@ import android.database.ContentObserver;
 import android.database.Cursor;
 import android.net.Uri;
 
-import com.wkw.commonbusiness.constant.AppConstats;
+import com.wkw.commonbusiness.constant.AppConstants;
 import com.wkw.ext.utils.ToastUtils;
 
 import javax.inject.Inject;
@@ -32,7 +32,7 @@ public class UserSystem {
     public UserSystem(Context context) {
         this.mContext = context;
         loadTokenEntity();
-        context.getContentResolver().registerContentObserver(Uri.parse(AppConstats.USER_URI), false, new ContentObserver(null) {
+        context.getContentResolver().registerContentObserver(Uri.parse(AppConstants.USER_URI), false, new ContentObserver(null) {
             @Override
             public void onChange(boolean selfChange) {
                 super.onChange(selfChange);
@@ -44,7 +44,7 @@ public class UserSystem {
 
     private void loadTokenEntity() {
         ContentResolver resolver = mContext.getContentResolver();
-        Uri uri = Uri.parse(AppConstats.USER_URI);
+        Uri uri = Uri.parse(AppConstants.USER_URI);
         Cursor cursor = resolver.query(uri, null, null, null, null);
         if (cursor != null) {
             while (cursor.moveToNext()) {
