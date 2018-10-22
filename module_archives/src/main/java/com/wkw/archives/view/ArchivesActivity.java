@@ -48,8 +48,7 @@ public class ArchivesActivity extends MvpActivity<ArchivesContract.View, Archive
         AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.archives_activity_archives);
-        getPresenter().archivesList(1);
-
+        getPresenter().fetchPassword();
     }
 
 
@@ -101,7 +100,7 @@ public class ArchivesActivity extends MvpActivity<ArchivesContract.View, Archive
 
     @Override
     public void showPassword(String pa) {
-        Timber.d(pa);
+        Timber.d("showPassword %s", pa);
     }
 
     @Override

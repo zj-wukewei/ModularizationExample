@@ -13,5 +13,5 @@ public interface ArchivesRepository {
 
     Observable<String> fetchName();
 
-    Observable<String> fetchPassword();
+    Observable<String> fetchPassword(String param);
 }

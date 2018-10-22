@@ -7,11 +7,23 @@
         android:label="@string/login_app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
+        <activity
+            android:launchMode="singleTask"
+            android:name=".LoginActivity">
+            <intent-filter>
+                <data
+                    android:host="loginmodule"
+                    android:path="/login"
+                    android:port="8888"
+                    android:scheme="modularization"/>
+
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <!--<category android:name="android.intent.category.BROWSABLE"/>-->
+
             </intent-filter>
         </activity>
         <provider

@@ -6,6 +6,7 @@ import com.vongihealth.network.repository.RepositoryUtils;
 import com.wkw.archives.data.api.ArchivesApi;
 import com.wkw.archives.domain.repository.ArchivesRepository;
 import com.wkw.commonbusiness.entity.TokenEntity;
+import com.wkw.ext.utils.StringUtils;
 
 import javax.inject.Inject;
 
@@ -56,10 +57,15 @@ public class ArchivesDataRepository implements ArchivesRepository {
     }
 
     @Override
-    public Observable<String> fetchPassword() {
+    public Observable<String> fetchPassword(String param) {
         return Observable.create((ObservableOnSubscribe<TokenEntity>) e -> {
             Thread.sleep(3000);
-            e.onNext(new TokenEntity("aaaa", null));
-        }).flatMap(entity -> Observable.error(new ResponseException(new MrResponse(-1, "-1111", null))));
+            e.onNext(new TokenEntity("我有token了", null));
+        }).flatMap(entity -> {
+            if (!StringUtils.isEmpty(param)) {
+                return Observable.just(entity.getUid());
+            }
+            return Observable.error(new ResponseException(new MrResponse(ResponseException.ERROR_CODE_NEED_LOGIN, "重新登录", null)));
+        });
     }
 }

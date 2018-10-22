@@ -11,7 +11,7 @@ public class ResponseException extends Exception {
 
     private static final String TAG = "ResponseException";
     public static final int STATUS_CODE_SUCCESS = 0;
-    public static final int ERROR_CODE_NEED_LOGIN = 20004;
+    public static final int ERROR_CODE_NEED_LOGIN = 1001;
     public static final int ERROR_CODE_NEED_PERFECT_PROFILE = -1010;
     public static final int USER_INFO_NOT_EXIST = 20010;
     private final int mStatusCode;

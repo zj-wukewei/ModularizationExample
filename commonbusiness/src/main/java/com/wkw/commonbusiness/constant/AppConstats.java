@@ -10,4 +10,5 @@ public class AppConstats {
     public static final String TOKEN = "token";
     public static final String UID = "uid";
     public static final String USER_URI = "content://com.modularization.android.login/user";
+    public static final String LOGIN_URI = "modularization://loginmodule:8888/login";
 }

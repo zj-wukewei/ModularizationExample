@@ -13,7 +13,7 @@ import io.reactivex.Observable;
  * Created by wukewei on 2017/9/12.
  */
 
-public class PasswordUseCase extends UseCase<String, Void> {
+public class PasswordUseCase extends UseCase<String, String> {
 
 
     private final ArchivesRepository mArchivesRepository;
@@ -26,8 +26,8 @@ public class PasswordUseCase extends UseCase<String, Void> {
     }
 
     @Override
-    public Observable<String> buildUseCaseObservable(Void params) {
-        return mArchivesRepository.fetchPassword();
+    public Observable<String> buildUseCaseObservable(String params) {
+        return mArchivesRepository.fetchPassword(params);
     }
 
 

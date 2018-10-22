@@ -9,12 +9,15 @@ import com.wkw.archives.domain.interactor.ArchivesListUseCase;
 import com.wkw.archives.domain.interactor.NameUseCase;
 import com.wkw.archives.domain.interactor.PasswordUseCase;
 import com.wkw.commonbusiness.entity.TokenEntity;
+import com.wkw.commonbusiness.entity.UserSystem;
 import com.wkw.uiframework.base.mvp.MvpBasePresenter;
 import com.wkw.uiframework.base.mvp.rxandroid.LoadingTransformer;
 
 import javax.inject.Inject;
 
+import io.reactivex.ObservableSource;
 import io.reactivex.functions.Consumer;
+import io.reactivex.functions.Function;
 
 /**
  * Created by wukewei on 2017/9/12.
@@ -23,16 +26,17 @@ import io.reactivex.functions.Consumer;
 public class ArchivesPresenter extends MvpBasePresenter<ArchivesContract.View> implements ArchivesContract.Presenter {
 
     private final ArchivesListUseCase mArchivesListUseCase;
-    private final RxErrorHandler mRxErrorHandler;
     @Inject
     NameUseCase mNameUseCase;
     @Inject
     PasswordUseCase mPasswordUseCase;
 
     @Inject
-    public ArchivesPresenter(ArchivesListUseCase getArchivesListUseCase, RxErrorHandler handler) {
+    UserSystem mUserSystem;
+
+    @Inject
+    public ArchivesPresenter(ArchivesListUseCase getArchivesListUseCase) {
         this.mArchivesListUseCase = getArchivesListUseCase;
-        mRxErrorHandler = handler;
     }
 
     @SuppressLint("CheckResult")
@@ -54,6 +58,18 @@ public class ArchivesPresenter extends MvpBasePresenter<ArchivesContract.View> i
 
     @Override
     public void fetchPassword() {
+        mUserSystem.getTokenEntityObservable()
+                .flatMap((Function<TokenEntity, ObservableSource<String>>) tokenEntity -> mPasswordUseCase.execute(tokenEntity.getToken()))
+                .compose(Live.bindLifecycle(getLifecycleOwner()))
+
+                .subscribe(new MrObserver<String>(getRxErrorHandler()) {
+                    @Override
+                    public void onNext(String s) {
+                        super.onNext(s);
+                        getView().showPassword(s);
+                    }
+                });
+
     }
 
     private Consumer<ArchivesContract.View> toViewAction(String name) {
