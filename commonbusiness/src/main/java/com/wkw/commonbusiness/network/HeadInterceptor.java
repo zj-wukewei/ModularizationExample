@@ -3,8 +3,10 @@ package com.wkw.commonbusiness.network;
 import android.content.Context;
 import android.os.Build;
 
-import com.wkw.commonbusiness.entity.UserSystem;
+import com.wkw.commonbusiness.UserContentObserver;
+import com.wkw.commonbusiness.utils.LoginModuleUtils;
 import com.wkw.ext.Ext;
+import com.wkw.ext.utils.StringUtils;
 
 import java.io.IOException;
 import java.util.Locale;
@@ -33,6 +35,11 @@ public class HeadInterceptor implements Interceptor {
     private String token = "";
 
     public HeadInterceptor(Context context) {
+        LoginModuleUtils.registerUserContentObserver(context, new UserContentObserver(context, entity -> {
+            if (entity != null && !StringUtils.isEmpty(entity.getToken()) && !entity.getToken().equals(token)) {
+                token = entity.getToken();
+            }
+        }));
     }
 
     @Override

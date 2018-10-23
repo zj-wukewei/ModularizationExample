@@ -30,7 +30,6 @@ public class BaseApplication extends com.wkw.uiframework.app.BaseApplication {
         }
         initExtension();
         ConfigManager.init(this);
-        LoginModuleUtils.getInstance().initContentResolver(this);
     }
 
 
