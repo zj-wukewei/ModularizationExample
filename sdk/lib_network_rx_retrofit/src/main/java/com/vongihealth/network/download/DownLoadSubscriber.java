@@ -1,8 +1,6 @@
 package com.vongihealth.network.download;
 
-import com.vongihealth.network.handler.RxErrorHandler;
 import com.vongihealth.network.interactor.DefaultObserver;
-import com.vongihealth.network.interactor.MrObserver;
 
 import java.io.File;
 

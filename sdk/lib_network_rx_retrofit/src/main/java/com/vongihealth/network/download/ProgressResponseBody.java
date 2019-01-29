@@ -54,7 +54,6 @@ public class ProgressResponseBody extends ResponseBody {
             public long read(Buffer sink, long byteCount) throws IOException {
                 long bytesRead = super.read(sink, byteCount);
                 bytesReaded += bytesRead == -1 ? 0 : bytesRead;
-                //使用RxBus的方式，实时发送当前已读取(上传/下载)的字节数据
                 if (mProgressCallBack != null) {
                     mProgressCallBack.progress(byteCount, contentLength());
                 }

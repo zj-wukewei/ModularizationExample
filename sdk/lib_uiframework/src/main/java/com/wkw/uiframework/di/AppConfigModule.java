@@ -66,7 +66,6 @@ public class AppConfigModule {
         }
 
         OkHttpClient.Builder client = new OkHttpClient.Builder()
-                .addInterceptor(logging)
                 .connectTimeout(12, TimeUnit.SECONDS)
                 .readTimeout(12, TimeUnit.SECONDS)
                 .cookieJar(new CookieJar() {
@@ -87,7 +86,7 @@ public class AppConfigModule {
         for (Interceptor i : interceptors) {
             client.addInterceptor(i);
         }
-
+        client.addInterceptor(logging);
         if (sSLSocketFactory != null) {
             client.sslSocketFactory(sSLSocketFactory);
         }

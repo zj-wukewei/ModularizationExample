@@ -16,6 +16,7 @@ import okhttp3.Interceptor;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 import retrofit2.http.GET;
+import retrofit2.http.Header;
 import retrofit2.http.Streaming;
 import retrofit2.http.Url;
 import timber.log.Timber;
@@ -36,7 +37,6 @@ public class DownloadManager {
         this.mInterceptor = new Interceptor() {
             @Override
             public Response intercept(Chain chain) throws IOException {
-                Timber.d("DownloadManager intercept");
                 return wrapResponseBody(chain.proceed(chain.request()));
             }
         };
