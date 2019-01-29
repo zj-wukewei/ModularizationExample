@@ -12,13 +12,11 @@ import com.vongihealth.network.executor.job.JobExecutor;
 import com.vongihealth.network.executor.job.UIThread;
 import com.vongihealth.network.handler.ResponseErrorListener;
 import com.vongihealth.network.handler.RxErrorHandler;
-import com.vongihealth.network.retrofit.MrService;
+
 import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import okhttp3.HttpUrl;
-import okhttp3.OkHttpClient;
 
 /**
  * Created by wukewei on 2017/8/25.
@@ -47,18 +45,13 @@ public class ApplicationModule {
 
     @Provides
     @Singleton
-    RxErrorHandler provideRxErrorHander(Context context, ResponseErrorListener listener) {
+    RxErrorHandler provideRxErrorHandler(Context context, ResponseErrorListener listener) {
         return RxErrorHandler.builder()
                 .with(context)
                 .responseErrorListener(listener)
                 .build();
     }
 
-    @Provides
-    @Singleton
-    MrService provideMrService(HttpUrl url, OkHttpClient okHttpClient) {
-        return new MrService(url, okHttpClient);
-    }
 
     @Provides
     @Singleton
@@ -73,9 +66,4 @@ public class ApplicationModule {
         return RxSharedPreferences.create(sharedPreferences);
     }
 
-//    @Provides
-//    @Singleton
-//    ViewActionQueueProvider provideViewActionQueueProvider(RxErrorHandler rxErrorHandler) {
-//        return new ViewActionQueueProviderImpl(rxErrorHandler);
-//    }
 }

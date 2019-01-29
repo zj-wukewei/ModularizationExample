@@ -1,8 +1,9 @@
 package com.wkw.uiframework.di;
 
 
+import com.vongihealth.network.download.DownloadManager;
 import com.vongihealth.network.handler.ResponseErrorListener;
-import com.wkw.ext.Ext;
+import com.vongihealth.network.retrofit.MrService;
 import com.wkw.ext.utils.guava.Preconditions;
 import com.wkw.imageloader.ImageLoader;
 import com.wkw.imageloader.ImageLoaderStrategy;
@@ -36,38 +37,29 @@ public class AppConfigModule {
     private List<Interceptor> interceptorList;
     private SSLSocketFactory sSLSocketFactory;
     private ResponseErrorListener responseErrorListener;
+    private MrService mrService;
+    private DownloadManager downloadManager;
+    private Boolean isDebuggable;
+    private OkHttpClient okHttpClient;
 
     private AppConfigModule(Builder builder) {
         baseUrl = builder.baseUrl;
         interceptorList = builder.interceptorList;
         sSLSocketFactory = builder.sSLSocketFactory;
         responseErrorListener = builder.responseErrorListener;
+        isDebuggable = builder.isDebuggable;
+        downloadManager = new DownloadManager();
+        builder.interceptorList.add(downloadManager.getInterceptor());
+        OkHttpClient.Builder okHttpClientBuilder = getOkHttpClient(builder.interceptorList);
+        okHttpClient = okHttpClientBuilder.build();
+        mrService = new MrService(builder.baseUrl, okHttpClient);
     }
 
-    @Provides
-    @Singleton
-    public HttpUrl getBaseUrl() {
-        return baseUrl;
-    }
 
-    @Provides
-    @Singleton
-    public ResponseErrorListener getResponseErrorListener() {
-        return responseErrorListener == null ? ResponseErrorListener.EMPTY : responseErrorListener;
-    }
-
-    @Provides
-    @Singleton
-    public List<Interceptor> getInterceptorList() {
-        return interceptorList;
-    }
-
-    @Provides
-    @Singleton
-    public OkHttpClient getOkHttpClient(List<Interceptor> interceptors) {
+    private OkHttpClient.Builder getOkHttpClient(List<Interceptor> interceptors) {
         HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
 
-        if (Ext.g().isDebuggable()) {
+        if (isDebuggable) {
             logging.setLevel(HttpLoggingInterceptor.Level.BODY);
         } else {
             logging.setLevel(HttpLoggingInterceptor.Level.BASIC);
@@ -99,7 +91,45 @@ public class AppConfigModule {
         if (sSLSocketFactory != null) {
             client.sslSocketFactory(sSLSocketFactory);
         }
-        return client.build();
+        return client;
+    }
+
+    @Provides
+    @Singleton
+    public HttpUrl getBaseUrl() {
+        return baseUrl;
+    }
+
+    @Provides
+    @Singleton
+    public ResponseErrorListener getResponseErrorListener() {
+        return responseErrorListener == null ? ResponseErrorListener.EMPTY : responseErrorListener;
+    }
+
+
+    @Provides
+    @Singleton
+    DownloadManager providerDownLoadManager(MrService mrService) {
+        downloadManager.setMrService(mrService);
+        return downloadManager;
+    }
+
+    @Provides
+    @Singleton
+    MrService provideMrService() {
+        return mrService;
+    }
+
+    @Provides
+    @Singleton
+    public List<Interceptor> getInterceptorList() {
+        return interceptorList;
+    }
+
+    @Provides
+    @Singleton
+    public OkHttpClient providerOkHttpClient() {
+        return okHttpClient;
     }
 
 
@@ -114,7 +144,7 @@ public class AppConfigModule {
         private HttpUrl baseUrl;
         private List<Interceptor> interceptorList;
         private SSLSocketFactory sSLSocketFactory;
-
+        private Boolean isDebuggable;
 
         private Builder() {
         }
@@ -160,6 +190,18 @@ public class AppConfigModule {
          */
         public Builder responseErrorListener(ResponseErrorListener val) {
             responseErrorListener = val;
+            return this;
+        }
+
+
+        /***
+         * 是否debug
+         * @param
+         * @param
+         * @return
+         */
+        public Builder isDebuggable(boolean debug) {
+            isDebuggable = debug;
             return this;
         }
 

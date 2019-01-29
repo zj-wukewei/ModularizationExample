@@ -76,9 +76,9 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    testCompile rootProject.ext.testJunit
-    testCompile rootProject.ext.testMockito
-    testCompile rootProject.ext.testAssertj
+    testImplementation rootProject.ext.testJunit
+    testImplementation rootProject.ext.testMockito
+    testImplementation rootProject.ext.testAssertj
     annotationProcessor rootProject.ext.libDaggerCompiler
     annotationProcessor rootProject.ext.libDaggerAndroidCompiler
     annotationProcessor rootProject.ext.libAutoService

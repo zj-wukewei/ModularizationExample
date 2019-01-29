@@ -48,6 +48,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     annotationProcessor rootProject.ext.libDaggerCompiler
     annotationProcessor rootProject.ext.libDaggerAndroidCompiler
+    debugImplementation rootProject.ext.debugDependencies.leakCanary
+    releaseImplementation rootProject.ext.debugDependencies.leakCanary
     if (isBuildModule.toBoolean()) {
         api project(':commonbusiness')
 //        api('com.wkw:knowledge:1.0.0')

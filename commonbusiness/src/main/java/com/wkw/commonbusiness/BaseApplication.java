@@ -9,10 +9,10 @@ import com.wkw.imageloader.glide.GlideImageLoaderStrategy;
 import com.wkw.uiframework.di.AppConfigModule;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
+import java.util.List;
 
 import okhttp3.HttpUrl;
+import okhttp3.Interceptor;
 import timber.log.Timber;
 
 /**
@@ -30,14 +30,17 @@ public class BaseApplication extends com.wkw.uiframework.app.BaseApplication {
         }
         initExtension();
         ConfigManager.init(this);
-        LoginModuleUtils.getInstance().initContentResolver(this);
+        LoginModuleUtils.getInstance().registerContentObserver(this);
     }
 
 
     protected AppConfigModule.Builder providerAppConfigModule() {
         AppConfigModule.Builder builder = AppConfigModule.builder();
+        List<Interceptor> headers = new ArrayList<>();
+        headers.add(new HeadInterceptor());
         builder.baseUrl(HttpUrl.parse("http://192.168.8.164:1001/"))
-                .interceptorList(Collections.singletonList(new HeadInterceptor(this)))
+                .isDebuggable(true)
+                .interceptorList(headers)
                 .responseErrorListener(new ResponseListenerImpl())
                 .imageLoaderStrategy(new GlideImageLoaderStrategy());
         return builder;
@@ -45,10 +48,17 @@ public class BaseApplication extends com.wkw.uiframework.app.BaseApplication {
     }
 
 
+
     private void initExtension() {
         Ext.init(this, new ExtImpl());
     }
 
+
+    @Override
+    public void onTerminate() {
+        super.onTerminate();
+        LoginModuleUtils.getInstance().unRegisterContentObserver();
+    }
 
     static class ExtImpl extends Ext {
 

@@ -58,18 +58,6 @@ public class ArchivesPresenter extends MvpBasePresenter<ArchivesContract.View> i
 
     @Override
     public void fetchPassword() {
-        mUserSystem.getTokenEntityObservable()
-                .flatMap((Function<TokenEntity, ObservableSource<String>>) tokenEntity -> mPasswordUseCase.execute(tokenEntity.getToken()))
-                .compose(Live.bindLifecycle(getLifecycleOwner()))
-
-                .subscribe(new MrObserver<String>(getRxErrorHandler()) {
-                    @Override
-                    public void onNext(String s) {
-                        super.onNext(s);
-                        getView().showPassword(s);
-                    }
-                });
-
     }
 
     private Consumer<ArchivesContract.View> toViewAction(String name) {

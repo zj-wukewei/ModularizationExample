@@ -64,10 +64,6 @@ public class ArchivesActivity extends MvpActivity<ArchivesContract.View, Archive
     @Override
     protected void onStart() {
         super.onStart();
-        mDisposables.add(mUserSystem.getTokenEntityObservable()
-        .subscribe(tokenEntity -> {
-            Timber.d("ArchivesActivity tokenEntity %s", tokenEntity.toString());
-        }));
     }
 
     @Override

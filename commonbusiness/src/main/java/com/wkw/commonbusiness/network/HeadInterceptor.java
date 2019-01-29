@@ -3,7 +3,9 @@ package com.wkw.commonbusiness.network;
 import android.content.Context;
 import android.os.Build;
 
+import com.wkw.commonbusiness.entity.TokenEntity;
 import com.wkw.commonbusiness.entity.UserSystem;
+import com.wkw.commonbusiness.utils.LoginModuleUtils;
 import com.wkw.ext.Ext;
 
 import java.io.IOException;
@@ -29,10 +31,11 @@ public class HeadInterceptor implements Interceptor {
     public static final String DEVICE_MODEL = "DEVICE-MODEL";
     public static final String DEVICE_SYSTEM = "DEVICE-SYSTEM";
     public static final String HEADER_TOKEN = "TOKEN";
-
-    private String token = "";
-
-    public HeadInterceptor(Context context) {
+    private TokenEntity mTokenEntity;
+    public HeadInterceptor() {
+        LoginModuleUtils.getInstance().registerObserver(entity -> {
+            this.mTokenEntity = entity;
+        });
     }
 
     @Override
@@ -45,7 +48,7 @@ public class HeadInterceptor implements Interceptor {
                 .addHeader(HEADER_APP_VER, String.valueOf(Ext.g().getVersionCode()))
                 .addHeader(DEVICE_SYSTEM, Build.VERSION.RELEASE)
                 .addHeader(DEVICE_MODEL, Build.MODEL)
-                .addHeader(HEADER_TOKEN, token)
+                .addHeader(HEADER_TOKEN, "token")
                 .header(ACCEPT_LANGUAGE, Locale.getDefault().getLanguage())
                 .build();
 //        Logger.d(TAG, String.format("Sending request %s", toGetUrl(request)));

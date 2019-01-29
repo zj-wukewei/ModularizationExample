@@ -5,6 +5,8 @@ import android.app.Application;
 import com.github.wkw.login.di.LoginModule;
 import com.wkw.archives.di.ArchivesActivityModule;
 import com.wkw.archives.di.ArchivesDataRepositoryModule;
+import com.wkw.modularization.MainActivity;
+import com.wkw.modularization.MainModule;
 import com.wkw.uiframework.di.AppConfigModule;
 import com.wkw.uiframework.di.ApplicationModule;
 import com.wkw.knowledge.di.KnowledgeActivityModule;
@@ -25,7 +27,7 @@ import dagger.android.AndroidInjectionModule;
         AndroidInjectionModule.class, ApplicationModule.class, AppConfigModule.class,
         ArchivesDataRepositoryModule.class, ArchivesActivityModule.class,
         KnowledgeDataRepositoryModule.class, KnowledgeActivityModule.class,
-        LoginModule.class
+        LoginModule.class, MainModule.class
 })
 public interface AppComponent {
     @Component.Builder

@@ -31,22 +31,36 @@ public class LoginModuleUtils {
 
     public static final LoginModuleUtils instance = new LoginModuleUtils();
 
+    private ContentObserver mTokenEntityContentResolver = new ContentObserver(null) {
+        @Override
+        public void onChange(boolean selfChange) {
+            super.onChange(selfChange);
+            loadTokenEntity();
+        }
+    };
+
+
     private List<Observer> mObservers = new ArrayList<>();
     private Context mContext;
+    private TokenEntity mTokenEntity;
 
+    private LoginModuleUtils() {
+    }
 
-
-    public void initContentResolver(Context context) {
+    public void registerContentObserver(Context context) {
         if (mContext == null) {
             this.mContext = context.getApplicationContext();
-            context.getContentResolver().registerContentObserver(Uri.parse(AppConstants.USER_URI), false, new ContentObserver(null) {
-                @Override
-                public void onChange(boolean selfChange) {
-                    super.onChange(selfChange);
-                    loadTokenEntity();
-                }
-            });
+            context.getContentResolver().registerContentObserver(Uri.parse(AppConstants.USER_URI), false, mTokenEntityContentResolver);
         }
+    }
+
+    public void unRegisterContentObserver() {
+        if (mContext != null) {
+            mContext.getContentResolver().unregisterContentObserver(mTokenEntityContentResolver);
+            mObservers.clear();
+            mContext = null;
+        }
+
     }
 
     private void loadTokenEntity() {
@@ -58,6 +72,7 @@ public class LoginModuleUtils {
                 String token = cursor.getString(0);
                 String uId = cursor.getString(1);
                 TokenEntity entity = new TokenEntity(uId, token);
+                this.mTokenEntity = entity;
                 notifyTokenEntity(entity);
             }
             cursor.close();
@@ -69,6 +84,9 @@ public class LoginModuleUtils {
     public void registerObserver(Observer observer) {
         if (observer != null && !mObservers.contains(observer)) {
             mObservers.add(observer);
+            if (this.mTokenEntity != null) {
+                observer.onChange(this.mTokenEntity);
+            }
         }
     }
 
