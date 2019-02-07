@@ -13,13 +13,12 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 import okhttp3.Interceptor;
+import okhttp3.OkHttpClient;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 import retrofit2.http.GET;
-import retrofit2.http.Header;
 import retrofit2.http.Streaming;
 import retrofit2.http.Url;
-import timber.log.Timber;
 
 /**
  * @author GoGo on 2019-01-29.
@@ -33,18 +32,16 @@ public class DownloadManager {
     private Map<String, ProgressCallBack> mResponseListeners = new WeakHashMap<>();
 
 
-    public DownloadManager() {
+    public DownloadManager(OkHttpClient.Builder builder) {
         this.mInterceptor = new Interceptor() {
             @Override
             public Response intercept(Chain chain) throws IOException {
                 return wrapResponseBody(chain.proceed(chain.request()));
             }
         };
+        builder.addNetworkInterceptor(this.mInterceptor);
     }
 
-    public Interceptor getInterceptor() {
-        return mInterceptor;
-    }
 
     public void setMrService(MrService mrService) {
         if (mDownApiService == null) {

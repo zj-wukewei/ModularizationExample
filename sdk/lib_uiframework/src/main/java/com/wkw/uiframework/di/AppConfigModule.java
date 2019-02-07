@@ -48,11 +48,11 @@ public class AppConfigModule {
         sSLSocketFactory = builder.sSLSocketFactory;
         responseErrorListener = builder.responseErrorListener;
         isDebuggable = builder.isDebuggable;
-        downloadManager = new DownloadManager();
-        builder.interceptorList.add(downloadManager.getInterceptor());
         OkHttpClient.Builder okHttpClientBuilder = getOkHttpClient(builder.interceptorList);
+        downloadManager = new DownloadManager(okHttpClientBuilder);
         okHttpClient = okHttpClientBuilder.build();
         mrService = new MrService(builder.baseUrl, okHttpClient);
+        downloadManager.setMrService(mrService);
     }
 
 
@@ -109,7 +109,6 @@ public class AppConfigModule {
     @Provides
     @Singleton
     DownloadManager providerDownLoadManager(MrService mrService) {
-        downloadManager.setMrService(mrService);
         return downloadManager;
     }
 
