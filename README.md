@@ -13,3 +13,5 @@ android组件化学习
 
 6: lib_live: 是一个rxjava和官方框架中的LiveData类似
 
+7: lib_network_rx_retrofit: 简单的网络库和文件下载及其监听提供（MrService、DownLoadManager）
+
