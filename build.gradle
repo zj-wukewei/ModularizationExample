@@ -27,14 +27,14 @@ task clean(type: Delete) {
 
 
 def daggerVersion = "2.11"
-def retrofitVersion = "2.3.0"
+def retrofitVersion = "2.5.0"
 def supportVersion = "27.1.1"
-def okHttpVersion = '3.8.1'
+def okHttpVersion = '3.14.0'
 def gsonVersion = '2.8.1'
 def rxJavaVersion = '2.1.1'
 def rxAndroidVersion = '2.0.1'
-def leakCanaryVersion = "1.5.1"
-def glideVersion = '4.5.0'
+def leakCanaryVersion = "1.6.3"
+def glideVersion = '4.9.0'
 def jUnitVersion  = '4.12'
 def assertJVersion  = '1.7.1'
 def mockitoVersion  = '1.9.5'

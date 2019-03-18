@@ -34,5 +34,5 @@ dependencies {
     api rootProject.ext.libRetrofitConverterGson
     api rootProject.ext.libRetrofitAdapterRxJava
     api rootProject.ext.libOkHttpLoggingInterceptor
-    implementation 'com.jakewharton.timber:timber:4.5.1'
+    implementation 'com.jakewharton.timber:timber:4.7.1'
 }

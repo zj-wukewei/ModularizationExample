@@ -41,5 +41,5 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     api rootProject.ext.libSupportV4
-    api 'com.jakewharton.timber:timber:4.5.1'
+    api 'com.jakewharton.timber:timber:4.7.1'
 }
