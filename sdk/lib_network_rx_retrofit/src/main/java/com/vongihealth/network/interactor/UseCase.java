@@ -1,6 +1,10 @@
 package com.vongihealth.network.interactor;
 
 
+import android.arch.lifecycle.Lifecycle;
+import android.arch.lifecycle.LifecycleObserver;
+import android.arch.lifecycle.OnLifecycleEvent;
+
 import com.vongihealth.network.executor.PostExecutionThread;
 import com.vongihealth.network.executor.ThreadExecutor;
 
@@ -14,7 +18,7 @@ import io.reactivex.schedulers.Schedulers;
  * Created by wukewei on 2017/8/25.
  */
 
-public abstract class UseCase<T, Params> {
+public abstract class UseCase<T, Params> implements LifecycleObserver {
     private final ThreadExecutor threadExecutor;
     private final PostExecutionThread postExecutionThread;
     private final CompositeDisposable disposables;
@@ -48,6 +52,8 @@ public abstract class UseCase<T, Params> {
         addDisposable(observable.subscribeWith(observer));
     }
 
+
+
     /**
      * Dispose from current {@link CompositeDisposable}.
      */
@@ -55,6 +61,11 @@ public abstract class UseCase<T, Params> {
         if (!disposables.isDisposed()) {
             disposables.dispose();
         }
+    }
+
+    @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
+    public void onDestroy() {
+        dispose();
     }
 
     /**

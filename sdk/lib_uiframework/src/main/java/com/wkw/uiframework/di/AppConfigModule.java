@@ -108,7 +108,7 @@ public class AppConfigModule {
 
     @Provides
     @Singleton
-    DownloadManager providerDownLoadManager(MrService mrService) {
+    DownloadManager providerDownLoadManager() {
         return downloadManager;
     }
 

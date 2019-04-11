@@ -9,39 +9,34 @@ import java.util.ServiceLoader;
 
 public class BaseApplication extends Application {
 
-    private ServiceLoader<IApplicationLifecycle> mApplicationLiServiceLoader = null;
+    private AppDelegate mAppDelegate;
 
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
-        mApplicationLiServiceLoader = ServiceLoader.load(IApplicationLifecycle.class);
-        for (IApplicationLifecycle iApplicationLifecycle : mApplicationLiServiceLoader) {
-            iApplicationLifecycle.attachBaseContext(base);
+        if (mAppDelegate == null) {
+            mAppDelegate = new AppDelegate();
         }
+        mAppDelegate.attachBaseContext(base);
     }
 
     @Override
     public void onCreate() {
         super.onCreate();
-        for (IApplicationLifecycle iApplicationLifecycle : mApplicationLiServiceLoader) {
-            iApplicationLifecycle.onCreate();
-        }
+        mAppDelegate.onCreate();
     }
 
     @Override
     public void onTerminate() {
         super.onTerminate();
-        for (IApplicationLifecycle iApplicationLifecycle : mApplicationLiServiceLoader) {
-            iApplicationLifecycle.onTerminate();
-        }
+        mAppDelegate.onTerminate();
+
     }
 
     @Override
     public void onLowMemory() {
         super.onLowMemory();
-        for (IApplicationLifecycle iApplicationLifecycle : mApplicationLiServiceLoader) {
-            iApplicationLifecycle.onLowMemory();
-        }
+        mAppDelegate.onLowMemory();
     }
 
 }

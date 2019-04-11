@@ -53,5 +53,6 @@ dependencies {
     api rootProject.ext.libSupportAppcompat
     api rootProject.ext.libRxJava
     api rootProject.ext.libRxPreferences
+    api rootProject.ext.libRxrelay2
 
 }

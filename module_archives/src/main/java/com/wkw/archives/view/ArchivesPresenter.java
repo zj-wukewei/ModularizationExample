@@ -11,13 +11,10 @@ import com.wkw.archives.domain.interactor.PasswordUseCase;
 import com.wkw.commonbusiness.entity.TokenEntity;
 import com.wkw.commonbusiness.entity.UserSystem;
 import com.wkw.uiframework.base.mvp.MvpBasePresenter;
-import com.wkw.uiframework.base.mvp.rxandroid.LoadingTransformer;
 
 import javax.inject.Inject;
 
-import io.reactivex.ObservableSource;
 import io.reactivex.functions.Consumer;
-import io.reactivex.functions.Function;
 
 /**
  * Created by wukewei on 2017/9/12.
@@ -37,6 +34,7 @@ public class ArchivesPresenter extends MvpBasePresenter<ArchivesContract.View> i
     @Inject
     public ArchivesPresenter(ArchivesListUseCase getArchivesListUseCase) {
         this.mArchivesListUseCase = getArchivesListUseCase;
+        getLifecycleOwner().getLifecycle().addObserver(mNameUseCase);
     }
 
     @SuppressLint("CheckResult")

@@ -31,7 +31,7 @@ def retrofitVersion = "2.5.0"
 def supportVersion = "27.1.1"
 def okHttpVersion = '3.14.0'
 def gsonVersion = '2.8.1'
-def rxJavaVersion = '2.1.1'
+def rxJavaVersion = '2.2.2'
 def rxAndroidVersion = '2.0.1'
 def leakCanaryVersion = "1.6.3"
 def glideVersion = '4.9.0'
@@ -39,6 +39,7 @@ def jUnitVersion  = '4.12'
 def assertJVersion  = '1.7.1'
 def mockitoVersion  = '1.9.5'
 def autoService = '1.0-rc4'
+def rxRelayVersion = '2.1.0'
 
 
 project.ext {
@@ -81,6 +82,7 @@ project.ext {
     libRxPermissions = 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
     libRxPreferences = 'com.f2prateek.rx.preferences2:rx-preferences:2.0.0'
     libAutoService = "com.google.auto.service:auto-service:${autoService}"
+    libRxrelay2 = "com.jakewharton.rxrelay2:rxrelay:${rxRelayVersion}"
     testJunit = "junit:junit:${jUnitVersion}"
     testMockito = "org.mockito:mockito-core:${mockitoVersion}"
     testAssertj = "org.assertj:assertj-core:${assertJVersion}"
