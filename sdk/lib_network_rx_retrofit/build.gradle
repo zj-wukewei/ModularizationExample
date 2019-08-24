@@ -27,7 +27,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+    api rootProject.ext.libSupportAppcompat
     api rootProject.ext.libRxJava
     api rootProject.ext.libRxAndroid
     api rootProject.ext.libRetrofit
