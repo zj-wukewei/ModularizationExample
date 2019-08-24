@@ -22,7 +22,8 @@ import io.reactivex.functions.Consumer;
 
 public class ArchivesPresenter extends MvpBasePresenter<ArchivesContract.View> implements ArchivesContract.Presenter {
 
-    private final ArchivesListUseCase mArchivesListUseCase;
+    @Inject
+    ArchivesListUseCase mArchivesListUseCase;
     @Inject
     NameUseCase mNameUseCase;
     @Inject
@@ -32,9 +33,14 @@ public class ArchivesPresenter extends MvpBasePresenter<ArchivesContract.View> i
     UserSystem mUserSystem;
 
     @Inject
-    public ArchivesPresenter(ArchivesListUseCase getArchivesListUseCase) {
-        this.mArchivesListUseCase = getArchivesListUseCase;
+    public ArchivesPresenter() {
+    }
+
+    @Override
+    public void attachView(ArchivesContract.View view) {
+        super.attachView(view);
         getLifecycleOwner().getLifecycle().addObserver(mNameUseCase);
+        getLifecycleOwner().getLifecycle().addObserver(mArchivesListUseCase);
     }
 
     @SuppressLint("CheckResult")

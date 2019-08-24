@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 import com.wkw.archives.R;
+import com.wkw.archives.dialog.TestDialog;
 import com.wkw.commonbusiness.entity.TokenEntity;
 import com.wkw.commonbusiness.entity.UserSystem;
 import com.wkw.uiframework.base.mvp.MvpActivity;
@@ -42,7 +43,15 @@ public class ArchivesActivity extends MvpActivity<ArchivesContract.View, Archive
         AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.archives_activity_archives);
+        initView();
         getPresenter().fetchPassword();
+    }
+
+    private void initView() {
+        findViewById(R.id.btn).setOnClickListener(v -> {
+            TestDialog dialog = new TestDialog();
+            dialog.show(getSupportFragmentManager(), dialog.getTag());
+        });
     }
 
 

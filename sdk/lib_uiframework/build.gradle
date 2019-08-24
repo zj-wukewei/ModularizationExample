@@ -54,5 +54,5 @@ dependencies {
     api rootProject.ext.libRxJava
     api rootProject.ext.libRxPreferences
     api rootProject.ext.libRxrelay2
-
+    api 'com.yqritc:recyclerview-flexibledivider:1.4.0'
 }

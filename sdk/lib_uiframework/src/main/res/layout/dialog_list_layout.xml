@@ -1,0 +1,28 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <com.wkw.uikit.RCRelativeLayout
+        android:id="@+id/rc_layout"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content"
+        app:round_corner="@dimen/dialog_list_round_corner">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </com.wkw.uikit.RCRelativeLayout>
+
+
+
+
+</layout>
