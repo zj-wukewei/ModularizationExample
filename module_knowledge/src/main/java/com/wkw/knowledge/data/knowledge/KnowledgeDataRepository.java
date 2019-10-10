@@ -9,6 +9,7 @@ import com.wkw.knowledge.entity.User;
 import com.wkw.uiframework.base.mvp.page.PageEntity;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.inject.Inject;
 
@@ -35,7 +36,15 @@ public class KnowledgeDataRepository implements KnowledgeRepository {
     public Observable<PageEntity<String>> fetchList(Integer pn) {
         PageEntity<String> pageEntity = new PageEntity<>();
         pageEntity.setHasMore(pn != 6);
-        pageEntity.setList(new ArrayList<>());
+        List<String> data = new ArrayList<>();
+//        data.add("1111111111111111111111");
+//        data.add("2222222222222222222222");
+//        data.add("333333333333333333333");
+//        data.add("444444444444444444");
+//        data.add("555555555555555555");
+//        data.add("666666666666666");
+//        data.add("777777777777777777777");
+        pageEntity.setList(data);
         return Observable.create(new ObservableOnSubscribe<PageEntity<String>>() {
             @Override
             public void subscribe(ObservableEmitter<PageEntity<String>> e) throws Exception {

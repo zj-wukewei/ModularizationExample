@@ -23,6 +23,9 @@ public class UserSystem {
         });
     }
 
+    public boolean hasLogin() {
+        return mTokenEntity != null;
+    }
 
     public TokenEntity getTokenEntity() {
         return mTokenEntity;

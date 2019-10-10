@@ -34,10 +34,6 @@ public class UserContentProvider extends DaggerContentProvider {
     @Inject
     RxSharedPreferences mRxSharedPreferences;
 
-    @Override
-    public boolean onCreate() {
-        return super.onCreate();
-    }
 
     @Nullable
     @Override

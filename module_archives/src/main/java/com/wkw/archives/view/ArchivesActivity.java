@@ -49,6 +49,13 @@ public class ArchivesActivity extends MvpActivity<ArchivesContract.View, Archive
 
     private void initView() {
         findViewById(R.id.btn).setOnClickListener(v -> {
+            if (mUserSystem.hasLogin()) {
+                Timber.d("用户已经登陆 %s", mUserSystem.getTokenEntity().toString());
+
+            } else {
+                Timber.d("用户未登陆");
+
+            }
             TestDialog dialog = new TestDialog();
             dialog.show(getSupportFragmentManager(), dialog.getTag());
         });

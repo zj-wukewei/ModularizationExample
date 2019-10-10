@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import com.wkw.knowledge.R;
 import com.wkw.knowledge.domain.UsersListUseCase;
 import com.wkw.knowledge.entity.User;
+import com.wkw.knowledge.view.FragmentPagerFragment;
 import com.wkw.knowledge.view.KnowledgePresenter;
 import com.wkw.knowledge.view.KonwledgeContract;
 import com.wkw.uiframework.adapter.MultiTypeAdapter;
@@ -23,7 +24,7 @@ import timber.log.Timber;
  * GitHub https://github.com/zj-wukewei
  */
 
-public class KnowledgeFragment extends PageFragment<Integer, String, KonwledgeContract.View, KonwledgeContract.Presenter> implements KonwledgeContract.View {
+public class KnowledgeFragment extends FragmentPagerFragment<Integer, String, KonwledgeContract.View, KonwledgeContract.Presenter> implements KonwledgeContract.View {
 
     public static final int TYPE_VIEW = 1;
 
@@ -71,5 +72,17 @@ public class KnowledgeFragment extends PageFragment<Integer, String, KonwledgeCo
     @Override
     public void showDataUserList(PageEntity<User> users) {
         Timber.d(users.toString());
+    }
+
+    @Override
+    public boolean canScrollVertically(int direction) {
+        return getRecyclerViewWithFooter() != null && getRecyclerViewWithFooter().canScrollVertically(direction);
+    }
+
+    @Override
+    public void onFlingOver(int y, long duration) {
+        if (getRecyclerViewWithFooter() != null) {
+            getRecyclerViewWithFooter().smoothScrollBy(0, y);
+        }
     }
 }

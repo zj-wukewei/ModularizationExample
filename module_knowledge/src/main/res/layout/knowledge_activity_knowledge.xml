@@ -1,11 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
 
-    <FrameLayout
-        android:id="@+id/fragment"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="50dp" />
+
+
+    <ru.noties.scrollable.ScrollableLayout
+        android:id="@+id/scrollable_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:scrollable_autoMaxScroll="true"
+        app:scrollable_defaultCloseUp="true"
+        app:scrollable_scrollingHeaderId="@id/header">
+
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1111111111111111
+        1111111111111111111111111111111111111111212121
+        1111111111111111111111111111111111111111212121
+        11111111111111111111111111111111111111112121211111111111111111111111111111111111111111212121
+
+        111111111111111111111111212121" />
+
+
+        <com.wkw.uikit.tablayout.SlidingTabLayout
+            android:id="@+id/sliding_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            app:tl_indicator_color="@color/knowledge_recommend_type_text_color"
+            app:tl_indicator_corner_radius="1.5dp"
+            app:tl_indicator_height="3dp"
+            app:tl_indicator_margin_right="@dimen/knowledge_recommend_tl_divider_width"
+            app:tl_indicator_width_equal_title="true"
+            app:tl_tab_space_equal="false"
+            app:tl_tab_width="@dimen/knowledge_recommend_type_width"
+            app:tl_textSelectColor="@color/knowledge_recommend_type_text_color"
+            app:tl_textUnselectColor="@color/knowledge_un_recommend_type_text_color"
+            app:tl_textsize="13sp" />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ru.noties.scrollable.ScrollableLayout>
+
+
 </LinearLayout>

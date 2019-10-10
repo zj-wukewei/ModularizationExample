@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="knowledge_recommend_type_text_color">#31b9a8</color>
+    <color name="knowledge_un_recommend_type_text_color">#a8b4c4</color>
+    <color name="knowledge_recommend_doctor_text_color">#2d2f3b</color>
+
+
+    <dimen name="knowledge_recommend_type_width">110dp</dimen>
+    <dimen name="knowledge_recommend_tl_divider_width">22dp</dimen>
+</resources>
