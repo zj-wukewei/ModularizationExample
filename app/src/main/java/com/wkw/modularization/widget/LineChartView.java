@@ -16,9 +16,13 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 
+import com.wkw.ext.utils.ViewUtils;
+
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.List;
 /**
  * Created by GoGo on 2019/10/11.
@@ -208,7 +212,7 @@ public class LineChartView extends View {
         if (MeasureSpec.EXACTLY == heightMode) {
             height = getPaddingTop() + getPaddingBottom() + height;
         }
-        setMeasuredDimension(width, height);//设置自己的宽度和高度
+        setMeasuredDimension(hasData() ? width : ViewUtils.getScreenWidth(), height);//设置自己的宽度和高度
     }
 
     @Override
@@ -216,6 +220,10 @@ public class LineChartView extends View {
         super.onSizeChanged(w, h, oldw, oldh);
         mWidth = w;
         mHeight = h;
+    }
+
+    private boolean hasData () {
+        return mChartData != null && !mChartData.getData().isEmpty();
     }
 
     @Override
@@ -227,17 +235,22 @@ public class LineChartView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         canvas.drawColor(Color.TRANSPARENT);//绘制背景颜色
-        canvas.translate(0f, mHeight / 2f + (getViewDrawHeight() + topSpace + bottomSpace) / 2f);//设置画布中心点垂直居中
+        if (hasData()) {
+            canvas.translate(0f, mHeight / 2f + (getViewDrawHeight() + topSpace + bottomSpace) / 2f);//设置画布中心点垂直居中
 
-        if (!isInitialized) {
-            setupLine();
+            if (!isInitialized) {
+                setupLine();
+            }
+
+            if (isShowTable) {
+                drawTable(canvas);//绘制表格
+            }
+            drawLine(canvas);//绘制曲线
+            drawLinePoints(canvas);//绘制曲线上的点
+        } else {
+            drawRulerXText(canvas, "暂无数据", getWidth() / 2f, getHeight() / 2f, true);
         }
 
-        if (isShowTable) {
-            drawTable(canvas);//绘制表格
-        }
-        drawLine(canvas);//绘制曲线
-        drawLinePoints(canvas);//绘制曲线上的点
     }
 
     private void drawText(Canvas canvas, Paint textPaint, String text, float x, float y) {
@@ -327,14 +340,19 @@ public class LineChartView extends View {
         int endValue = (maxValue + rulerValue);
 //
         //标尺y轴连接线
-        do {
-            int startHeight = -getValueHeight(startValue);
-            tablePath.moveTo(stepStart, startHeight);
-            tablePath.lineTo(tableEnd, startHeight);
-            //绘制y轴刻度单位
-            drawRulerYText(canvas, String.valueOf(startValue), stepStart, startHeight);
-            startValue += rulerValue;
-        } while (startValue < endValue);
+        if (linePoints.length == 1) {
+            drawRulerYText(canvas, String.valueOf(startValue), stepStart, linePoints[0].y);
+        } else {
+            do {
+                int startHeight = -getValueHeight(startValue);
+                tablePath.moveTo(stepStart, startHeight);
+                tablePath.lineTo(tableEnd, startHeight);
+                //绘制y轴刻度单位
+                drawRulerYText(canvas, String.valueOf(startValue), stepStart, startHeight);
+                startValue += rulerValue;
+            } while (startValue < endValue);
+        }
+
         tablePaint.setColor(Color.parseColor("#F4F5F6"));
         canvas.drawPath(tablePath, tablePaint);
         tablePaint.setColor(tableColor);
@@ -374,7 +392,7 @@ public class LineChartView extends View {
         } else {
             canvas.drawPath(linePath, linePaint);
         }
-        mShader = new LinearGradient(0, -getValueHeight(maxValue), 0, -getValueHeight(minValue), mChartData.gradientColor, null, Shader.TileMode.CLAMP);
+        mShader = new LinearGradient(0, -getValueHeight(maxValue), 0, -getValueHeight(minValue), mChartData.getGradientColor(), null, Shader.TileMode.CLAMP);
 
         linearGradientPaint.setShader(mShader);
         canvas.drawPath(linearGradientPath, linearGradientPaint);
@@ -444,6 +462,7 @@ public class LineChartView extends View {
         linearGradientPath.lineTo(pre.x, pre.y);
 
         if (dataList.size() == 1) {
+            pre.set(stepTemp, -getValueHeight(dataList.get(0).getValue()) - getHeight() / 2);
             isInitialized = true;
             return;
         }
@@ -506,9 +525,10 @@ public class LineChartView extends View {
      */
     ChartData mChartData;
     Shader mShader;
-
+    private float mothSize = 1f;
 
     public void setData(ChartData chartData) {
+        mothSize = 1f;
         this.mChartData = chartData;
         if (chartData.getData() == null) {
             throw new RuntimeException("dataList cannot is null!");
@@ -527,12 +547,21 @@ public class LineChartView extends View {
             }
         }).getValue();
 
+
+
         minValue = Collections.min(this.dataList, new Comparator<Data>() {
             @Override
             public int compare(Data o1, Data o2) {
                 return o1.getValue() - o2.getValue();
             }
         }).getValue();
+
+        for (int i = 0; i < chartData.getData().size() - 1; i++) {
+            Data data = chartData.getData().get(i);
+            Data nextData = chartData.getData().get(i + 1);
+            int day = differentDays(data.getDate(), nextData.getDate());
+            mothSize  = mothSize + day > 30 ? day / 30f : 1f;
+        }
 
         refreshLayout();
     }
@@ -615,6 +644,20 @@ public class LineChartView extends View {
         if (valueAnimator != null) {
             valueAnimator.start();
         }
+    }
+
+
+    private int differentDays(String day1, String day2) {
+        try {
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+            Date fDate = sdf.parse(day1);
+            Date oDate = sdf.parse(day2);
+            int days = (int) ((oDate.getTime() - fDate.getTime()) / (1000*3600*24));
+            return days;
+        } catch (Exception e) {
+            return 0;
+        }
+
     }
 
     public static class ChartData {

@@ -36,8 +36,7 @@ public class MainActivity extends MrActivity {
 
     LineChartView lineChartView;
 
-    private int[] dataArr = new int[]{200, 100, 300, -20, 50, -80, 200, 100, 300, 50, 200, 150, 160, 100, 300, 50, 200, 150,
-            300, 50, 200, 100, 150, 150};
+    private int[] dataArr = new int[]{200, 100, 300, -20, 50, -80};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,15 +48,27 @@ public class MainActivity extends MrActivity {
         tv_step_space = (TextView) findViewById(R.id.tv_step_space);
 
         List<LineChartView.Data> datas = new ArrayList<>();
-        for (int value : dataArr) {
-            LineChartView.Data data = new LineChartView.Data(value, "2019-11-11");
-            datas.add(data);
-        }
-        LineChartView.ChartData data = new LineChartView.ChartData();
-        data.setColor(Color.parseColor("#0cdfef"));
-        data.setGradientColor(new int[] {Color.parseColor("#1ad4dd"), Color.TRANSPARENT});
-        data.setData(datas);
-        lineChartView.setData(data);
+
+
+        LineChartView.Data data = new LineChartView.Data(200, "2019-" + (1 + 1) + "-11");
+        LineChartView.Data data1 = new LineChartView.Data(100, "2019-" + (3 + 1) + "-11");
+        LineChartView.Data data2 = new LineChartView.Data(300, "2019-" + (6 + 1) + "-11");
+        LineChartView.Data data3 = new LineChartView.Data(-20, "2019-" + (7 + 1) + "-11");
+        LineChartView.Data data4 = new LineChartView.Data(50, "2019-" + (8 + 1) + "-11");
+        LineChartView.Data data5 = new LineChartView.Data(-80, "2019-" + (10 + 1) + "-11");
+        datas.add(data);
+        datas.add(data1);
+        datas.add(data2);
+        datas.add(data3);
+        datas.add(data4);
+        datas.add(data5);
+
+
+        LineChartView.ChartData data11 = new LineChartView.ChartData();
+        data11.setColor(Color.parseColor("#0cdfef"));
+        data11.setGradientColor(new int[] {Color.parseColor("#1ad4dd"), Color.TRANSPARENT});
+        data11.setData(datas);
+        lineChartView.setData(data11);
 
         if (lineChartView != null) {
 //            lineChartView.setRulerYSpace(ViewUtils.dpToPx(40));
