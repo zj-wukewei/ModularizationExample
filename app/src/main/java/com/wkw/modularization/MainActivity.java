@@ -51,17 +51,19 @@ public class MainActivity extends MrActivity {
 
 
         LineChartView.Data data = new LineChartView.Data(200, "2019-" + (1 + 1) + "-11");
-        LineChartView.Data data1 = new LineChartView.Data(100, "2019-" + (2 + 1) + "-11");
+        LineChartView.Data data1 = new LineChartView.Data(100, "2019-" + (1 + 1) + "-14");
         LineChartView.Data data2 = new LineChartView.Data(300, "2019-" + (3 + 1) + "-11");
         LineChartView.Data data3 = new LineChartView.Data(-20, "2019-" + (4 + 1) + "-11");
         LineChartView.Data data4 = new LineChartView.Data(50, "2019-" + (5 + 1) + "-11");
         LineChartView.Data data5 = new LineChartView.Data(-80, "2019-" + (7 + 1) + "-11");
+        LineChartView.Data data6 = new LineChartView.Data(100, "2019-" + (11 + 1) + "-11");
         datas.add(data);
         datas.add(data1);
         datas.add(data2);
         datas.add(data3);
         datas.add(data4);
         datas.add(data5);
+        datas.add(data6);
 
 
         LineChartView.ChartData data11 = new LineChartView.ChartData();

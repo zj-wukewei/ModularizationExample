@@ -474,7 +474,7 @@ public class LineChartView extends View {
             Data data = dataList.get(i);
             Point next = new Point();
             float diffDay = differentDays(dataList.get(i -1).getDate(), data.getDate());
-            float dff = stepSpace / 30f * diffDay;
+            float dff = stepSpace / 30f * (diffDay > 30f ? diffDay : 30f);
             stepTemp = (int) (stepTemp + dff);
 
             next.set(stepTemp, -getValueHeight(data.getValue()));
