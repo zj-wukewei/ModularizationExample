@@ -55,6 +55,7 @@ public class MainActivity extends MrActivity {
         }
         LineChartView.ChartData data = new LineChartView.ChartData();
         data.setColor(Color.parseColor("#0cdfef"));
+        data.setGradientColor(new int[] {Color.parseColor("#1ad4dd"), Color.TRANSPARENT});
         data.setData(datas);
         lineChartView.setData(data);
 

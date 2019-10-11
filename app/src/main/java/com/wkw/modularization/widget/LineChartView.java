@@ -34,6 +34,8 @@ public class LineChartView extends View {
     private Paint textPointPaint;//曲线上锚点文本画笔
 
     private Path linePath;//曲线路径
+
+    private Path linearGradientPath;
     private Path tablePath;//表格路径
 
     private int mWidth, mHeight;
@@ -98,6 +100,7 @@ public class LineChartView extends View {
     }
 
     private Paint mInnerPaint;
+    private Paint linearGradientPaint;
 
     private void setupView() {
         linePaint = new Paint();
@@ -118,6 +121,11 @@ public class LineChartView extends View {
         mInnerPaint.setColor(Color.WHITE);
         mInnerPaint.setStrokeWidth(dip2px(pointWidthDP));
 
+
+        linearGradientPaint = new Paint();
+        linearGradientPaint.setAntiAlias(true);
+        linearGradientPaint.setStyle(Paint.Style.FILL);
+        linearGradientPaint.setStrokeWidth(dip2px(pointWidthDP));
 
         tablePaint = new Paint();
         tablePaint.setAntiAlias(true);
@@ -140,6 +148,7 @@ public class LineChartView extends View {
         textPointPaint.setTextSize(sp2px(pointTextSizeSP));//字体大小
 
         linePath = new Path();
+        linearGradientPath = new Path();
         tablePath = new Path();
 
         resetParam();
@@ -178,6 +187,7 @@ public class LineChartView extends View {
     private void resetParam() {
         linePath.reset();
         tablePath.reset();
+        linearGradientPath.reset();
         stepSpace = dip2px(stepSpaceDP);
         tablePadding = dip2px(tablePaddingDP);
         rulerValuePadding = dip2px(rulerValuePaddingDP);
@@ -364,11 +374,10 @@ public class LineChartView extends View {
         } else {
             canvas.drawPath(linePath, linePaint);
         }
-        mShader = new LinearGradient(0, -1000, 1000, 100, new int[] {mChartData.color, Color.TRANSPARENT}, null, Shader.TileMode.CLAMP);
+        mShader = new LinearGradient(0, -getValueHeight(maxValue), 0, -getValueHeight(minValue), mChartData.gradientColor, null, Shader.TileMode.CLAMP);
 
-        linePaint.setShader(mShader);
-        canvas.drawPath(linePath, linePaint);
-        linePaint.setShader(null);
+        linearGradientPaint.setShader(mShader);
+        canvas.drawPath(linearGradientPath, linearGradientPaint);
 
     }
 
@@ -431,10 +440,15 @@ public class LineChartView extends View {
         linePoints[0] = pre;
         linePath.moveTo(pre.x, pre.y);
 
+        linearGradientPath.moveTo(pre.x, -getValueHeight(minValue));
+        linearGradientPath.lineTo(pre.x, pre.y);
+
         if (dataList.size() == 1) {
             isInitialized = true;
             return;
         }
+
+        int lastX = 0;
 
         for (int i = 1; i < dataList.size(); i++) {
             Data data = dataList.get(i);
@@ -451,13 +465,19 @@ public class LineChartView extends View {
                 p2.set(cW, next.y);
 
                 linePath.cubicTo(p1.x, p1.y, p2.x, p2.y, next.x, next.y);//创建三阶贝塞尔曲线
+                linearGradientPath.cubicTo(p1.x, p1.y, p2.x, p2.y, next.x, next.y);//创建三阶贝塞尔曲线
             } else {
                 linePath.lineTo(next.x, next.y);
+                linearGradientPath.lineTo(next.x, next.y);
             }
 
             pre = next;
+            lastX = pre.x;
             linePoints[i] = next;
         }
+
+        linearGradientPath.lineTo(lastX, -getValueHeight(minValue));
+        linearGradientPath.lineTo(linePoints[0].x, -getValueHeight(minValue));
 
         isInitialized = true;
     }
@@ -499,8 +519,6 @@ public class LineChartView extends View {
         linePaint.setColor(chartData.color);
         pointPaint.setColor(chartData.color);
         textPointPaint.setColor(chartData.color);
-
-
 
         maxValue = Collections.max(this.dataList, new Comparator<Data>() {
             @Override
@@ -601,7 +619,16 @@ public class LineChartView extends View {
 
     public static class ChartData {
         private int color;
+        private int[] gradientColor;
         private List<Data> data;
+
+        public int[] getGradientColor() {
+            return gradientColor;
+        }
+
+        public void setGradientColor(int[] gradientColor) {
+            this.gradientColor = gradientColor;
+        }
 
         public int getColor() {
             return color;
