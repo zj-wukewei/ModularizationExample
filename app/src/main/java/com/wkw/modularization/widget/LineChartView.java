@@ -196,7 +196,8 @@ public class LineChartView extends View {
         tablePadding = dip2px(tablePaddingDP);
         rulerValuePadding = dip2px(rulerValuePaddingDP);
         stepStart = tablePadding * (isShowTable ? 2 : 1);
-        stepEnd = stepStart + stepSpace * (dataList.size() - 1);
+//        stepEnd = stepStart + stepSpace * (dataList.size() - 1);
+        stepEnd = (int) (stepStart + stepSpace * (mothSize));
         topSpace = bottomSpace = tablePadding;
         linePoints = new Point[dataList.size()];
 
@@ -472,7 +473,11 @@ public class LineChartView extends View {
         for (int i = 1; i < dataList.size(); i++) {
             Data data = dataList.get(i);
             Point next = new Point();
-            next.set(stepTemp += stepSpace, -getValueHeight(data.getValue()));
+            float diffDay = differentDays(dataList.get(i -1).getDate(), data.getDate());
+            float dff = stepSpace / 30f * diffDay;
+            stepTemp = (int) (stepTemp + dff);
+
+            next.set(stepTemp, -getValueHeight(data.getValue()));
 
             if (isBezierLine) {
                 int cW = pre.x + stepSpace / 2;
@@ -556,11 +561,11 @@ public class LineChartView extends View {
             }
         }).getValue();
 
-        for (int i = 0; i < chartData.getData().size() - 1; i++) {
+        for (int i = 1; i < chartData.getData().size(); i++) {
             Data data = chartData.getData().get(i);
-            Data nextData = chartData.getData().get(i + 1);
-            int day = differentDays(data.getDate(), nextData.getDate());
-            mothSize  = mothSize + day > 30 ? day / 30f : 1f;
+            Data lastData = chartData.getData().get(i - 1);
+            int day = (int) differentDays(lastData.getDate(), data.getDate());
+            mothSize  = mothSize + (day > 30 ? day / 30f : 1f);
         }
 
         refreshLayout();
@@ -647,15 +652,15 @@ public class LineChartView extends View {
     }
 
 
-    private int differentDays(String day1, String day2) {
+    private float differentDays(String day1, String day2) {
         try {
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
             Date fDate = sdf.parse(day1);
             Date oDate = sdf.parse(day2);
-            int days = (int) ((oDate.getTime() - fDate.getTime()) / (1000*3600*24));
+            float days =  ((oDate.getTime() - fDate.getTime()) / (1000*3600*24f));
             return days;
         } catch (Exception e) {
-            return 0;
+            return 0f;
         }
 
     }
