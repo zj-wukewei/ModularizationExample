@@ -2,6 +2,7 @@ package com.wkw.uiframework;
 
 import android.app.Activity;
 
+import java.util.Iterator;
 import java.util.Stack;
 
 /**
@@ -57,6 +58,17 @@ public class AppManager {
             }
         }
         activityStack.clear();
+    }
+
+    public synchronized void finishAllActivityOther(Class clz) {
+        Iterator<Activity> iterator = activityStack.iterator();
+        while (iterator.hasNext()) {
+            Activity activity = iterator.next();
+            if (!activity.getClass().equals(clz)) {
+                activity.finish();
+                iterator.remove();
+            }
+        }
     }
 
 }
