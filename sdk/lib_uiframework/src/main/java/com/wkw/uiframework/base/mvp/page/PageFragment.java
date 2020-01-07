@@ -1,10 +1,11 @@
 package com.wkw.uiframework.base.mvp.page;
 
-import android.databinding.DataBindingUtil;
+import androidx.annotation.Nullable;
+import androidx.databinding.DataBindingUtil;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,6 +42,7 @@ public abstract class PageFragment<Request, Response, V extends PageView<Respons
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         if (mFragmentView == null) {
+
             mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_list, container, false);
             mFragmentView = mBinding.getRoot();
             initHeaderAndFooter();
@@ -193,12 +195,13 @@ public abstract class PageFragment<Request, Response, V extends PageView<Respons
         mIsFetching = false;
         if (mCurrentPage == PageConstants.FIRST_PAGE && getProgressLayout() != null) {
             isInit = true;
+            final View.OnClickListener onClickListener = v -> getPresenter().fetchData(provideRequest());
             if (NetWorkUtils.isNetworkConnected()) {
                 String errorMessage = ErrorMessageFactory.create(getContext(), e);
                 setFailedText(errorMessage);
-                getProgressLayout().showFailed(v -> getPresenter().fetchData(provideRequest()));
+                getProgressLayout().showFailed(onClickListener);
             } else {
-                getProgressLayout().showNetError(v -> getPresenter().fetchData(provideRequest()));
+                getProgressLayout().showNetError(onClickListener);
             }
         } else {
             getRecyclerViewWithFooter().setFailure(v -> {

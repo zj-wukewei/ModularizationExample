@@ -1,7 +1,8 @@
 package com.wkw.modularization;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import com.wkw.uiframework.base.SwipeBackActivity;
 

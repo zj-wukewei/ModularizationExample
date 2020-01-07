@@ -11,7 +11,7 @@ android {
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
     }
 
@@ -46,7 +46,7 @@ dependencies {
     api rootProject.ext.libSupportAppcompat
     api rootProject.ext.libSupportRecyclerview
     api rootProject.ext.libSupportDesign
-    api rootProject.ext.libSupportV4
+//    api rootProject.ext.libSupportV4
     api rootProject.ext.libRxPermissions
     api rootProject.ext.libRetrofit
     api rootProject.ext.libRetrofitConverterGson

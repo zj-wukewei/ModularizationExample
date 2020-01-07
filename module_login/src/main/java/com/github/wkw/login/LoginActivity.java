@@ -3,9 +3,10 @@ package com.github.wkw.login;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.annotation.Nullable;
 
 import com.wkw.commonbusiness.activity.MrActivity;
 import com.wkw.commonbusiness.constant.AppConstants;

@@ -1,6 +1,7 @@
 package com.wkw.ext.utils.guava;
 
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import java.io.Serializable;
 import java.util.NoSuchElementException;

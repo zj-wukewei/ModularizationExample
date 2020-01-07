@@ -1,14 +1,14 @@
 package com.wkw.uiframework.base.mvp;
 
-import android.arch.lifecycle.LifecycleOwner;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
+import androidx.lifecycle.Lifecycle;
 
 import com.wkw.ext.utils.ToastUtils;
 import com.wkw.uiframework.base.BaseActivity;
 
-import java.util.UUID;
 
 /**
  * Created by GoGo on 2018-4-11.
@@ -55,10 +55,9 @@ public abstract class MvpActivity<V extends MvpView, P extends MvpPresenter<V>> 
         ToastUtils.show(this, stringId);
     }
 
-
     @Override
-    public LifecycleOwner getLifecycleOwner() {
-        return this;
+    public Lifecycle getLifecycle() {
+        return super.getLifecycle();
     }
 
     @Override

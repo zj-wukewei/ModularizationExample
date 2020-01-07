@@ -22,7 +22,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation rootProject.ext.libSupportAppcompat
+//    implementation rootProject.ext.libSupportAppcompat
     implementation rootProject.ext.libRxJava
     implementation rootProject.ext.libRxAndroid
     implementation rootProject.ext.libRxPermissions

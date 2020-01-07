@@ -1,6 +1,7 @@
 package com.wkw.knowledge.service;
 
-import android.support.annotation.Keep;
+
+import androidx.annotation.Keep;
 
 import com.google.auto.service.AutoService;
 import com.wkw.commonbusiness.service.IKnowledgeService;

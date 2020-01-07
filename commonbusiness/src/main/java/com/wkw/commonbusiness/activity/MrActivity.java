@@ -1,7 +1,8 @@
 package com.wkw.commonbusiness.activity;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import com.vongihealth.network.exception.ErrorBundle;
 import com.vongihealth.network.exception.ResponseException;

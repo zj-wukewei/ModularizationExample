@@ -1,6 +1,7 @@
 package com.wkw.commonbusiness.entity;
 
-import android.support.annotation.Keep;
+
+import androidx.annotation.Keep;
 
 import com.google.gson.annotations.SerializedName;
 

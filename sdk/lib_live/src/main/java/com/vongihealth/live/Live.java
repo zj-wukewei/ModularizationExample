@@ -1,13 +1,13 @@
 package com.vongihealth.live;
 
-import android.arch.lifecycle.Lifecycle;
-import android.arch.lifecycle.LifecycleObserver;
-import android.arch.lifecycle.LifecycleOwner;
-import android.arch.lifecycle.OnLifecycleEvent;
 import android.os.Looper;
-import android.support.annotation.MainThread;
-import android.support.annotation.NonNull;
-import android.util.Log;
+
+import androidx.annotation.MainThread;
+import androidx.annotation.NonNull;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleObserver;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.OnLifecycleEvent;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableSource;
@@ -19,13 +19,13 @@ public final class Live<T> implements ObservableTransformer<T, T>, LifecycleObse
 
     private static final String TAG = "Live";
 
-    public static <T> ObservableTransformer<T, T> bindLifecycle(LifecycleOwner owner) {
+    public static <T> ObservableTransformer<T, T> bindLifecycle(Lifecycle owner) {
         return new Live<>(owner);
     }
 
     private final PublishSubject<T> mSubject = PublishSubject.create();
 
-    private final LifecycleOwner mLifecycleOwner;
+    private final Lifecycle mLifecycle;
 
     private Disposable mDisposable;
 
@@ -37,16 +37,16 @@ public final class Live<T> implements ObservableTransformer<T, T>, LifecycleObse
 
     private int mLastVersion = -1;
 
-    private Live(LifecycleOwner owner) {
-        mLifecycleOwner = owner;
+    private Live(Lifecycle owner) {
+        mLifecycle = owner;
     }
 
     @MainThread
     @Override
     public ObservableSource<T> apply(@NonNull Observable<T> upstream) {
         assertMainThread();
-        if (mLifecycleOwner.getLifecycle().getCurrentState() != Lifecycle.State.DESTROYED) {
-            mLifecycleOwner.getLifecycle().addObserver(this);
+        if (mLifecycle.getCurrentState() != Lifecycle.State.DESTROYED) {
+            mLifecycle.addObserver(this);
             mDisposable = upstream.subscribe(it -> {
                 assertMainThread();
                 ++mVersion;
@@ -66,16 +66,16 @@ public final class Live<T> implements ObservableTransformer<T, T>, LifecycleObse
 
     @OnLifecycleEvent(Lifecycle.Event.ON_ANY)
     void onStateChange() {
-        if (this.mLifecycleOwner.getLifecycle().getCurrentState() == Lifecycle.State.DESTROYED) {
+        if (this.mLifecycle.getCurrentState() == Lifecycle.State.DESTROYED) {
             if (mDisposable != null && !mDisposable.isDisposed()) {
                 mDisposable.dispose();
             }
             if (!mSubject.hasComplete()) {
                 mSubject.onComplete();
             }
-            mLifecycleOwner.getLifecycle().removeObserver(this);
+            mLifecycle.removeObserver(this);
         } else {
-            this.activeStateChanged(Live.isActiveState(mLifecycleOwner.getLifecycle().getCurrentState()));
+            this.activeStateChanged(Live.isActiveState(mLifecycle.getCurrentState()));
         }
     }
 
@@ -88,7 +88,7 @@ public final class Live<T> implements ObservableTransformer<T, T>, LifecycleObse
 
     void considerNotify() {
         if (mActive) {
-            if (isActiveState(mLifecycleOwner.getLifecycle().getCurrentState())) {
+            if (isActiveState(mLifecycle.getCurrentState())) {
                 if (mLastVersion < mVersion) {
                     mLastVersion = mVersion;
                     if (!mSubject.hasComplete()) {

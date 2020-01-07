@@ -2,11 +2,12 @@ package com.wkw.ext.utils;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.annotation.Nullable;
 import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
 
 /**
  * Created by wukewei on 2017/8/28.

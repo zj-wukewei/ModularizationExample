@@ -2,7 +2,8 @@ package com.wkw.archives.view;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import com.wkw.archives.R;
 import com.wkw.archives.dialog.TestDialog;

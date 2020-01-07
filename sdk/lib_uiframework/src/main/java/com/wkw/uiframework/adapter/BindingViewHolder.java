@@ -16,8 +16,8 @@
 
 package com.wkw.uiframework.adapter;
 
-import android.databinding.ViewDataBinding;
-import android.support.v7.widget.RecyclerView;
+import androidx.databinding.ViewDataBinding;
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Created by wukewei on 17/3/19.

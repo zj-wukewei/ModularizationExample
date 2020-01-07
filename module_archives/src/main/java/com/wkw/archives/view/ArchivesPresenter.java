@@ -39,15 +39,15 @@ public class ArchivesPresenter extends MvpBasePresenter<ArchivesContract.View> i
     @Override
     public void attachView(ArchivesContract.View view) {
         super.attachView(view);
-        getLifecycleOwner().getLifecycle().addObserver(mNameUseCase);
-        getLifecycleOwner().getLifecycle().addObserver(mArchivesListUseCase);
+        getLifecycle().addObserver(mNameUseCase);
+        getLifecycle().addObserver(mArchivesListUseCase);
     }
 
     @SuppressLint("CheckResult")
     @Override
     public void archivesList(int pn) {
         mArchivesListUseCase.execute(ArchivesListUseCase.Params.forArchives(pn))
-                .compose(Live.bindLifecycle(getLifecycleOwner()))
+                .compose(Live.bindLifecycle(getLifecycle()))
                 .subscribe(tokenEntity -> getView().showData(tokenEntity));
     }
 

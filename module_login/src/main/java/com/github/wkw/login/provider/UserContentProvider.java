@@ -5,8 +5,8 @@ import android.content.UriMatcher;
 import android.database.Cursor;
 import android.database.MatrixCursor;
 import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import com.f2prateek.rx.preferences2.RxSharedPreferences;
 import com.wkw.commonbusiness.constant.AppConstants;
@@ -14,6 +14,7 @@ import com.wkw.commonbusiness.constant.AppConstants;
 import javax.inject.Inject;
 
 import dagger.android.DaggerContentProvider;
+import io.reactivex.annotations.NonNull;
 
 /**
  * @author GoGo on 2018/10/21.

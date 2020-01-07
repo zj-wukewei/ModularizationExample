@@ -1,8 +1,9 @@
 package com.wkw.uiframework.base.mvp;
 
-import android.arch.lifecycle.LifecycleOwner;
 import android.content.Context;
-import android.support.annotation.StringRes;
+
+import androidx.annotation.StringRes;
+import androidx.lifecycle.LifecycleOwner;
 
 /**
  * Created by GoGo on 2018-4-9.
@@ -10,10 +11,9 @@ import android.support.annotation.StringRes;
  * GitHub https://github.com/zj-wukewei
  */
 
-public interface MvpView {
+public interface MvpView extends LifecycleOwner {
     Context context();
 
     void showToast(@StringRes int stringId);
 
-    LifecycleOwner getLifecycleOwner();
 }

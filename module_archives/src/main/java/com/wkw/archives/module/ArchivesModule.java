@@ -1,7 +1,8 @@
 package com.wkw.archives.module;
 
 import android.content.Intent;
-import android.support.annotation.Keep;
+
+import androidx.annotation.Keep;
 
 import com.wkw.archives.view.ArchivesActivity;
 import com.wkw.commonbusiness.module.archives.IArchivesService;

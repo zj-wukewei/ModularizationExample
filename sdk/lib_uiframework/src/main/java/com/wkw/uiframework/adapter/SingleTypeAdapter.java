@@ -1,8 +1,9 @@
 package com.wkw.uiframework.adapter;
 
 import android.content.Context;
-import android.databinding.DataBindingUtil;
-import android.support.annotation.LayoutRes;
+
+import androidx.annotation.LayoutRes;
+import androidx.databinding.DataBindingUtil;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;

@@ -1,7 +1,8 @@
 package com.wkw.knowledge.module;
 
 import android.content.Intent;
-import android.support.annotation.Keep;
+
+import androidx.annotation.Keep;
 
 import com.wkw.commonbusiness.module.knowledge.IKnowledgeService;
 import com.wkw.commonbusiness.module.knowledge.IKnowledgeUi;

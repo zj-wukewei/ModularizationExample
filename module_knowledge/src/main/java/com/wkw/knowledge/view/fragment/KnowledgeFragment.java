@@ -1,7 +1,8 @@
 package com.wkw.knowledge.view.fragment;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import com.wkw.knowledge.R;
 import com.wkw.knowledge.domain.UsersListUseCase;
@@ -11,10 +12,10 @@ import com.wkw.knowledge.view.KnowledgePresenter;
 import com.wkw.knowledge.view.KonwledgeContract;
 import com.wkw.uiframework.adapter.MultiTypeAdapter;
 import com.wkw.uiframework.base.mvp.page.PageEntity;
-import com.wkw.uiframework.base.mvp.page.PageFragment;
 
 import javax.inject.Inject;
 
+import dagger.android.AndroidInjection;
 import dagger.android.support.AndroidSupportInjection;
 import timber.log.Timber;
 

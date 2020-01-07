@@ -7,7 +7,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.0-alpha02'
+        classpath 'com.android.tools.build:gradle:3.5.3'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -26,9 +26,9 @@ task clean(type: Delete) {
 }
 
 
-def daggerVersion = "2.11"
+def daggerVersion = "2.16"
 def retrofitVersion = "2.5.0"
-def supportVersion = "27.1.1"
+def supportVersion = "1.0.0"
 def okHttpVersion = '3.14.0'
 def gsonVersion = '2.8.1'
 def rxJavaVersion = '2.2.2'
@@ -55,10 +55,11 @@ project.ext {
     useJack = false
     abortOnLintError = false
     javaVersion = JavaVersion.VERSION_1_8
-    libSupportAppcompat = "com.android.support:appcompat-v7:${supportVersion}"
-    libSupportDesign = "com.android.support:design:${supportVersion}"
-    libSupportRecyclerview = "com.android.support:recyclerview-v7:${supportVersion}"
-    libSupportV4 = "com.android.support:support-v4:${supportVersion}"
+    annotation = "androidx.annotation:annotation:${supportVersion}"
+    libSupportAppcompat = "androidx.appcompat:appcompat:${supportVersion}"
+    libSupportDesign = "com.google.android.material:material:${supportVersion}"
+    libSupportRecyclerview = "androidx.recyclerview:recyclerview:${supportVersion}"
+//    libSupportV4 = "androidx.legacy:legacy-support:${supportVersion}"
     libRxAndroid = "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}"
     libRxJava = "io.reactivex.rxjava2:rxjava:${rxJavaVersion}"
     libEventBus = "org.greenrobot:eventbus:3.0.0"

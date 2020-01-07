@@ -1,6 +1,7 @@
 package com.wkw.uiframework.base.mvp;
 
-import android.arch.lifecycle.LifecycleOwner;
+
+import androidx.lifecycle.Lifecycle;
 
 import com.vongihealth.network.handler.RxErrorHandler;
 import com.wkw.ext.utils.guava.Preconditions;
@@ -58,9 +59,9 @@ public abstract class MvpBasePresenter<V extends MvpView> implements MvpPresente
         return mRxErrorHandler;
     }
 
-    protected LifecycleOwner getLifecycleOwner() {
+    protected Lifecycle getLifecycle() {
         if (getView() != null) {
-            return getView().getLifecycleOwner();
+            return getView().getLifecycle();
         }
         return null;
     }
