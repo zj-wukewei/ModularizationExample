@@ -6,105 +6,25 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3cf7fc5-473f-42a4-9fc6-7717d0e96a96" name="Default" comment="网络库增加下载文件下载">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileContent/fileContent.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/jarAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskJars.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+    <list default="true" id="e3cf7fc5-473f-42a4-9fc6-7717d0e96a96" name="Default" comment="升级到Androidx">
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/BackActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/BackActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/MrApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/MrApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/basic/basic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/basic/basic.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/basic/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commonbusiness/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/commonbusiness/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commonbusiness/commonbusiness.iml" beforeDir="false" afterPath="$PROJECT_DIR$/commonbusiness/commonbusiness.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/activity/MrActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/activity/MrActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/entity/TokenEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/entity/TokenEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_archives/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/module_archives/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module_archives/module_archives.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module_archives/module_archives.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/module/ArchivesModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/module/ArchivesModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/module/ArchivesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/module/ArchivesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_knowledge/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/module_knowledge/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module_knowledge/module_knowledge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module_knowledge/module_knowledge.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/KnowledgeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/KnowledgeActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/module/KnowledgeModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/module/KnowledgeModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/service/KnowledgeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/service/KnowledgeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/view/KnowledgePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/view/KnowledgePresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/view/fragment/KnowledgeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/view/fragment/KnowledgeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_knowledge/src/main/res/layout/knowledge_activity_knowledge.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_knowledge/src/main/res/layout/knowledge_activity_knowledge.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_login/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/module_login/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_login/src/main/java/com/github/wkw/login/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_login/src/main/java/com/github/wkw/login/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_login/src/main/java/com/github/wkw/login/provider/UserContentProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_login/src/main/java/com/github/wkw/login/provider/UserContentProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_ext/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_ext/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_ext/lib_ext.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_ext/lib_ext.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_ext/src/main/java/com/wkw/ext/utils/StatusBarUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_ext/src/main/java/com/wkw/ext/utils/StatusBarUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_ext/src/main/java/com/wkw/ext/utils/ToastUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_ext/src/main/java/com/wkw/ext/utils/ToastUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_ext/src/main/java/com/wkw/ext/utils/guava/Absent.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_ext/src/main/java/com/wkw/ext/utils/guava/Absent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_ext/src/main/java/com/wkw/ext/utils/guava/Optional.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_ext/src/main/java/com/wkw/ext/utils/guava/Optional.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_ext/src/main/java/com/wkw/ext/utils/guava/Preconditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_ext/src/main/java/com/wkw/ext/utils/guava/Preconditions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_ext/src/main/java/com/wkw/ext/utils/guava/Present.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_ext/src/main/java/com/wkw/ext/utils/guava/Present.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sdk/lib_imageloader/lib_imageloader.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_imageloader/lib_imageloader.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_imageloader/src/main/java/com/wkw/imageloader/glide/BlurTransformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_imageloader/src/main/java/com/wkw/imageloader/glide/BlurTransformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_imageloader/src/main/java/com/wkw/imageloader/glide/GlideCircleTransform.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_imageloader/src/main/java/com/wkw/imageloader/glide/GlideCircleTransform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_imageloader/src/main/java/com/wkw/imageloader/glide/GlideImageLoaderStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_imageloader/src/main/java/com/wkw/imageloader/glide/GlideImageLoaderStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_imageloader/src/main/java/com/wkw/imageloader/glide/GlideRoundTransform.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_imageloader/src/main/java/com/wkw/imageloader/glide/GlideRoundTransform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_live/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_live/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_live/src/main/java/com/vongihealth/live/Live.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_live/src/main/java/com/vongihealth/live/Live.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/interactor/UseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/interactor/UseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_pictures/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_pictures/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/ImageFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/ImageFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/ImagePageAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/ImagePageAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/PicturesActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/PicturesActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/widget/MultiTouchViewPager.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/widget/MultiTouchViewPager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/PhotoViewAttacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/widget/photoview/PhotoViewAttacher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/lib_uiframework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/lib_uiframework.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/adapter/BaseViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/adapter/BaseViewAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/adapter/BindingViewHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/adapter/BindingViewHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/adapter/LayoutResId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/adapter/MultiTypeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/adapter/MultiTypeAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/adapter/SingleTypeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/adapter/SingleTypeAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/adapter/SuperAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/BaseActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/BaseFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/BaseFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpBasePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpBasePresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpView.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/page/PageFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/page/PageFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/page/PagePresenterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/page/PagePresenterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/widget/dialog/BaseDataBindingDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/widget/dialog/BaseDataBindingDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/res/layout/dialog_list_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/res/layout/dialog_list_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/res/layout/fragment_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uiframework/src/main/res/layout/fragment_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uikit/lib_uikit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uikit/lib_uikit.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uikit/src/main/java/com/liuguangqiang/swipeback/SwipeBackLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uikit/src/main/java/com/liuguangqiang/swipeback/SwipeBackLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uikit/src/main/java/com/wkw/uikit/ClearEditText.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uikit/src/main/java/com/wkw/uikit/ClearEditText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uikit/src/main/java/com/wkw/uikit/CustomTabHost.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uikit/src/main/java/com/wkw/uikit/CustomTabHost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uikit/src/main/java/com/wkw/uikit/loadmore/RecyclerViewUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uikit/src/main/java/com/wkw/uikit/loadmore/RecyclerViewUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uikit/src/main/java/com/wkw/uikit/loadmore/RecyclerViewWithFooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uikit/src/main/java/com/wkw/uikit/loadmore/RecyclerViewWithFooter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdk/lib_uikit/src/main/java/com/wkw/uikit/tablayout/SlidingTabLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/sdk/lib_uikit/src/main/java/com/wkw/uikit/tablayout/SlidingTabLayout.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,10 +37,7 @@
       <FILTER>com.wkw.knowledge.interactor.*</FILTER>
     </SUITE>
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_6P_API_28" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="98899530374e525059" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -166,31 +83,6 @@
       </state>
     </system>
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-android/2.14.1/fed8c59630998955c032b54a12302cdafe7d0c7/dagger-android-2.14.1-sources.jar!/dagger/android/FragmentKey.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -202,430 +94,11 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>PREFIX</find>
-      <find>providers</find>
-      <find>contentProviderInjector</find>
-      <find>DEFAULT_STRING</find>
-      <find>interceptors</find>
-      <find>RELEASE_REPOSITORY_URL</find>
-      <find>img_tab_unread</find>
-      <find>colorAccent</find>
-      <find>linePoints</find>
-      <find>pre</find>
-      <find>linePath</find>
-      <find>maxValue</find>
-      <find>stepSpaceDP</find>
-      <find>stepEnd</find>
-      <find>rulerValuePadding</find>
-      <find>dataList.size()</find>
-      <find>isInitialized</find>
-      <find>setupLine</find>
-      <find>stepSpace</find>
-      <find>daggerVersion</find>
-      <find>ResponseListenerImpl</find>
-      <find>ResponseErrorListener</find>
-      <find>libSupportAppcompat</find>
-      <find>libSupportDesign</find>
-      <find>libSupportRecyclerview</find>
-      <find>supportVersion</find>
-      <find>libSupportV4</find>
-      <find>import android.support.annotation.Nullable;</find>
-      <find>import android.support.annotation.Keep;</find>
-      <find>libAutoService</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/BaseActivity.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/src/main/java/com/vongihealth/network/interactor/UseCase.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpActivity.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpView.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpFragment.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpBasePresenter.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/page/PagePresenterImpl.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_uikit/src/main/java/com/wkw/uikit/tablayout/SlidingTabLayout.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/res/layout/fragment_list.xml" />
-        <option value="$PROJECT_DIR$/sdk/lib_ext/src/main/java/com/wkw/ext/utils/guava/Preconditions.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_ext/src/main/java/com/wkw/ext/utils/guava/Optional.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_ext/src/main/java/com/wkw/ext/utils/guava/Present.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_ext/src/main/java/com/wkw/ext/utils/guava/Absent.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_ext/src/main/java/com/wkw/ext/utils/StatusBarUtil.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/page/PageFragment.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_imageloader/src/main/java/com/wkw/imageloader/glide/GlideCircleTransform.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_imageloader/src/main/java/com/wkw/imageloader/glide/BlurTransformation.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_imageloader/src/main/java/com/wkw/imageloader/glide/GlideRoundTransform.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/widget/MultiTouchViewPager.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/ImageFragment.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/ImagePageAdapter.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_pictures/src/main/java/com/vongihealth/pictures/PicturesActivity.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/widget/dialog/BaseDataBindingDialog.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_pictures/build.gradle" />
-        <option value="$PROJECT_DIR$/sdk/lib_ext/src/main/java/com/wkw/ext/utils/ToastUtils.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_uikit/build.gradle" />
-        <option value="$PROJECT_DIR$/sdk/lib_imageloader/build.gradle" />
-        <option value="$PROJECT_DIR$/sdk/lib_live/build.gradle" />
-        <option value="$PROJECT_DIR$/sdk/lib_network_rx_retrofit/build.gradle" />
-        <option value="$PROJECT_DIR$/sdk/lib_uiframework/build.gradle" />
-        <option value="$PROJECT_DIR$/sdk/lib_ext/build.gradle" />
-        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/res/layout/dialog_list_layout.xml" />
-        <option value="$PROJECT_DIR$/basic/build.gradle" />
-        <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/activity/MrActivity.java" />
-        <option value="$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/entity/TokenEntity.java" />
-        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesActivity.java" />
-        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/module/ArchivesService.java" />
-        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/module/ArchivesModule.java" />
-        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/BackActivity.java" />
-        <option value="$PROJECT_DIR$/module_login/src/main/java/com/github/wkw/login/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/module_login/src/main/java/com/github/wkw/login/provider/UserContentProvider.java" />
-        <option value="$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesPresenter.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_live/src/main/java/com/vongihealth/live/Live.java" />
-        <option value="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/module/KnowledgeModule.java" />
-        <option value="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/service/KnowledgeService.java" />
-        <option value="$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/BaseFragment.java" />
-        <option value="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/view/fragment/KnowledgeFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/MrApplication.java" />
-        <option value="$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/KnowledgeActivity.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="721" />
-  </component>
+  <component name="ProjectId" id="1ZNhDwaSyfxhh7GWN7YQyrhQ0RB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="modularization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="modularization" type="462c0819:PsiDirectoryNode" />
-              <item name="widget" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="basic" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="commonbusiness" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="commonbusiness" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="commonbusiness" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="commonbusiness" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="commonbusiness" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="commonbusiness" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="commonbusiness" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="commonbusiness" type="462c0819:PsiDirectoryNode" />
-              <item name="activity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="commonbusiness" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="commonbusiness" type="462c0819:PsiDirectoryNode" />
-              <item name="constant" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_archives" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-              <item name="ap_generated_sources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-              <item name="ap_generated_sources" type="462c0819:PsiDirectoryNode" />
-              <item name="debug" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-              <item name="ap_generated_sources" type="462c0819:PsiDirectoryNode" />
-              <item name="debug" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-              <item name="ap_generated_sources" type="462c0819:PsiDirectoryNode" />
-              <item name="debug" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="wkw" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-              <item name="ap_generated_sources" type="462c0819:PsiDirectoryNode" />
-              <item name="debug" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="wkw" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledge" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-              <item name="ap_generated_sources" type="462c0819:PsiDirectoryNode" />
-              <item name="debug" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="wkw" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="di" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledge" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledge" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="di" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ModularizationExample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="module_knowledge" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledge" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="fragment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.google.dagger:dagger-android:2.14.1@aar" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.google.dagger:dagger-android:2.14.1@aar" type="70bed36:NamedLibraryElementNode" />
-              <item name="classes.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ModularizationExample" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.google.dagger:dagger-android:2.14.1@aar" type="70bed36:NamedLibraryElementNode" />
-              <item name="classes.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="android" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="Da&#9;FILE&#9;jar:///Users/wukewei/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-android/2.11/4618ec57a3c1a1424cd7fd105a8ad63b7dffa6d2/dagger-android-2.11-sources.jar!/dagger/android/DaggerApplication.java&#10;Dagger&#9;FILE&#9;jar:///Users/wukewei/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-android/2.11/4618ec57a3c1a1424cd7fd105a8ad63b7dffa6d2/dagger-android-2.11-sources.jar!/dagger/android/DaggerApplication.java&#10;DaggerAppl&#9;PSI&#9;JAVA://dagger.android.DaggerApplication&#10;UserSystem&#9;FILE&#9;file://G:/androidproject/ModularizationExample/commonbusiness/build/generated/source/apt/debug/com/wkw/commonbusiness/entity/UserSystemMapper_Factory.java&#10;AutoService&#9;FILE&#9;jar://G:/sdk/platforms/android-27/android.jar!/android/service/autofill/AutofillService.class&#10;ServiceLoader&#9;PSI&#9;JAVA://java.util.ServiceLoader&#10;RecyclerViewWithFooter&#9;FILE&#9;file://G:/androidproject/ModularizationExample/sdk/lib_uikit/src/main/java/com/wkw/uikit/loadmore/RecyclerViewWithFooter.java&#10;PublishSubject&#9;PSI&#9;JAVA://io.reactivex.subjects.PublishSubject&#10;BehaviorSubject&#9;PSI&#9;JAVA://io.reactivex.subjects.BehaviorSubject&#10;Observable&#9;PSI&#9;JAVA://io.reactivex.Observable&#10;MainThreadDisposable &#9;PSI&#9;JAVA://io.reactivex.android.MainThreadDisposable" />
@@ -740,8 +213,6 @@
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEBUGGER_TYPE" value="Auto" />
@@ -794,8 +265,6 @@
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEBUGGER_TYPE" value="Auto" />
@@ -847,8 +316,6 @@
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEBUGGER_TYPE" value="Auto" />
@@ -900,8 +367,6 @@
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEBUGGER_TYPE" value="Auto" />
@@ -953,8 +418,6 @@
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEBUGGER_TYPE" value="Auto" />
@@ -993,18 +456,17 @@
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
       <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
       <option name="EXTRA_OPTIONS" value="" />
+      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEBUGGER_TYPE" value="Auto" />
@@ -1303,80 +765,15 @@
       <option name="project" value="LOCAL" />
       <updated>1571838339365</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="升级到Androidx">
+      <created>1578408779484</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1578408779484</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="GetUsersListTest - 2018.07.23 at 14h 14m 26s.xml">
-      <configuration name="GetUsersListTest" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="GetUsersListTest_testGetUserListUseCaseObservableHappyCase - 2018.07.23 at 14h 10m 55s.xml">
-      <configuration name="GetUsersListTest.testGetUserListUseCaseObservableHappyCase" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="GetUsersListTest_testGetUserListUseCaseObservableHappyCase - 2018.07.23 at 14h 13m 21s.xml">
-      <configuration name="GetUsersListTest.testGetUserListUseCaseObservableHappyCase" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="GetUsersListTest_testGetUserListUseCaseObservableHappyCase - 2018.07.23 at 14h 16m 05s.xml">
-      <configuration name="GetUsersListTest.testGetUserListUseCaseObservableHappyCase" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="GetUsersListTest_testGetUserListUseCaseObservableHappyCase - 2018.07.23 at 14h 17m 03s.xml">
-      <configuration name="GetUsersListTest.testGetUserListUseCaseObservableHappyCase" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="GetUsersListTest_testGetUserListUseCaseObservableHappyCase - 2018.07.23 at 14h 17m 17s.xml">
-      <configuration name="GetUsersListTest.testGetUserListUseCaseObservableHappyCase" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="GetUsersListTest_testGetUserListUseCaseObservableHappyCase - 2018.07.23 at 14h 18m 24s.xml">
-      <configuration name="GetUsersListTest.testGetUserListUseCaseObservableHappyCase" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="GetUsersListTest_testGetUserListUseCaseObservableHappyCase - 2018.07.23 at 14h 19m 10s.xml">
-      <configuration name="GetUsersListTest.testGetUserListUseCaseObservableHappyCase" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="GetUsersListTest_testGetUserListUseCaseObservableHappyCase - 2018.07.23 at 14h 24m 44s.xml">
-      <configuration name="GetUsersListTest.testGetUserListUseCaseObservableHappyCase" configurationId="AndroidJUnit" />
-    </history-entry>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="721" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4939394" visible="true" weight="0.39176092" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Build Variants" order="3" sideWeight="0.5060606" side_tool="true" weight="0.31877023" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Captures" order="6" side_tool="true" weight="0.25" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info id="Resources Explorer" order="8" weight="0.32980457" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32750398" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.518283" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.44061962" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49592835" visible="true" weight="0.2845787" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" weight="0.8944882" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50407165" side_tool="true" weight="0.40963855" />
-      <window_info anchor="bottom" x="0" y="458" width="1280" height="702" id="Logcat" order="10" sideWeight="0.49785408" type="WINDOWED" weight="0.5318436" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32755905" />
-      <window_info anchor="bottom" id="Terminal" order="12" />
-      <window_info anchor="bottom" id="Gradle Console" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.3242424" />
-      <window_info anchor="bottom" id="Flutter Performance" order="15" side_tool="true" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="right" id="Preview" order="4" weight="0.32956383" />
-      <window_info anchor="right" id="Device File Explorer" order="5" side_tool="true" />
-      <window_info anchor="right" id="Gradle" order="6" sideWeight="0.4906542" weight="0.28836834" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.50934577" side_tool="true" weight="0.3299356" />
-      <window_info anchor="right" id="Flutter Inspector" order="10" />
-      <window_info anchor="right" id="Flutter Outline" order="11" />
-    </layout>
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -1386,6 +783,19 @@
         <option value="3" />
         <option value="1" />
       </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
@@ -1406,7 +816,8 @@
     <MESSAGE value="网络库增加下载文件下载" />
     <MESSAGE value="曲线图(计算天数差)" />
     <MESSAGE value="添加除了哪个activity其它都关闭方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加除了哪个activity其它都关闭方法" />
+    <MESSAGE value="升级到Androidx" />
+    <option name="LAST_COMMIT_MESSAGE" value="升级到Androidx" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1414,8 +825,12 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/widget/LineChartView.java</url>
           <line>570</line>
-          <properties />
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/view/KnowledgePresenter.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1424,426 +839,5 @@
         <watch expression="okHttpClient" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/build/generated/data_binding_base_class_source_out/debug/dataBindingGenBaseClassesDebug/out/com/wkw/uiframework/databinding/DialogListLayoutBinding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-432">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/res/layout/dialog_list_layout.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commonbusiness/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-398" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/activity/MrActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/entity/TokenEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-341">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/module/ArchivesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/module/ArchivesModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/BackActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_login/src/main/java/com/github/wkw/login/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_login/src/main/java/com/github/wkw/login/provider/UserContentProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.0.0/cb4562c8927ab69f2a8ef49267b90753207df0c3/lifecycle-common-2.0.0-sources.jar!/androidx/lifecycle/LifecycleOwner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_live/src/main/java/com/vongihealth/live/Live.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="90" column="40" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpBasePresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="61" column="23" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_archives/src/main/java/com/wkw/archives/view/ArchivesPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/module/KnowledgeModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/service/KnowledgeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/view/FragmentPagerFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="154" selection-start-line="14" selection-start-column="154" selection-end-line="14" selection-end-column="154" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/page/PageFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="30" column="142" selection-start-line="30" selection-start-column="142" selection-end-line="30" selection-end-column="142" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/mvp/MvpFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="19" column="91" selection-start-line="19" selection-start-column="91" selection-end-line="19" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/widget/EditText.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="68" column="6" lean-forward="true" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdk/lib_uiframework/src/main/java/com/wkw/uiframework/base/BaseFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-598">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/data/knowledge/KnowledgeDataRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/di/KnowledgeActivityModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/di/KnowledgeDataRepositoryModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/di/KnowledgeFragmentModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.0.0/bcd167792ec03e930d5c8345c99ae07b2627de84/fragment-1.0.0-sources.jar!/androidx/fragment/app/Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="84" column="13" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ffe8e67369744f2203a711df913e3632/jetified-dagger-android-support-2.11/jars/classes.jar!/dagger/android/support/AndroidSupportInjection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-android-support/2.11/e1419e92683f91f2cb214d71f000ca661e02826/dagger-android-support-2.11-sources.jar!/dagger/android/support/AndroidSupportInjection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="264" column="13" selection-start-line="264" selection-start-column="13" selection-end-line="264" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-android/2.24/bb077c657fb731a770e0677555235251cf074ffb/dagger-android-2.24-sources.jar!/dagger/android/AndroidInjection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="78" column="33" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-android-support/2.24/aa4dcd38a7d2841c3991b0547945c577d8f19e2a/dagger-android-support-2.24-sources.jar!/dagger/android/support/DaggerAppCompatActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="35" selection-start-line="35" selection-end-line="36" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-android/2.24/bb077c657fb731a770e0677555235251cf074ffb/dagger-android-2.24-sources.jar!/dagger/android/HasAndroidInjector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-android-support/2.24/aa4dcd38a7d2841c3991b0547945c577d8f19e2a/dagger-android-support-2.24-sources.jar!/dagger/android/support/DaggerFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="32" column="83" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-android/2.24/bb077c657fb731a770e0677555235251cf074ffb/dagger-android-2.24-sources.jar!/dagger/android/DaggerActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commonbusiness/src/main/java/com/wkw/commonbusiness/BaseApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-android/2.24/bb077c657fb731a770e0677555235251cf074ffb/dagger-android-2.24-sources.jar!/dagger/android/DaggerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="45" column="66" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/di/AppComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5d0d2c0740c7bb29c51983d456e1c3a7/jetified-dagger-android-support-2.24/jars/classes.jar!/dagger/android/support/AndroidSupportInjection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ec9913756e96b39b25fe23471a34ac59/jetified-dagger-android-support-2.14/jars/classes.jar!/dagger/android/support/AndroidSupportInjection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxandroid/2.0.1/67244b35fe87c5899f87151f8b63981b7c9b37db/rxandroid-2.0.1-sources.jar!/io/reactivex/android/schedulers/AndroidSchedulers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.auto/auto-common/0.8/24705cafc9997c5eb6ae3270bd6234fdf9912bad/auto-common-0.8-sources.jar!/com/google/auto/common/MoreTypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e2c081deb9a3f0edd0e0774094a5222b/jetified-dagger-android-support-2.14.1/jars/classes.jar!/dagger/android/support/AndroidSupportInjection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wkw/modularization/MrApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/view/fragment/KnowledgeFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_knowledge/src/main/java/com/wkw/knowledge/KnowledgeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="36" column="165" selection-start-line="36" selection-start-column="139" selection-end-line="36" selection-end-column="165" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_knowledge/build/generated/ap_generated_sources/debug/out/com/wkw/knowledge/di/KnowledgeFragmentModule_ContributeKnowledgeFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-android/2.14.1/fed8c59630998955c032b54a12302cdafe7d0c7/dagger-android-2.14.1-sources.jar!/dagger/android/FragmentKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

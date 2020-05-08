@@ -1,6 +1,7 @@
 package com.wkw.knowledge.view;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 
 import com.vongihealth.live.Live;
 import com.vongihealth.network.interactor.UseCase;
@@ -28,6 +29,9 @@ public class KnowledgePresenter extends PagePresenterImpl<Integer, String, Konwl
     @Inject
     KnowledgeUseCase mKnowledgeUseCase;
 
+//    @Inject
+//    Activity activity;
+
     @Inject
     public KnowledgePresenter() {
     }
@@ -53,6 +57,7 @@ public class KnowledgePresenter extends PagePresenterImpl<Integer, String, Konwl
     @SuppressLint("CheckResult")
     @Override
     public void usersList(AbstractQry qry) {
+//        Timber.d(activity.getLocalClassName());
         mUsersListUseCase.execute(qry)
                 .subscribe(users -> getView().showDataUserList(users),
                         throwable -> getRxErrorHandler().getHandlerFactory().handleError(throwable));

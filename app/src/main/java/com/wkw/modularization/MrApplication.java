@@ -1,10 +1,8 @@
 package com.wkw.modularization;
 
 
-import android.app.Activity;
 import android.content.ContentProvider;
 
-import com.squareup.leakcanary.LeakCanary;
 import com.wkw.commonbusiness.BaseApplication;
 import com.wkw.modularization.di.DaggerAppComponent;
 
@@ -12,17 +10,16 @@ import javax.inject.Inject;
 
 import dagger.android.AndroidInjector;
 import dagger.android.DispatchingAndroidInjector;
-import dagger.android.HasActivityInjector;
-import dagger.android.HasContentProviderInjector;
+import dagger.android.HasAndroidInjector;
 
 /**
  * Created by wukewei on 2017/8/27.
  */
 
-public class MrApplication extends BaseApplication implements HasActivityInjector, HasContentProviderInjector {
+public class MrApplication extends BaseApplication implements HasAndroidInjector {
 
     @Inject
-    DispatchingAndroidInjector<Activity> dispatchingAndroidInjector;
+    volatile DispatchingAndroidInjector<Object> androidInjector;
 
     private volatile boolean needToInject = true;
 
@@ -34,7 +31,6 @@ public class MrApplication extends BaseApplication implements HasActivityInjecto
     public void onCreate() {
         super.onCreate();
         initInjector();
-        LeakCanary.install(this);
     }
 
     private void initInjector() {
@@ -57,15 +53,7 @@ public class MrApplication extends BaseApplication implements HasActivityInjecto
 
 
     @Override
-    public AndroidInjector<Activity> activityInjector() {
-        return dispatchingAndroidInjector;
+    public AndroidInjector<Object> androidInjector() {
+        return androidInjector;
     }
-
-
-    @Override
-    public AndroidInjector<ContentProvider> contentProviderInjector() {
-        initInjector();
-        return dispatchingContentProviderInjector;
-    }
-
 }

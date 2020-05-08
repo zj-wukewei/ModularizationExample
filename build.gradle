@@ -17,6 +17,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url 'https://jitpack.io' }
         maven { url RELEASE_REPOSITORY_URL }
     }
 }
@@ -26,15 +27,16 @@ task clean(type: Delete) {
 }
 
 
-def daggerVersion = "2.16"
+def daggerVersion = "2.26"
 def retrofitVersion = "2.5.0"
 def supportVersion = "1.0.0"
 def okHttpVersion = '3.14.0'
 def gsonVersion = '2.8.1'
 def rxJavaVersion = '2.2.2'
 def rxAndroidVersion = '2.0.1'
-def leakCanaryVersion = "1.6.3"
-def glideVersion = '4.9.0'
+def leakCanaryVersion = "2.2"
+def glideVersion = '4.11' +
+        '.0'
 def jUnitVersion  = '4.12'
 def assertJVersion  = '1.7.1'
 def mockitoVersion  = '1.9.5'
@@ -69,9 +71,6 @@ project.ext {
     debugDependencies = [
             leakCanary: "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}",
     ]
-    releaseDependencies = [
-            leakCanary: "com.squareup.leakcanary:leakcanary-android-no-op:${leakCanaryVersion}",
-    ]
     libRetrofit = "com.squareup.retrofit2:retrofit:${retrofitVersion}"
     libRetrofitConverterGson = "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
     libRetrofitAdapterRxJava = "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}"
@@ -80,7 +79,7 @@ project.ext {
     libDaggerSupport = "com.google.dagger:dagger-android-support:${daggerVersion}"
     libDaggerCompiler = "com.google.dagger:dagger-compiler:${daggerVersion}"
     libDaggerAndroidCompiler = "com.google.dagger:dagger-android-processor:${daggerVersion}"
-    libRxPermissions = 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
+    libRxPermissions = 'com.github.tbruyelle:rxpermissions:0.10.2'
     libRxPreferences = 'com.f2prateek.rx.preferences2:rx-preferences:2.0.0'
     libAutoService = "com.google.auto.service:auto-service:${autoService}"
     libRxrelay2 = "com.jakewharton.rxrelay2:rxrelay:${rxRelayVersion}"
